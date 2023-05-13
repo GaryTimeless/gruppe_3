@@ -1,0 +1,384 @@
+<div class="container">
+    <div class="tui-row">
+        <div class="tui-col_md-12">
+            <tui-island>
+                <form>
+                <table class="tui-table" style="width: 100%">
+                    <tbody>
+                        <tr class="tui-table__tr">
+                            <th i18n="@@Column_Headline_Part_Dispo1" class="tui-table__th">Teil</th>
+                            <th i18n="@@Column_Headline_Sellwish_Dispo1" class="tui-table__th">Vertriebswunsch</th>
+                            <th i18n="@@Column_Transfer_Waitinglist_Dispo1"class="tui-table__th">Übertrag <br>Warteschlange</th>
+                            <th i18n="@@Column_Headline_Planned_Stock_Dispo1" class="tui-table__th">Geplanter Lagerbestand <br>am Ender der Planperiode</th>
+                            <th i18n="@@Column_Headline_Stock_Dispo1" class="tui-table__th">Lagerbestand <br>am Ende der Vorperiode</th>
+                            <th i18n="@@Column_Headline_Orders_In_Waitinglist_Dispo1"class="tui-table__th">Aufträge <br>in der Warteschlange</th>
+                            <th i18n="@@Column_Headline_Orders_In_Work_Dispo1"class="tui-table__th">Aufträge <br>in Bearbeitung</th>
+                            <th i18n="@@Column_Headline_Production_Orders_Dispo1" class="tui-table__th">Produktionsaufträge <br>für die kommende Periode</th>
+                        </tr>
+                        <tr class="tui-table__tr border-bottom">
+                            <td class="tui-table__td" style="padding-top: 19px;">P1</td>
+                            <td class="tui-table__td" style="padding-top: 19px;"> {{value1}}</td>
+                            <td class="tui-table__td" style="padding-top: 19px;">0</td>
+
+                            <td class="tui-table__td">
+                                <div class="tui-form__multi-field" style="margin-left: 10px; margin-top: 3px;">
+                                    <!-- <tui-input-number
+                                    tuiTextfieldSize="s"
+                                    [tuiTextfieldLabelOutside]="true"
+                                        ngDefaultControl
+                                      [(ngModel)]="nummer1"
+                                      [ngModelOptions]="{standalone: true}"
+                                      (ngModelChange)="checkInput($event, 'nummer1'); setData($event, 'nummer1')"
+                                      [disabled] = "true"
+                                    >
+                                    </tui-input-number> -->
+                                    {{nummer1}}
+                                    <span style="color: red;" *ngIf="errors.nummer1">{{errors.nummer1}}</span>
+                                </div>
+                            </td>
+                            <td class="tui-table__td" style="padding-top: 19px;">{{value21}}</td>
+                            <td class="tui-table__td" style="padding-top: 19px;">{{value31}}</td>
+                            <td class="tui-table__td" style="padding-top: 19px;">{{value41}}</td>
+                            <td class="tui-table__td" style="padding-top: 19px;">
+                                <tui-tag class="tag" 
+                                [class.support-red]="this.value51 < 0" 
+                                [class.support-green]="(this.value51) >= 0"status="custom"
+                                [value]="this.value51 + ''">
+                            </tui-tag>
+                               </td>
+                        </tr>
+                        <tr class="tui-table__tr">
+                            <td class="tui-table__td" style="padding-top: 19px; ">E26*</td>
+                            <td class="tui-table__td" style="padding-top: 19px;">{{value2}}</td>
+                            <td class="tui-table__td" style="padding-top: 19px;">{{value31}}</td>
+                            <td class="tui-table__td">
+                                <div class="tui-form__multi-field">
+                                    <tui-input-number
+                                       tuiTextfieldSize="s"
+                                    [tuiTextfieldLabelOutside]="true"  
+                                      ngDefaultControl
+                                    [(ngModel)]="nummer2"
+                                    [ngModelOptions]="{standalone: true}"
+                                    (ngModelChange)="checkInput($event, 'nummer2'); setData($event, 'nummer2')"
+                                    >
+                                    </tui-input-number>
+                                    <span style="color: red;" *ngIf="errors.nummer2">{{errors.nummer2}}</span>
+                                </div>
+                            </td>
+                            <td class="tui-table__td" style="padding-top: 19px;">{{value22}}</td>
+                            <td class="tui-table__td" style="padding-top: 19px;">{{value32}}</td>
+                            <td class="tui-table__td" style="padding-top: 19px;">{{value42}}</td>
+                            <td class="tui-table__td" style="padding-top: 19px;">
+                                <tui-tag class="tag" 
+                                [class.support-red]="this.value52 < 0" 
+                                [class.support-green]="(this.value52) >= 0"status="custom"
+                                [value]="this.value52 + ''">
+                            </tui-tag>
+                        </td>
+                        </tr>
+                        <tr class="tui-table__tr border-bottom">
+                            <td class="tui-table__td" style="padding-top: 19px;">E51</td>
+                            <td class="tui-table__td" style="padding-top: 19px;">{{value3}}</td>
+                            <td class="tui-table__td" style="padding-top: 19px;">{{value31}}</td>
+                            <td class="tui-table__td">
+                                <div class="tui-form__multi-field">
+                                <tui-input-number
+                                   tuiTextfieldSize="s"
+                                    [tuiTextfieldLabelOutside]="true" 
+                                ngDefaultControl
+                                [(ngModel)]="nummer3"
+                                [ngModelOptions]="{standalone: true}"
+                                (ngModelChange)="checkInput($event, 'nummer3'); setData($event, 'nummer3')">
+                                </tui-input-number>
+                            <span  style="color: red;" *ngIf="errors.nummer3">{{errors.nummer3}}</span>
+                            </div></td>
+                            <td class="tui-table__td" style="padding-top: 19px;">{{value23}}</td>
+                            <td class="tui-table__td" style="padding-top: 19px;">{{value33}}</td>
+                            <td class="tui-table__td" style="padding-top: 19px;">{{value43}}</td>
+                            <td class="tui-table__td" style="padding-top: 19px;">
+                                <tui-tag class="tag" 
+                                [class.support-red]="this.value53 < 0" 
+                                [class.support-green]="(this.value53) >= 0"status="custom" 
+                                [value]="this.value53 + ''">
+                            </tui-tag></td>
+                        </tr>
+                        <tr class="tui-table__tr">
+                            <td class="tui-table__td" style="padding-top: 19px;">E16*</td>
+                            <td class="tui-table__td" style="padding-top: 19px;">{{value4}}</td>
+                            <td class="tui-table__td" style="padding-top: 19px;">{{value33}}</td>
+                            <td class="tui-table__td">
+                                <div class="tui-form__multi-field">
+                                <tui-input-number
+                                   tuiTextfieldSize="s"
+                                    [tuiTextfieldLabelOutside]="true"  
+                                ngDefaultControl
+                                [(ngModel)]="nummer4"
+                                [ngModelOptions]="{standalone: true}"
+                                (ngModelChange)="checkInput($event, 'nummer4'); setData($event, 'nummer4')">
+                                </tui-input-number>
+                             <span  style="color: red;" *ngIf="errors.nummer4">{{errors.nummer4}}</span>
+                            </div></td>
+                            <td class="tui-table__td" style="padding-top: 19px;">{{value24}}</td>
+                            <td class="tui-table__td" style="padding-top: 19px;">{{value34}}</td>
+                            <td class="tui-table__td" style="padding-top: 19px;">{{value44}}</td>
+                            <td class="tui-table__td" style="padding-top: 19px;">
+                                <tui-tag class="tag" 
+                                [class.support-red]="this.value54 < 0" 
+                                [class.support-green]="(this.value54) >= 0"status="custom" 
+                                [value]="this.value54 + ''">
+                            </tui-tag></td>
+                        </tr>
+                        <tr class="tui-table__tr">
+                            <td class="tui-table__td" style="padding-top: 19px;">E17*</td>
+                            <td class="tui-table__td" style="padding-top: 19px;">{{value5}}</td>
+                            <td class="tui-table__td" style="padding-top: 19px;">{{value33}}</td>
+
+                            <td class="tui-table__td" >
+                                <div class="tui-form__multi-field">
+                                <tui-input-number
+                                   tuiTextfieldSize="s"
+                                    [tuiTextfieldLabelOutside]="true" 
+                                 ngDefaultControl
+                                [(ngModel)]="nummer5"
+                                [ngModelOptions]="{standalone: true}"
+                                (ngModelChange)="checkInput($event, 'nummer5'); setData($event, 'nummer5')">
+                                </tui-input-number>
+                                <span   style="color: red;" *ngIf="errors.nummer5">{{errors.nummer5}}</span>
+
+                            </div></td>
+                            <td class="tui-table__td" style="padding-top: 19px;">{{value25}}</td>
+                            <td class="tui-table__td" style="padding-top: 19px;">{{value35}}</td>
+                            <td class="tui-table__td" style="padding-top: 19px;">{{value45}}</td>
+                            <td class="tui-table__td" style="padding-top: 19px;">
+                                <tui-tag class="tag" 
+                                [class.support-red]="this.value55 < 0" 
+                                [class.support-green]="(this.value55) >= 0"status="custom" 
+                                [value]="this.value55 + ''">
+                            </tui-tag>
+                        </td>
+                        </tr>
+                        <tr class="tui-table__tr border-bottom">
+                            <td class="tui-table__td" style="padding-top: 19px;">E50</td>
+                            <td class="tui-table__td" style="padding-top: 19px;">{{value6}}</td>
+                            <td class="tui-table__td" style="padding-top: 19px;">{{value33}}</td>
+
+                            <td class="tui-table__td">
+                                <div class="tui-form__multi-field">
+                                <tui-input-number
+                                   tuiTextfieldSize="s"
+                                    [tuiTextfieldLabelOutside]="true"
+                                ngDefaultControl
+                                [(ngModel)]="nummer6"
+                                [ngModelOptions]="{standalone: true}"
+                                (ngModelChange)="checkInput($event, 'nummer6'); setData($event, 'nummer6')">
+                                </tui-input-number>
+                            <span   style="color: red;" *ngIf="errors.nummer6">{{errors.nummer6}}</span>
+
+                            </div></td>
+                            <td class="tui-table__td" style="padding-top: 19px;">{{value26}}</td>
+                            <td class="tui-table__td" style="padding-top: 19px;">{{value36}}</td>
+                            <td class="tui-table__td" style="padding-top: 19px;">{{value46}}</td>
+                            <td class="tui-table__td" style="padding-top: 19px;">
+                                <tui-tag class="tag" 
+                                [class.support-red]="this.value56 < 0" 
+                                [class.support-green]="(this.value56) >= 0"status="custom" 
+                                [value]="this.value56+ ''">
+                            </tui-tag>
+                        </td>
+                        </tr>
+                        <tr class="tui-table__tr">
+                            <td  class="tui-table__td" style="padding-top: 19px;">E4</td>
+                            <td class="tui-table__td" style="padding-top: 19px;">{{value7}}</td>
+                            <td class="tui-table__td" style="padding-top: 19px;">{{value36}}</td>
+                            <td class="tui-table__td">
+                                <div class="tui-form__multi-field">
+                                    <tui-input-number
+                                       tuiTextfieldSize="s"
+                                    [tuiTextfieldLabelOutside]="true"
+                                    ngDefaultControl
+                                [(ngModel)]="nummer7"
+                                [ngModelOptions]="{standalone: true}"
+                                (ngModelChange)="checkInput($event, 'nummer7'); setData($event, 'nummer7')"
+                                    >
+                                    </tui-input-number>
+                                    <span  style="color: red;" *ngIf="errors.nummer7">{{errors.nummer7}}</span>
+                                </div>
+                            </td>
+                            <td class="tui-table__td" style="padding-top: 19px;">{{value27}}</td>
+                            <td class="tui-table__td" style="padding-top: 19px;">{{value37}}</td>
+                            <td class="tui-table__td" style="padding-top: 19px;">{{value47}}</td>
+                            <td class="tui-table__td" style="padding-top: 19px;">
+                                <tui-tag class="tag" 
+                                [class.support-red]="this.value57 < 0" 
+                                [class.support-green]="(this.value57) >= 0"status="custom" 
+                                [value]="this.value57 + ''">
+                            </tui-tag>
+                        </td>
+                        </tr>
+                        <tr class="tui-table__tr">
+                            <td class="tui-table__td" style="padding-top: 19px;">E10</td>
+                            <td class="tui-table__td" style="padding-top: 19px;">{{value8}}</td>
+                            <td class="tui-table__td" style="padding-top: 19px;">{{value36}}</td>
+                            <td class="tui-table__td">
+                                <div class="tui-form__multi-field">
+                                <tui-input-number
+                                   tuiTextfieldSize="s"
+                                    [tuiTextfieldLabelOutside]="true"
+                                ngDefaultControl
+                                [(ngModel)]="nummer8"
+                                [ngModelOptions]="{standalone: true}"
+                                (ngModelChange)="checkInput($event, 'nummer8'); setData($event, 'nummer8')">
+                                </tui-input-number>
+                            <span  style="color: red;" *ngIf="errors.nummer8">{{errors.nummer8}}</span>
+
+                            </div></td>
+                            <td class="tui-table__td" style="padding-top: 19px;">{{value28}}</td>
+                            <td class="tui-table__td" style="padding-top: 19px;">{{value38}}</td>
+                            <td class="tui-table__td" style="padding-top: 19px;">{{value48}}</td>
+                            <td class="tui-table__td" style="padding-top: 19px;">
+                                <tui-tag class="tag" 
+                                [class.support-red]="this.value58 < 0" 
+                                [class.support-green]="(this.value58) >= 0"status="custom" 
+                                [value]="this.value58 + ''">
+                            </tui-tag>
+                        </td>
+                        </tr>
+                        <tr class="tui-table__tr border-bottom">
+                            <td class="tui-table__td" style="padding-top: 19px;">E49</td>
+                            <td class="tui-table__td" style="padding-top: 19px;">{{value9}}</td>
+                            <td class="tui-table__td" style="padding-top: 19px;">{{value36}}</td>
+                            <td class="tui-table__td">
+                                <div class="tui-form__multi-field">
+                                <tui-input-number
+                                   tuiTextfieldSize="s"
+                                    [tuiTextfieldLabelOutside]="true"
+                                ngDefaultControl
+                                [(ngModel)]="nummer9"
+                                [ngModelOptions]="{standalone: true}"
+                                (ngModelChange)="checkInput($event, 'nummer9'); setData($event, 'nummer9')">
+                                </tui-input-number>
+                            <span  style="color: red;" *ngIf="errors.nummer9">{{errors.nummer9}}</span>
+
+                            </div></td>
+                            <td class="tui-table__td" style="padding-top: 19px;">{{value29}}</td>
+                            <td class="tui-table__td" style="padding-top: 19px;">{{value39}}</td>
+                            <td class="tui-table__td" style="padding-top: 19px;">{{value49}}</td>
+                            <td class="tui-table__td" style="padding-top: 19px;">
+                                <tui-tag class="tag" 
+                                [class.support-red]="this.value59 < 0" 
+                                [class.support-green]="(this.value59) >= 0"status="custom"
+                                [value]="this.value59 + ''">
+                            </tui-tag>
+                        </td>
+                        </tr>
+                        <tr class="tui-table__tr">
+                            <td class="tui-table__td" style="padding-top: 19px;">E7</td>
+                            <td class="tui-table__td" style="padding-top: 19px;">{{value10}}</td>
+                            <td class="tui-table__td" style="padding-top: 19px;">{{value39}}</td>
+                            <td class="tui-table__td">
+                                <div class="tui-form__multi-field">
+                                <tui-input-number
+                                   tuiTextfieldSize="s"
+                                    [tuiTextfieldLabelOutside]="true"
+                                ngDefaultControl
+                                [(ngModel)]="nummer10"
+                                [ngModelOptions]="{standalone: true}"
+                                (ngModelChange)="checkInput($event, 'nummer10'); setData($event, 'nummer10')">
+                                </tui-input-number>
+                            <span  style="color: red;" *ngIf="errors.nummer10">{{errors.nummer10}}</span>
+
+                            </div></td>
+                            <td class="tui-table__td" style="padding-top: 19px;">{{value210}}</td>
+                            <td class="tui-table__td" style="padding-top: 19px;">{{value310}}</td>
+                            <td class="tui-table__td" style="padding-top: 19px;">{{value410}}</td>
+                            <td class="tui-table__td" style="padding-top: 19px;">
+                                <tui-tag class="tag" 
+                                [class.support-red]="this.value510 < 0" 
+                                [class.support-green]="(this.value510) >= 0"status="custom"
+                                [value]="this.value510 + ''">
+                            </tui-tag>
+                        </td>
+                        </tr>
+                        <tr class="tui-table__tr">
+                            <td class="tui-table__td" style="padding-top: 19px;">E13</td>
+                            <td class="tui-table__td" style="padding-top: 19px;">{{value11}}</td>
+                            <td class="tui-table__td" style="padding-top: 19px;">{{value39}}</td>
+                            <td class="tui-table__td">
+                                <div class="tui-form__multi-field">
+                                <tui-input-number
+                                   tuiTextfieldSize="s"
+                                    [tuiTextfieldLabelOutside]="true"
+                                ngDefaultControl
+                                [(ngModel)]="nummer11"
+                                [ngModelOptions]="{standalone: true}"
+                                (ngModelChange)="checkInput($event, 'nummer11'); setData($event, 'nummer11')">
+                                </tui-input-number>
+                            <span style="color: red;" *ngIf="errors.nummer11">{{errors.nummer11}}</span>
+
+                            </div></td>
+                            <td class="tui-table__td" style="padding-top: 19px;">{{value211}}</td>
+                            <td class="tui-table__td" style="padding-top: 19px;">{{value311}}</td>
+                            <td class="tui-table__td" style="padding-top: 19px;">{{value411}}</td>
+                            <td class="tui-table__td" style="padding-top: 19px;">
+                                <tui-tag class="tag" 
+                                [class.support-red]="this.value511 < 0" 
+                                [class.support-green]="(this.value511) >= 0"status="custom" 
+                                [value]="this.value511 + ''">
+                            </tui-tag>
+                        </td>
+                        </tr>
+                        <tr class="tui-table__tr border-bottom">
+                            <td class="tui-table__td" style="padding-top: 19px;">E18</td>
+                            <td class="tui-table__td" style="padding-top: 19px;">{{value12}}</td>
+                            <td class="tui-table__td" style="padding-top: 19px;">{{value39}}</td>
+                            <td class="tui-table__td">
+                                <div class="tui-form__multi-field">
+                                    <tui-input-number
+                                       tuiTextfieldSize="s"
+                                    [tuiTextfieldLabelOutside]="true"
+                                    ngDefaultControl
+                                [(ngModel)]="nummer12"
+                                [ngModelOptions]="{standalone: true}"
+                                (ngModelChange)="checkInput($event, 'nummer12'); setData($event, 'nummer12')">
+                                    </tui-input-number>
+                                <span  style="color: red;" *ngIf="errors.nummer12">{{errors.nummer12}}</span>
+
+                                </div>
+                            </td>
+                            <td class="tui-table__td" style="padding-top: 19px;">{{value212}}</td>
+                            <td class="tui-table__td" style="padding-top: 19px;">{{value312}}</td>
+                            <td class="tui-table__td" style="padding-top: 19px;">{{value412}}</td>
+                            <td class="tui-table__td" style="padding-top: 19px;">
+                                <tui-tag class="tag" 
+                                [class.support-red]="this.value512 < 0" 
+                                [class.support-green]="(this.value512) >= 0"status="custom" 
+                                [value]="this.value512 + ''">
+                            </tui-tag>
+                        </td>
+                        </tr>
+                    </tbody>
+                </table>
+               </form>
+               <p i18n="@@Disposition_Mehrfachverwendung">*Mehrfachverwendung</p> 
+            </tui-island>
+        </div>
+    </div>
+</div>
+<div class="tui-space_top-3" style="text-align:center ; width:100%">
+    <button i18n="@@Disposition_1_Back"
+        tuiButton
+        type="button"
+        (click)="back()"
+    >
+        Zurück
+    </button>
+        <button i18n="@@Disposition_1_Further"
+        tuiButton
+        type="button"
+        class="button_further"
+        (click)="next()"
+        [disabled]="(errors|keyvalue).length > 0"
+    >
+        Weiter
+    </button>
+</div>

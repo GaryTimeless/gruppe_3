@@ -1,0 +1,147 @@
+<h2 i18n="@@PRODUCTION_TITLE_PRIORISATION">Auftragspriorisierung</h2>
+<p i18n="@@PRODUCTION_DESCRIPTION">
+  Ordnen Sie hier die Aufträge in Ihrer gewünschten Reihenfolge. Zusätzlich
+  besteht die Möglichkeit Aufträge zu splitten.
+  <ng-template #tooltip>
+    Die dargestellten Symbole sind folgendermaßen zu verstehen:<br />
+    <i class="fas fa-angles-up"></i>: Der Auftrag wird an den Anfang
+    geschoben.<br />
+    <i class="fas fa-angle-up"></i>: Der Auftrag wird um eine Zeile nach oben
+    verschoben.<br />
+    <i class="fas fa-angle-down"></i>: Der Auftrag wird um eine Zeile nach unten
+    verschoben.<br />
+    <i class="fas fa-angles-down"></i>: Der Auftrag wird an das Ende
+    geschoben.<br />
+    <i class="fas fa-split"></i>: Der Auftrag wird gesplittet. <br />
+  </ng-template>
+  <tui-tooltip [content]="tooltip" direction="left"></tui-tooltip>
+</p>
+
+<ng-container *ngIf="dataService.currentPeriod">
+  <!-- <h3 class="tui-island__title" i18n="@@PRODUCTION_TITLE_PRIORISATION">
+    Auftragspriorisierung
+  </h3>
+  <p>Ordnen Sie hier die Aufträge in Ihrer gewünschten Reihenfolge. Zusätzlich besteht die Möglichkeit Aufträge zu splitten. </p> -->
+  <tui-island>
+    <div class="tui-row tui-row_adaptive">
+      <div
+        class="tui-col_xs-1 tui-col_md-1 tui-col_lg-1"
+        i18n="@@Production_Artikel"
+      >
+        Artikel
+      </div>
+      <div
+        class="tui-col_xs-6 tui-col_md-6 tui-col_lg-6"
+        i18n="@@Production_Arbeitsplaetze"
+      >
+        Arbeitsplätze
+      </div>
+      <div
+        class="tui-col_xs-2 tui-col_md-2 tui-col_lg-2"
+        i18n="@@Production_Wert"
+      >
+        Menge
+      </div>
+      <div
+        class="tui-col_xs-3 tui-col_md-3 tui-col_lg-3"
+        i18n="@@Production_AKtionen"
+      >
+        Aktionen
+      </div>
+    </div>
+  </tui-island>
+  <div
+    id="table"
+    class="tui-island__paragraph"
+    tuiGroup
+    class="group"
+    orientation="vertical"
+    *ngIf="dataService.currentPeriod.production.afterSplitting"
+  >
+    <tui-island
+      *ngFor="
+        let p of dataService.currentPeriod.production.afterSplitting;
+        let index = index
+      "
+    >
+      <div class="tui-row tui-row_adaptive">
+        <div class="tui-col_xs-1 tui-col_md-1 tui-col_lg-1">
+          <span *ngIf="p._article > 3">E{{ p._article }}</span>
+          <span *ngIf="p._article <= 3">P{{ p._article }}</span>
+        </div>
+        <div class="tui-col_xs-6 tui-col_md-6 tui-col_lg-6">
+          <tui-tag
+            class="tag"
+            [style]="
+              'margin-right: 4px; width: ' + getWidth(getBearbeitungszeit(arbeitsplatz.value))
+            "
+            *ngFor="
+              let arbeitsplatz of sortArbeitsplaetze(
+                dataService.stammdaten[p._article].Arbeitsplaetze
+              )
+            "
+            [value]="
+              arbeitsplatz.key +
+              ':' +
+              getBearbeitungszeit(arbeitsplatz.value) +
+              'm'
+            "
+          >
+          </tui-tag>
+        </div>
+        <div class="tui-col_xs-2 tui-col_md-2 tui-col_lg-2">
+          <span *ngIf="!splittedMap[p._article]">{{ p._quantity }}</span>
+          <tui-input-number
+            [tuiTextfieldLabelOutside]="true"
+            tuiTextfieldSize="s"
+            ngDefaultControl
+            *ngIf="splittedMap[p._article]"
+            [(ngModel)]="p._quantity"
+            (ngModelChange)="changeQuantity(p, index)"
+          >
+          </tui-input-number>
+          <span style="color: red" *ngIf="errors[index]">{{
+            errors[index]
+          }}</span>
+        </div>
+        <div class="tui-col_xs-3 tui-col_md-3 tui-col_lg-3">
+          <i class="fas fa-angles-up" (click)="moveUp(index, true)"></i>
+          <i
+            class="fas fa-angle-up tui-space_left-3"
+            (click)="moveUp(index)"
+          ></i>
+          <i
+            class="fas fa-angle-down tui-space_left-3"
+            (click)="moveDown(index)"
+          ></i>
+          <i
+            class="fas fa-angles-down tui-space_left-3"
+            (click)="moveDown(index, true)"
+          ></i>
+          <i class="fas fa-split tui-space_left-3" (click)="split(index)"></i>
+          <i
+            *ngIf="splittedMap[p._article]"
+            class="fas fa-trash tui-space_left-3"
+            (click)="deleteSplitting(p, index)"
+          ></i>
+        </div>
+      </div>
+    </tui-island>
+  </div>
+</ng-container>
+
+<div class="tui-space_top-3" style="text-align: center; width: 100%">
+  <button tuiButton type="button" (click)="back()" outline i18n="@@BACK">
+    Zurück
+  </button>
+  <button
+    tuiButton
+    type="button"
+    [disabled]="(errors | keyvalue).length > 0"
+    class="button_further"
+    (click)="next()"
+    i18n="@@FORWARD"
+  >
+    Weiter
+  </button>
+</div>

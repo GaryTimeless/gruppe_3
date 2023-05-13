@@ -1,0 +1,18 @@
+tui-stepper{
+    position: fixed;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    button{
+        hyphens: auto;
+        width: 150px;
+        text-align: left;
+    }
+
+    &.mobile{
+        top: auto;
+        bottom: 0;
+        width: 100%;
+    }
+}

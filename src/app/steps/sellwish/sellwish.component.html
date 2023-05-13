@@ -1,0 +1,235 @@
+
+<div class="tui-row tui-row_adaptive">
+  <div class="tui-col_md-12">
+    <h2 i18n="@@SELLWISH_TITLE">
+      Prognosen und Produktionsplanung
+    </h2>
+    <p i18n="@@SELLWISH_DESCRIPTION">
+      Tragen Sie hier die Vertriebswunsch-Prognosen für die aktuelle und die
+      kommenden Perioden ein sowie Ihren Produktionsplan.
+    </p>
+  
+  <h2 i18n="@@SELLWISH_TITLE_VERTRIEBSWUNSCH">
+    Vertriebswunsch
+  </h2>
+</div>
+  
+  <table class="tui-table" *ngIf="dataService.currentPeriod">
+    <tbody>
+      <tr class="tui-table__tr">
+        <th class="tui-table__th"></th>
+        <th class="tui-table__th">
+          <span i18n="@@PERIOD">Periode</span> {{ getPeriodPlus(1) }}
+        </th>
+        <th class="tui-table__th">
+          <span i18n="@@PERIOD">Periode</span> {{ getPeriodPlus(2) }}
+        </th>
+        <th class="tui-table__th">
+          <span i18n="@@PERIOD">Periode</span> {{ getPeriodPlus(3) }}
+        </th>
+        <th class="tui-table__th">
+          <span i18n="@@PERIOD">Periode</span> {{ getPeriodPlus(4) }}
+        </th>
+      </tr>
+      <tr class="tui-table__tr">
+        <td class="tui-table__td">P1</td>
+        <td class="tui-table__td">
+          {{ dataService.currentPeriod?.result?.forecast?._p1 || "n/a" }}
+        </td>
+        <td class="tui-table__td">
+          <tui-input-number
+            ngDefaultControl
+            [(ngModel)]="dataService.currentPeriod.sellwish.period1._p1"
+            (ngModelChange)="sellWishChange('period1', '_p1', $event)"
+            tuiTextfieldSize="s"
+            [tuiTextfieldLabelOutside]="true"
+          >
+          </tui-input-number>
+          <span style="color:red" *ngIf="errors['period1._p1']">{{errors['period1._p1']}}</span>
+        </td>
+        <td class="tui-table__td">
+          <tui-input-number
+            ngDefaultControl
+            [(ngModel)]="dataService.currentPeriod.sellwish.period2._p1"
+            (ngModelChange)="sellWishChange('period2', '_p1', $event)"
+            tuiTextfieldSize="s"
+            [tuiTextfieldLabelOutside]="true"
+          >
+          </tui-input-number>
+          <span style="color:red" *ngIf="errors['period2._p1']">{{errors['period2._p1']}}</span>
+        </td>
+        <td class="tui-table__td">
+          <tui-input-number
+            ngDefaultControl
+            [(ngModel)]="dataService.currentPeriod.sellwish.period3._p1"
+            (ngModelChange)="sellWishChange('period3', '_p1', $event)"
+            tuiTextfieldSize="s"
+            [tuiTextfieldLabelOutside]="true"
+          >
+          </tui-input-number>
+          <span style="color:red" *ngIf="errors['period3._p1']">{{errors['period3._p1']}}</span>
+        </td>
+      </tr>
+      <tr class="tui-table__tr">
+        <td class="tui-table__td">P2</td>
+        <td class="tui-table__td">
+          {{ dataService.currentPeriod?.result?.forecast?._p2 || "n/a" }}
+        </td>
+        <td class="tui-table__td">
+          <tui-input-number
+            ngDefaultControl
+            [(ngModel)]="dataService.currentPeriod.sellwish.period1._p2"
+            (ngModelChange)="sellWishChange('period1', '_p2', $event)"
+            tuiTextfieldSize="s"
+            [tuiTextfieldLabelOutside]="true"
+          >
+          </tui-input-number>
+          <span style="color:red" *ngIf="errors['period1._p2']">{{errors['period1._p2']}}</span>
+        </td>
+        <td class="tui-table__td">
+          <tui-input-number
+            ngDefaultControl
+            [(ngModel)]="dataService.currentPeriod.sellwish.period2._p2"
+            (ngModelChange)="sellWishChange('period2', '_p2', $event)"
+            tuiTextfieldSize="s"
+            [tuiTextfieldLabelOutside]="true"
+          >
+          </tui-input-number>
+          <span style="color:red" *ngIf="errors['period2._p2']">{{errors['period2._p2']}}</span>
+        </td>
+        <td class="tui-table__td">
+          <tui-input-number
+            ngDefaultControl
+            [(ngModel)]="dataService.currentPeriod.sellwish.period3._p2"
+            (ngModelChange)="sellWishChange('period3', '_p2', $event)"
+            tuiTextfieldSize="s"
+            [tuiTextfieldLabelOutside]="true"
+          >
+          </tui-input-number>
+          <span style="color:red" *ngIf="errors['period3._p2']">{{errors['period3._p2']}}</span>
+        </td>
+      </tr>
+      <tr class="tui-table__tr">
+        <td class="tui-table__td">P3</td>
+        <td class="tui-table__td">
+          {{ dataService.currentPeriod?.result?.forecast?._p3 || "n/a" }}
+        </td>
+        <td class="tui-table__td">
+          <tui-input-number
+            ngDefaultControl
+            [(ngModel)]="dataService.currentPeriod.sellwish.period1._p3"
+            (ngModelChange)="sellWishChange('period1', '_p3', $event)"
+            tuiTextfieldSize="s"
+            [tuiTextfieldLabelOutside]="true"
+          >
+          </tui-input-number>
+          <span style="color:red" *ngIf="errors['period1._p3']">{{errors['period1._p3']}}</span>
+        </td>
+        <td class="tui-table__td">
+          <tui-input-number
+            ngDefaultControl
+            [(ngModel)]="dataService.currentPeriod.sellwish.period2._p3"
+            (ngModelChange)="sellWishChange('period2', '_p3', $event)"
+            tuiTextfieldSize="s"
+            [tuiTextfieldLabelOutside]="true"
+          >
+          </tui-input-number>
+          <span style="color:red" *ngIf="errors['period2._p3']">{{errors['period2._p3']}}</span>
+        </td>
+        <td class="tui-table__td">
+          <tui-input-number
+            ngDefaultControl
+            [(ngModel)]="dataService.currentPeriod.sellwish.period3._p3"
+            (ngModelChange)="sellWishChange('period3', '_p3', $event)"
+            tuiTextfieldSize="s"
+            [tuiTextfieldLabelOutside]="true"
+          >
+          </tui-input-number>
+          <span style="color:red" *ngIf="errors['period3._p3']">{{errors['period3._p3']}}</span>
+        </td>
+      </tr>
+    </tbody> <br>
+  </table> 
+
+  <div i18n="@@SELLWISH_INFO"></div> 
+  <h2 i18n="@@SELLWISH_TITLE_PRODUKTION">
+    Produktionsplanung
+  <ng-template  #tooltip>
+    Hinweis grünes Feld: <br>
+    Das dargestelle grüne Feld zeigt den Lagerbestand der verschiedenen Fahrräder an.
+    Wird bei dem vorherigen Planungsschritt ein Direktverkauf veranlasst, dann wurde dieser bereits mit dem Lagerbestand verrechnet.
+  </ng-template>
+  <tui-tooltip [content]="tooltip" direction="left"></tui-tooltip>
+</h2>
+</div>
+
+  <table class="tui-table" *ngIf="dataService.currentPeriod">
+    <tbody>
+      <tr class="tui-table__tr">
+        <th class="tui-table__th"></th>
+        <th class="tui-table__th">
+          <span i18n="@@PERIOD">Periode</span> {{ getPeriodPlus(1) }}
+        </th>
+        <th class="tui-table__th">
+          <span i18n="@@PERIOD">Periode</span> {{ getPeriodPlus(2) }}
+        </th>
+        <th class="tui-table__th">
+          <span i18n="@@PERIOD">Periode</span> {{ getPeriodPlus(3) }}
+        </th>
+        <th class="tui-table__th">
+          <span i18n="@@PERIOD">Periode</span> {{ getPeriodPlus(4) }}
+        </th>
+      </tr>
+      <tr
+        class="tui-table__tr"
+        *ngFor="
+          let product of dataService.currentPeriod.productionPlanning | keyvalue
+        "
+      >
+        <td class="tui-table__td">{{ formatProduct(product.key) }}</td>
+        <td
+          class="tui-table__td"
+          *ngFor="let period of product.value | keyvalue"
+        >
+          <div style="display: flex; width: 100%">
+            <tui-input-number
+              style="flex-grow: 1"
+              ngDefaultControl
+              [(ngModel)]="period.value.production"
+              (ngModelChange)="calcPlannedStock($event, product.key, period.key)"
+              tuiTextfieldSize="s"
+              i18n="@@PRODUCTION"
+              >Produktion</tui-input-number
+            >
+            <tui-tag
+            class="tag"
+            [class.support-red]="(period.value.plannedStock || 0) < 0"
+            [class.support-green]="(period.value.plannedStock || 0) >= 0"
+            status="custom"
+            [value]="period.value.plannedStock + ''"
+            ></tui-tag>
+          </div>
+          <span style="color: red;" *ngIf="hasError(product.key,period.key)">{{errors['production.'+product.key+'.'+period.key]}}</span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+ 
+
+<div class="tui-space_top-3" style="text-align:center ; width:100%">
+  <button
+  tuiButton
+  type="button"
+  (click)="back()"
+  outline
+  i18n="@@BACK"
+>Zurück</button>
+<button
+  tuiButton
+  type="button"
+  (click)="next()"
+  [disabled]="(errors|keyvalue).length  > 0"
+  i18n="@@FORWARD"
+  class="button_further"
+>Weiter</button>
+</div>

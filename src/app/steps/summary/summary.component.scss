@@ -1,0 +1,27 @@
+	
+.box {
+    width: 16rem;
+    height: 9.75rem;
+    border: 1px solid var(--tui-base-09);
+}
+ 
+.content {
+    padding: 0 0.6875rem;
+}
+
+.button_further{
+    margin-left: 50px;
+    margin-bottom: 10px;
+    width: 125px;
+}
+	
+.primary {
+    color: var(--tui-primary);
+}
+ 
+.input {
+    display: inline-block;
+    width: 18.75rem;
+    margin: 0.75rem 0.75rem 0.75rem 0;
+    vertical-align: middle;
+}

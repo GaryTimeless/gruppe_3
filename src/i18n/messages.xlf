@@ -1,0 +1,1256 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="de" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="STEPS_CURRENT_PERIOD" datatype="html">
+        <source> Aktuelle Periode: <x id="INTERPOLATION" equiv-text="{{ dataService.currentPeriod.name }"/> </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">6,8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="SAVED" datatype="html">
+        <source>Die Daten wurden gespeichert</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data.service.ts</context>
+          <context context-type="linenumber">127</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="HOME" datatype="html">
+        <source> Herzlich Willkommen bei plannery erp! </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">5,6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="HOME_BEGIN" datatype="html">
+        <source> Klicken Sie auf den Button &quot;Los gehts!&quot; um plannery erp zu verwenden und die Produktionsplanung für die nächste Periode zu starten. <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> Im nächsten Schritt werden Sie aufgefordet entweder eine vorhandene Periode auszuwählen oder eine XML-Datei hochzuladen, um eine neue Periode anzulegen und zuplanen. Anschließenden werden Sie Schritt für Schritt durch die Planung über verschiedene Komponeten geleitet. <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> Am Seitenende der jeweiligen Komponente befindet sich ein &quot;Zurück&quot; und ein &quot;Weiter&quot;- Button, mit denen Sie durch die Seiten navigieren können. <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> Mit dem Home Button oben rechts werden Sie zurück zu dieser Seite geleitet und durch das Klicken auf das Flagge-Icon können sie zwischen der deutschen und englischen Sprache wechseln. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">8,14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="HOME_HELP_ERINNERUNG" datatype="html">
+        <source>Zur Erinnerung:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2575284258809563040" datatype="html">
+        <source>P1 = Kinderfahrrad</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+        <note priority="1" from="description">HOME_HELP_P1</note>
+      </trans-unit>
+      <trans-unit id="2606753390720241187" datatype="html">
+        <source>P2 = Damenfahrrad</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+        <note priority="1" from="description">HOME_HELP_P2</note>
+      </trans-unit>
+      <trans-unit id="6912151149014494707" datatype="html">
+        <source>P3 = Herrenfahrad</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+        <note priority="1" from="description">HOME_HELP_P3</note>
+      </trans-unit>
+      <trans-unit id="HOME_BUTTON" datatype="html">
+        <source>Los gehts!</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ORDER_TITLE" datatype="html">
+        <source>Bestellverwaltung</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/order/order.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ORDER_DESCRIPTION" datatype="html">
+        <source> Tragen Sie hier die gewünschten Normal- und Eilbestellungen ein. <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> Wo eine Bestellung nötig ist, ist bereits eine Bestellvorschlag basierend auf der optimalen Bestellmenge eingetragen. <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> Bei einer orange markierten Artikel-ID ist es möglich, dass die Bestellung zu spät ankommt und der Produktionsbedarf nicht gedeckt werden kann. Bitte prüfen Sie diese Artikel und wenden Sie sich ggf. an den Marktplatz. <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b style=&quot;color: #8bcf7d&quot;&gt;"/>|<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> Der <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span style=&quot;color: #8bcf7d&quot;&gt;"/>grüne<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> Strich zeigt den tatsächlichen Ankunfszeitpunkt einer Normalbestellung. <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/><x id="START_BOLD_TEXT_1" equiv-text="&lt;b style=&quot;color: #B399D4&quot;&gt;"/>|<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> Der <x id="START_TAG_SPAN_1" ctype="x-span_1" equiv-text="&lt;span style=&quot;color: #B399D4&quot;&gt;"/>violette<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> Strich zeigt den tatsächlichen Ankunftszeitpunkt einer Eilbestellung. <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/order/order.component.html</context>
+          <context context-type="linenumber">5,13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Lagerkostensatz" datatype="html">
+        <source> Mit erhöhtem Lagerkostensatz rechnen: <x id="START_TAG_TUI_TOGGLE" ctype="x-tui_toggle" equiv-text="&lt;tui-toggle
+      [(ngModel)]=&quot;lagerkostensatzToggle&quot;
+      (ngModelChange)=&quot;lagerkostensatzToggleChange($event)&quot;
+    &gt;"/><x id="CLOSE_TAG_TUI_TOGGLE" ctype="x-tui_toggle" equiv-text="&lt;/tui-toggle&gt;"/><x id="START_TAG_NG_TEMPLATE" ctype="x-ng_template" equiv-text="&lt;ng-template #tooltip&gt;"/> Default: Ein Lagerkostensatz von 30 % wird zur Berechnung der optimalen Bestellmenge verwendet. <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br /&gt;"/> Wenn der Lagerwert 250.000 übersteigt, sollte die optimale Bestellmenge mit erhöhtem Lagerkostensatz von 130 % berechnet und der Regler aktiviert werden. <x id="CLOSE_TAG_NG_TEMPLATE" ctype="x-ng_template" equiv-text="&lt;/ng-template&gt;"/><x id="START_TAG_TUI_TOOLTIP" ctype="x-tui_tooltip" equiv-text="&lt;tui-tooltip [content]=&quot;tooltip&quot; direction=&quot;left&quot;&gt;"/><x id="CLOSE_TAG_TUI_TOOLTIP" ctype="x-tui_tooltip" equiv-text="&lt;/tui-tooltip&gt;"/><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br /&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/order/order.component.html</context>
+          <context context-type="linenumber">18,32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ORDER_TABLE1" datatype="html">
+        <source>Artikel ID</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/order/order.component.html</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="LIEFERKOSTEN" datatype="html">
+        <source>Stück-<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br /&gt;"/>preis</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/order/order.component.html</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ORDER_TABLE3" datatype="html">
+        <source>Liefer-<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br /&gt;"/>kosten</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/order/order.component.html</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ORDER_TABLE5" datatype="html">
+        <source>Diskont<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br /&gt;"/>menge</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/order/order.component.html</context>
+          <context context-type="linenumber">44</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ORDER_TABLE6" datatype="html">
+        <source>Bestellmenge<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br /&gt;"/>Normal</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/order/order.component.html</context>
+          <context context-type="linenumber">45</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ORDER_TABLE7" datatype="html">
+        <source>Bestellmenge<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br /&gt;"/>Eil</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/order/order.component.html</context>
+          <context context-type="linenumber">46</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ORDER_TABLE8" datatype="html">
+        <source> Prognose <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br /&gt;"/> Periode <x id="INTERPOLATION" equiv-text="{{ getPeriodPlus(1) }"/> </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/order/order.component.html</context>
+          <context context-type="linenumber">48,50</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ORDER_TABLE9" datatype="html">
+        <source> Prognose <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br /&gt;"/> Periode <x id="INTERPOLATION" equiv-text="{{ getPeriodPlus(2) }"/> </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/order/order.component.html</context>
+          <context context-type="linenumber">52,54</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ORDER_TABLE10" datatype="html">
+        <source> Prognose <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br /&gt;"/> Periode <x id="INTERPOLATION" equiv-text="{{ getPeriodPlus(3) }"/> </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/order/order.component.html</context>
+          <context context-type="linenumber">56,58</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ORDER_TABLE11" datatype="html">
+        <source> Prognose <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br /&gt;"/> Periode <x id="INTERPOLATION" equiv-text="{{ getPeriodPlus(4) }"/> </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/order/order.component.html</context>
+          <context context-type="linenumber">60,62</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ORDER_HELP" datatype="html">
+        <source><x id="START_TAG_NG_TEMPLATE" ctype="x-ng_template" equiv-text="&lt;ng-template #tooltip&gt;"/> Lagerbestand: <x id="INTERPOLATION" equiv-text="{{ order.value._lagerbestand }"/> <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> Lieferzeit: <x id="INTERPOLATION_1" equiv-text="{{order.value._lieferzeit}"/><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> Ausstehende Bestellungen:<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/><x id="START_TAG_NG_CONTAINER" ctype="x-ng_container" equiv-text="&lt;ng-container *ngFor=&quot;let ausstehendeBestellung of order.value._ausstehendeBestellungen&quot;&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span *ngIf=&quot;ausstehendeBestellung._mode == 5&quot;&gt;"/>- Artikel <x id="INTERPOLATION_2" equiv-text="{{ausstehendeBestellung._article}}"/>: Menge <x id="INTERPOLATION_3" equiv-text="{{ausstehendeBestellung._amount}}"/>, Ankunft in <x id="INTERPOLATION_4" equiv-text="{{ausstehendeBestellung._orderperiod + order.value._lieferzeit+0.2}}"/><x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="START_TAG_SPAN_1" ctype="x-span_1" equiv-text="&lt;span *ngIf=&quot;ausstehendeBestellung._mode == 4&quot;&gt;"/>- Artikel <x id="INTERPOLATION_2" equiv-text="{{ausstehendeBestellung._article}}"/>: Menge <x id="INTERPOLATION_3" equiv-text="{{ausstehendeBestellung._amount}}"/>, Ankunft in <x id="INTERPOLATION_5" equiv-text="{{ausstehendeBestellung._orderperiod + (order.value._lieferzeit /2) + 0.2}}"/><x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="CLOSE_TAG_NG_CONTAINER" ctype="x-ng_container" equiv-text="&lt;/ng-container&gt;"/><x id="CLOSE_TAG_NG_TEMPLATE" ctype="x-ng_template" equiv-text="&lt;/ng-template&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/order/order.component.html</context>
+          <context context-type="linenumber">102,110</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ORDER_TABLE_INPUT1" datatype="html">
+        <source>
+          </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/order/order.component.html</context>
+          <context context-type="linenumber">125</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ORDER_TABLE_INPUT2" datatype="html">
+        <source>
+          </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/order/order.component.html</context>
+          <context context-type="linenumber">139</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="BACK" datatype="html">
+        <source> Zurück </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/order/order.component.html</context>
+          <context context-type="linenumber">186,187</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/production/production.component.html</context>
+          <context context-type="linenumber">135,136</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/selldirect/selldirect.component.html</context>
+          <context context-type="linenumber">88</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/sellwish/sellwish.component.html</context>
+          <context context-type="linenumber">226</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/summary/summary.component.html</context>
+          <context context-type="linenumber">250</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/workingtime/workingtime.component.html</context>
+          <context context-type="linenumber">99</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="FORWARD" datatype="html">
+        <source> Weiter </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/order/order.component.html</context>
+          <context context-type="linenumber">196,197</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/production/production.component.html</context>
+          <context context-type="linenumber">145,146</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/selldirect/selldirect.component.html</context>
+          <context context-type="linenumber">95</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/sellwish/sellwish.component.html</context>
+          <context context-type="linenumber">234</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/workingtime/workingtime.component.html</context>
+          <context context-type="linenumber">106</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="NOT_NEGATIVE" datatype="html">
+        <source>Wert darf nicht negativ sein</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/order/order.component.ts</context>
+          <context context-type="linenumber">99</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/order/order.component.ts</context>
+          <context context-type="linenumber">117</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/sellwish/sellwish.component.ts</context>
+          <context context-type="linenumber">245</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ERROR_NOT_CORRECT" datatype="html">
+        <source>Es sind nicht alle Felder richtig ausgefüllt</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/order/order.component.ts</context>
+          <context context-type="linenumber">740</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Column_Headline_Part_Dispo1" datatype="html">
+        <source>Teil</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/planning/disposition1/disposition1.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Column_Headline_Sellwish_Dispo1" datatype="html">
+        <source>Vertriebswunsch</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/planning/disposition1/disposition1.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Column_Transfer_Waitinglist_Dispo1" datatype="html">
+        <source>Übertrag <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/>Warteschlange</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/planning/disposition1/disposition1.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Column_Headline_Planned_Stock_Dispo1" datatype="html">
+        <source>Geplanter Lagerbestand <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/>am Ender der Planperiode</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/planning/disposition1/disposition1.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Column_Headline_Stock_Dispo1" datatype="html">
+        <source>Lagerbestand <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/>am Ende der Vorperiode</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/planning/disposition1/disposition1.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Column_Headline_Orders_In_Waitinglist_Dispo1" datatype="html">
+        <source>Aufträge <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/>in der Warteschlange</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/planning/disposition1/disposition1.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Column_Headline_Orders_In_Work_Dispo1" datatype="html">
+        <source>Aufträge <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/>in Bearbeitung</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/planning/disposition1/disposition1.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Column_Headline_Production_Orders_Dispo1" datatype="html">
+        <source>Produktionsaufträge <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/>für die kommende Periode</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/planning/disposition1/disposition1.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Disposition_Mehrfachverwendung" datatype="html">
+        <source>*Mehrfachverwendung</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/planning/disposition1/disposition1.component.html</context>
+          <context context-type="linenumber">362</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/planning/disposition2/disposition2.component.html</context>
+          <context context-type="linenumber">357</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/planning/disposition3/disposition3.component.html</context>
+          <context context-type="linenumber">360</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Disposition_1_Back" datatype="html">
+        <source> Zurück </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/planning/disposition1/disposition1.component.html</context>
+          <context context-type="linenumber">373,374</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Disposition_1_Further" datatype="html">
+        <source> Weiter </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/planning/disposition1/disposition1.component.html</context>
+          <context context-type="linenumber">382,383</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ERROR_MUST_BE_POSITIVE" datatype="html">
+        <source>Der Produktionsauftrag für die kommende Periode muss positiv sein</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/planning/disposition1/disposition1.component.ts</context>
+          <context context-type="linenumber">344</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/planning/disposition1/disposition1.component.ts</context>
+          <context context-type="linenumber">455</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/planning/disposition1/disposition1.component.ts</context>
+          <context context-type="linenumber">535</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/planning/disposition1/disposition1.component.ts</context>
+          <context context-type="linenumber">539</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/planning/disposition2/disposition2.component.ts</context>
+          <context context-type="linenumber">435</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/planning/disposition2/disposition2.component.ts</context>
+          <context context-type="linenumber">516</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/planning/disposition2/disposition2.component.ts</context>
+          <context context-type="linenumber">520</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/planning/disposition3/disposition3.component.ts</context>
+          <context context-type="linenumber">407</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/planning/disposition3/disposition3.component.ts</context>
+          <context context-type="linenumber">489</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/planning/disposition3/disposition3.component.ts</context>
+          <context context-type="linenumber">493</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ERROR_REQUIRED" datatype="html">
+        <source>Dieses Feld muss ausgefüllt werden</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/planning/disposition1/disposition1.component.ts</context>
+          <context context-type="linenumber">453</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/planning/disposition1/disposition1.component.ts</context>
+          <context context-type="linenumber">537</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/planning/disposition2/disposition2.component.ts</context>
+          <context context-type="linenumber">433</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/planning/disposition2/disposition2.component.ts</context>
+          <context context-type="linenumber">518</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/planning/disposition3/disposition3.component.ts</context>
+          <context context-type="linenumber">405</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/planning/disposition3/disposition3.component.ts</context>
+          <context context-type="linenumber">491</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ERROR_MUST_BE_A_WHOLE_NUMBER" datatype="html">
+        <source>Es dürfen nur ganze Zahlen eingetragen werden</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/planning/disposition1/disposition1.component.ts</context>
+          <context context-type="linenumber">458</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/planning/disposition1/disposition1.component.ts</context>
+          <context context-type="linenumber">542</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/planning/disposition2/disposition2.component.ts</context>
+          <context context-type="linenumber">438</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/planning/disposition2/disposition2.component.ts</context>
+          <context context-type="linenumber">523</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/planning/disposition3/disposition3.component.ts</context>
+          <context context-type="linenumber">410</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/planning/disposition3/disposition3.component.ts</context>
+          <context context-type="linenumber">496</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ERROR_FAILS" datatype="html">
+        <source>Bitte fehlerhafte Felder prüfen</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/planning/disposition1/disposition1.component.ts</context>
+          <context context-type="linenumber">518</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/planning/disposition2/disposition2.component.ts</context>
+          <context context-type="linenumber">501</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/planning/disposition3/disposition3.component.ts</context>
+          <context context-type="linenumber">473</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Column_Headline_Part_Dispo2" datatype="html">
+        <source>Teil</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/planning/disposition2/disposition2.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Column_Headline_Sellwish_Dispo2" datatype="html">
+        <source>Vertriebswunsch</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/planning/disposition2/disposition2.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Column_Transfer_Waitinglist_Dispo2" datatype="html">
+        <source>Übertrag <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/>Warteschlange</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/planning/disposition2/disposition2.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Column_Headline_Planned_Stock_Dispo2" datatype="html">
+        <source>Geplanter Lagerbestand <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/>am Ender der Planperiode</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/planning/disposition2/disposition2.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Column_Headline_Stock_Dispo2" datatype="html">
+        <source>Lagerbestand <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/>am Ende der Vorperiode</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/planning/disposition2/disposition2.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Column_Headline_Orders_In_Waitinglist_Dispo2" datatype="html">
+        <source>Aufträge <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/>in der Warteschlange</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/planning/disposition2/disposition2.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Column_Headline_Orders_In_Work_Dispo2" datatype="html">
+        <source>Aufträge <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/>in Bearbeitung</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/planning/disposition2/disposition2.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Column_Headline_Production_Orders_Dispo2" datatype="html">
+        <source>Produktionsaufträge <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/>für die kommende Periode</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/planning/disposition2/disposition2.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Disposition_2_Back" datatype="html">
+        <source> Zurück </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/planning/disposition2/disposition2.component.html</context>
+          <context context-type="linenumber">369,370</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Disposition_2_Further" datatype="html">
+        <source> Weiter </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/planning/disposition2/disposition2.component.html</context>
+          <context context-type="linenumber">378,379</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Column_Headline_Part_Dispo3" datatype="html">
+        <source>Teil</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/planning/disposition3/disposition3.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Column_Headline_Sellwish_Dispo3" datatype="html">
+        <source>Vertriebswunsch</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/planning/disposition3/disposition3.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Column_Transfer_Waitinglist_Dispo3" datatype="html">
+        <source>Übertrag <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/>Warteschlange</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/planning/disposition3/disposition3.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Column_Headline_Planned_Stock_Dispo3" datatype="html">
+        <source>Geplanter Lagerbestand <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/>am Ender der Planperiode</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/planning/disposition3/disposition3.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Column_Headline_Stock_Dispo3" datatype="html">
+        <source>Lagerbestand <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/>am Ende der Vorperiode</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/planning/disposition3/disposition3.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Column_Headline_Orders_In_Waitinglist_Dispo3" datatype="html">
+        <source>Aufträge <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/>in der Warteschlange</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/planning/disposition3/disposition3.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Column_Headline_Orders_In_Work_Dispo3" datatype="html">
+        <source>Aufträge <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/>in Bearbeitung</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/planning/disposition3/disposition3.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Column_Headline_Production_Orders_Dispo3" datatype="html">
+        <source>Produktionsaufträge <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/>für die kommende Periode</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/planning/disposition3/disposition3.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Disposition_3_Back" datatype="html">
+        <source> Zurück </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/planning/disposition3/disposition3.component.html</context>
+          <context context-type="linenumber">372,373</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Disposition_3_Further" datatype="html">
+        <source> Weiter </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/planning/disposition3/disposition3.component.html</context>
+          <context context-type="linenumber">381,382</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Disposition_TITLE" datatype="html">
+        <source> Disposition Eigenfertigung
+</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/planning/planning.component.html</context>
+          <context context-type="linenumber">5,6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Description_Disposition_1" datatype="html">
+        <source> Legen Sie hier den geplanten Lagerbestand der Eigenfertigungs-Produkte P1 fest. <x id="START_TAG_NG_TEMPLATE" ctype="x-ng_template" equiv-text="&lt;ng-template #tooltip&gt;"/> Bei der Disposition werden anhand der angegebenen Bestandteile die Produktionsaufträge, der Eigenfertigungs-Produkte, für die kommende Periode bestimmt. <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> Dispostion 1 beinhaltet die Planung für das Kinder Fahrrad. <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> Dispostion 2 beinhaltet die Planung für das Damen Fahrrad. <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> Dispostion 3 beinhaltet die Planung für das Herren Fahrrad. <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> *Hierbei wird berücksichtigt, dass die Teile E26, E16 und E17 bei allen drei Fahrradarten benötigt werden. <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/><x id="CLOSE_TAG_NG_TEMPLATE" ctype="x-ng_template" equiv-text="&lt;/ng-template&gt;"/><x id="START_TAG_TUI_TOOLTIP" ctype="x-tui_tooltip" equiv-text="&lt;tui-tooltip [content]=&quot;tooltip&quot; direction=&quot;left&quot;&gt;"/><x id="CLOSE_TAG_TUI_TOOLTIP" ctype="x-tui_tooltip" equiv-text="&lt;/tui-tooltip&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/planning/planning.component.html</context>
+          <context context-type="linenumber">8,18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Description_Disposition_2" datatype="html">
+        <source> Legen Sie hier den geplanten Lagerbestand der Eigenfertigungs-Produkte P2 fest. <x id="START_TAG_NG_TEMPLATE" ctype="x-ng_template" equiv-text="&lt;ng-template #tooltip&gt;"/> Bei der Disposition werden anhand der angegebenen Bestandteile die Produktionsaufträge, der Eigenfertigungs-Produkte, für die kommende Periode bestimmt. <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> Dispostion 1 beinhaltet die Planung für das Kinder Fahrrad. <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> Dispostion 2 beinhaltet die Planung für das Damen Fahrrad. <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> Dispostion 3 beinhaltet die Planung für das Herren Fahrrad. <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> *Hierbei wird berücksichtigt, dass die Teile E26, E16 und E17 bei allen drei Fahrradarten benötigt werden. <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/><x id="CLOSE_TAG_NG_TEMPLATE" ctype="x-ng_template" equiv-text="&lt;/ng-template&gt;"/><x id="START_TAG_TUI_TOOLTIP" ctype="x-tui_tooltip" equiv-text="&lt;tui-tooltip [content]=&quot;tooltip&quot; direction=&quot;left&quot;&gt;"/><x id="CLOSE_TAG_TUI_TOOLTIP" ctype="x-tui_tooltip" equiv-text="&lt;/tui-tooltip&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/planning/planning.component.html</context>
+          <context context-type="linenumber">22,32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Description_Disposition_3" datatype="html">
+        <source> Legen Sie hier den geplanten Lagerbestand der Eigenfertigungs-Produkte P3 fest. <x id="START_TAG_NG_TEMPLATE" ctype="x-ng_template" equiv-text="&lt;ng-template #tooltip&gt;"/> Bei der Disposition werden anhand der angegebenen Bestandteile die Produktionsaufträge, der Eigenfertigungs-Produkte, für die kommende Periode bestimmt. <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> Dispostion 1 beinhaltet die Planung für das Kinder Fahrrad. <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> Dispostion 2 beinhaltet die Planung für das Damen Fahrrad. <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> Dispostion 3 beinhaltet die Planung für das Herren Fahrrad. <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> *Hierbei wird berücksichtigt, dass die Teile E26, E16 und E17 bei allen drei Fahrradarten benötigt werden. <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/><x id="CLOSE_TAG_NG_TEMPLATE" ctype="x-ng_template" equiv-text="&lt;/ng-template&gt;"/><x id="START_TAG_TUI_TOOLTIP" ctype="x-tui_tooltip" equiv-text="&lt;tui-tooltip [content]=&quot;tooltip&quot; direction=&quot;left&quot;&gt;"/><x id="CLOSE_TAG_TUI_TOOLTIP" ctype="x-tui_tooltip" equiv-text="&lt;/tui-tooltip&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/planning/planning.component.html</context>
+          <context context-type="linenumber">35,45</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Planning_Button_Disposition1" datatype="html">
+        <source>Disposition 1</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/planning/planning.component.html</context>
+          <context context-type="linenumber">53</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Planning_Button_Disposition2" datatype="html">
+        <source>Disposition 2</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/planning/planning.component.html</context>
+          <context context-type="linenumber">57</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Planning_Button_Disposition3" datatype="html">
+        <source>Disposition 3</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/planning/planning.component.html</context>
+          <context context-type="linenumber">61</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="PRODUCTION_TITLE_PRIORISATION" datatype="html">
+        <source>Auftragspriorisierung</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/production/production.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="PRODUCTION_DESCRIPTION" datatype="html">
+        <source> Ordnen Sie hier die Aufträge in Ihrer gewünschten Reihenfolge. Zusätzlich besteht die Möglichkeit Aufträge zu splitten. <x id="START_TAG_NG_TEMPLATE" ctype="x-ng_template" equiv-text="&lt;ng-template #tooltip&gt;"/> Die dargestellten Symbole sind folgendermaßen zu verstehen:<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br /&gt;"/><x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i class=&quot;fas fa-angles-up&quot;&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/>: Der Auftrag wird an den Anfang geschoben.<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br /&gt;"/><x id="START_ITALIC_TEXT_1" equiv-text="&lt;i class=&quot;fas fa-angle-up&quot;&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/>: Der Auftrag wird um eine Zeile nach oben verschoben.<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br /&gt;"/><x id="START_ITALIC_TEXT_2" equiv-text="&lt;i class=&quot;fas fa-angle-down&quot;&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/>: Der Auftrag wird um eine Zeile nach unten verschoben.<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br /&gt;"/><x id="START_ITALIC_TEXT_3" equiv-text="&lt;i class=&quot;fas fa-angles-down&quot;&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/>: Der Auftrag wird an das Ende geschoben.<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br /&gt;"/><x id="START_ITALIC_TEXT_4" equiv-text="&lt;i class=&quot;fas fa-split&quot;&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/>: Der Auftrag wird gesplittet. <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br /&gt;"/><x id="CLOSE_TAG_NG_TEMPLATE" ctype="x-ng_template" equiv-text="&lt;/ng-template&gt;"/><x id="START_TAG_TUI_TOOLTIP" ctype="x-tui_tooltip" equiv-text="&lt;tui-tooltip [content]=&quot;tooltip&quot; direction=&quot;left&quot;&gt;"/><x id="CLOSE_TAG_TUI_TOOLTIP" ctype="x-tui_tooltip" equiv-text="&lt;/tui-tooltip&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/production/production.component.html</context>
+          <context context-type="linenumber">3,17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Production_Artikel" datatype="html">
+        <source> Artikel </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/production/production.component.html</context>
+          <context context-type="linenumber">31,32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Production_Arbeitsplaetze" datatype="html">
+        <source> Arbeitsplätze </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/production/production.component.html</context>
+          <context context-type="linenumber">37,38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Production_Wert" datatype="html">
+        <source> Menge </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/production/production.component.html</context>
+          <context context-type="linenumber">43,44</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Production_AKtionen" datatype="html">
+        <source> Aktionen </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/production/production.component.html</context>
+          <context context-type="linenumber">49,50</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ERROR_NOT_FILLED_CORRECT" datatype="html">
+        <source>Es sind nicht alle Felder richtig ausgefüllt</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/production/production.component.ts</context>
+          <context context-type="linenumber">112</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ERROR_NOT_HIGHER" datatype="html">
+        <source>Der Wert kann nicht höher sein als der geplante</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/production/production.component.ts</context>
+          <context context-type="linenumber">216</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ERROR_ONLY_TENS" datatype="html">
+        <source>Nur Zehnerschritte möglich</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/production/production.component.ts</context>
+          <context context-type="linenumber">222</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/sellwish/sellwish.component.ts</context>
+          <context context-type="linenumber">148</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/sellwish/sellwish.component.ts</context>
+          <context context-type="linenumber">255</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="SELLDIRECT_TITLE" datatype="html">
+        <source> Direktverkäufe </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/selldirect/selldirect.component.html</context>
+          <context context-type="linenumber">5,6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="SELLDIRECT_DESCRIPTION" datatype="html">
+        <source> Tragen Sie hier die gewünschten Direktverkäufe ein. Geben Sie dafür die Menge und den Preis sowie die Konventionalstrafe für das jeweilige Fahrrad an. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/selldirect/selldirect.component.html</context>
+          <context context-type="linenumber">8,11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="SELLDIRECT_TABLE1" datatype="html">
+        <source>Fahrrad</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/selldirect/selldirect.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="SELLDIRECT_TABLE2" datatype="html">
+        <source>Menge </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/selldirect/selldirect.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="SELLDIRECT_TABLE3" datatype="html">
+        <source>Preis pro Stück </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/selldirect/selldirect.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="SELLDIRECT_TABLE4" datatype="html">
+        <source>Konventionalstrafe pro Stück</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/selldirect/selldirect.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="SELLDIRECT_TABLE_INPUT" datatype="html">
+        <source> Wert eingeben </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/selldirect/selldirect.component.html</context>
+          <context context-type="linenumber">28,29</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/selldirect/selldirect.component.html</context>
+          <context context-type="linenumber">33,34</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/selldirect/selldirect.component.html</context>
+          <context context-type="linenumber">38,39</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/selldirect/selldirect.component.html</context>
+          <context context-type="linenumber">46,47</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/selldirect/selldirect.component.html</context>
+          <context context-type="linenumber">51,52</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/selldirect/selldirect.component.html</context>
+          <context context-type="linenumber">56,57</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/selldirect/selldirect.component.html</context>
+          <context context-type="linenumber">64,65</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/selldirect/selldirect.component.html</context>
+          <context context-type="linenumber">69,70</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/selldirect/selldirect.component.html</context>
+          <context context-type="linenumber">74,75</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ERROR_MUST_BE_POSITIVE_AND_FILLED" datatype="html">
+        <source>Es müssen alle Felder ausgefüllt und positiv sein!</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/selldirect/selldirect.component.ts</context>
+          <context context-type="linenumber">87</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ERROR_MUST_BE_POSITIVE_AND_TENS" datatype="html">
+        <source>Es sind nur positive ganze Zahlen in 10er Blöcken als Menge erlaubt!</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/selldirect/selldirect.component.ts</context>
+          <context context-type="linenumber">97</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="SELLWISH_TITLE" datatype="html">
+        <source> Prognosen und Produktionsplanung </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/sellwish/sellwish.component.html</context>
+          <context context-type="linenumber">5,6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="SELLWISH_DESCRIPTION" datatype="html">
+        <source> Tragen Sie hier die Vertriebswunsch-Prognosen für die aktuelle und die kommenden Perioden ein sowie Ihren Produktionsplan. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/sellwish/sellwish.component.html</context>
+          <context context-type="linenumber">8,10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="SELLWISH_TITLE_VERTRIEBSWUNSCH" datatype="html">
+        <source> Vertriebswunsch </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/sellwish/sellwish.component.html</context>
+          <context context-type="linenumber">13,14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="PERIOD" datatype="html">
+        <source>Periode</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/sellwish/sellwish.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/sellwish/sellwish.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/sellwish/sellwish.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/sellwish/sellwish.component.html</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/sellwish/sellwish.component.html</context>
+          <context context-type="linenumber">171</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/sellwish/sellwish.component.html</context>
+          <context context-type="linenumber">174</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/sellwish/sellwish.component.html</context>
+          <context context-type="linenumber">177</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/sellwish/sellwish.component.html</context>
+          <context context-type="linenumber">180</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="SELLWISH_TITLE_PRODUKTION" datatype="html">
+        <source> Produktionsplanung <x id="START_TAG_NG_TEMPLATE" ctype="x-ng_template" equiv-text="&lt;ng-template  #tooltip&gt;"/> Hinweis grünes Feld: <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> Das dargestelle grüne Feld zeigt den Lagerbestand der verschiedenen Fahrräder an. Wird bei dem vorherigen Planungsschritt ein Direktverkauf veranlasst, dann wurde dieser bereits mit dem Lagerbestand verrechnet. <x id="CLOSE_TAG_NG_TEMPLATE" ctype="x-ng_template" equiv-text="&lt;/ng-template&gt;"/><x id="START_TAG_TUI_TOOLTIP" ctype="x-tui_tooltip" equiv-text="&lt;tui-tooltip [content]=&quot;tooltip&quot; direction=&quot;left&quot;&gt;"/><x id="CLOSE_TAG_TUI_TOOLTIP" ctype="x-tui_tooltip" equiv-text="&lt;/tui-tooltip&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/sellwish/sellwish.component.html</context>
+          <context context-type="linenumber">156,162</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="PRODUCTION" datatype="html">
+        <source>Produktion</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/sellwish/sellwish.component.html</context>
+          <context context-type="linenumber">202</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ERROR_REQUIRED_POSITIVE" datatype="html">
+        <source>Es müssen alle Felder ausgefüllt und positiv sein!</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/sellwish/sellwish.component.ts</context>
+          <context context-type="linenumber">309</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Upload_Step" datatype="html">
+        <source>Import</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/steps.component.ts</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Selldirect_Step" datatype="html">
+        <source>Direktverkauf</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/steps.component.ts</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Sellwish_Step" datatype="html">
+        <source>Prognose</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/steps.component.ts</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Planning_Step" datatype="html">
+        <source>Disposition</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/steps.component.ts</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Production_Step" datatype="html">
+        <source>Auftragspriorisierung</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/steps.component.ts</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Workingtime_Step" datatype="html">
+        <source>Kapazitätsplanung</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/steps.component.ts</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Order_Step" datatype="html">
+        <source>Bestellverwaltung</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/steps.component.ts</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Summary_Step" datatype="html">
+        <source>Zusammenfassung</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/steps.component.ts</context>
+          <context context-type="linenumber">44</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="SUMMARY_TITLE" datatype="html">
+        <source> Zusammenfassung </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/summary/summary.component.html</context>
+          <context context-type="linenumber">4,5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="SUMMARY_DESCRIPTION" datatype="html">
+        <source> Prüfen Sie hier bitte Ihre gesamten Eingaben bevor Sie die XML-Datei generieren und exportieren. Falls etwas nicht korrekt ist oder Sie etwas ändern möchten, gehen Sie bitte zu dem entsprechenden Reiter zurück. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/summary/summary.component.html</context>
+          <context context-type="linenumber">7,10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="SUMMARY_HEADING_PROGNOSEN" datatype="html">
+        <source>Prognosen</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/summary/summary.component.html</context>
+          <context context-type="linenumber">52</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="FAHRRAD" datatype="html">
+        <source>Fahrrad</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/summary/summary.component.html</context>
+          <context context-type="linenumber">56</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/summary/summary.component.html</context>
+          <context context-type="linenumber">75</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="MENGE" datatype="html">
+        <source>Menge</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/summary/summary.component.html</context>
+          <context context-type="linenumber">57</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/summary/summary.component.html</context>
+          <context context-type="linenumber">76</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/summary/summary.component.html</context>
+          <context context-type="linenumber">107</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/summary/summary.component.html</context>
+          <context context-type="linenumber">173</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/summary/summary.component.html</context>
+          <context context-type="linenumber">195</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="DIREKTVERKAEUFE" datatype="html">
+        <source>Direktverkäufe</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/summary/summary.component.html</context>
+          <context context-type="linenumber">71</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="PREIS_PRO_STUECK" datatype="html">
+        <source>Preis pro Stück</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/summary/summary.component.html</context>
+          <context context-type="linenumber">77</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="KONVENTIONALSTRAFE" datatype="html">
+        <source>Konventionalstrafe pro Stück</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/summary/summary.component.html</context>
+          <context context-type="linenumber">78</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="SUMMARY_HEADING_BESTELLISTE" datatype="html">
+        <source>Bestellliste</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/summary/summary.component.html</context>
+          <context context-type="linenumber">98</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ARTIKEL" datatype="html">
+        <source>Artikel</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/summary/summary.component.html</context>
+          <context context-type="linenumber">106</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/summary/summary.component.html</context>
+          <context context-type="linenumber">172</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/summary/summary.component.html</context>
+          <context context-type="linenumber">194</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ART" datatype="html">
+        <source>Art <x id="START_TAG_NG_TEMPLATE" ctype="x-ng_template" equiv-text="&lt;ng-template #tooltip&gt;"/> Hinweis zu der Art: <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> Art 5 = Normalbestellungen <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> Art 4 = Eilbestellungen <x id="CLOSE_TAG_NG_TEMPLATE" ctype="x-ng_template" equiv-text="&lt;/ng-template&gt;"/><x id="START_TAG_TUI_TOOLTIP" ctype="x-tui_tooltip" equiv-text="&lt;tui-tooltip [content]=&quot;tooltip&quot; direction=&quot;left&quot;&gt;"/><x id="CLOSE_TAG_TUI_TOOLTIP" ctype="x-tui_tooltip" equiv-text="&lt;/tui-tooltip&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/summary/summary.component.html</context>
+          <context context-type="linenumber">108,113</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="SUMMRARY_TABLE_HELP" datatype="html">
+        <source><x id="START_TABLE_HEADER_CELL" ctype="x-th" equiv-text="&lt;th class=&quot;tui-table__th&quot;&gt;"/>Artikel<x id="CLOSE_TABLE_HEADER_CELL" ctype="x-th" equiv-text="&lt;/th&gt;"/><x id="START_TABLE_HEADER_CELL" ctype="x-th" equiv-text="&lt;th class=&quot;tui-table__th&quot;&gt;"/>Menge<x id="CLOSE_TABLE_HEADER_CELL" ctype="x-th" equiv-text="&lt;/th&gt;"/><x id="START_TABLE_HEADER_CELL" ctype="x-th" equiv-text="&lt;th class=&quot;tui-table__th&quot;&gt;"/>Art <x id="START_TAG_NG_TEMPLATE" ctype="x-ng_template" equiv-text="&lt;ng-template #tooltip &gt;"/> Hinweis zu der Art:<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> Art 5 = Normalbestellungen <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> Art 4 = Eilbestellungen <x id="CLOSE_TAG_NG_TEMPLATE" ctype="x-ng_template" equiv-text="&lt;/ng-template&gt;"/><x id="START_TAG_TUI_TOOLTIP" ctype="x-tui_tooltip" equiv-text="&lt;tui-tooltip [content]=&quot;tooltip&quot; direction=&quot;left&quot;&gt;"/><x id="CLOSE_TAG_TUI_TOOLTIP" ctype="x-tui_tooltip" equiv-text="&lt;/tui-tooltip&gt;"/><x id="CLOSE_TABLE_HEADER_CELL" ctype="x-th" equiv-text="&lt;/th&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/summary/summary.component.html</context>
+          <context context-type="linenumber">135,144</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="SUMMARY_HEADING_PRODUKTIONSLISTE" datatype="html">
+        <source>Produktionsliste</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/summary/summary.component.html</context>
+          <context context-type="linenumber">165</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="SUMMARY_HEADING_KAPAZITAETSPLANUNG" datatype="html">
+        <source>Kapazitätsplanung</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/summary/summary.component.html</context>
+          <context context-type="linenumber">215</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="SUMMARY_TABLE_HELP_ARBEITSPLATZ" datatype="html">
+        <source>Arbeitsplatz</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/summary/summary.component.html</context>
+          <context context-type="linenumber">219</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="SUMMARY_TABLE_HELP_SCHICHTEN" datatype="html">
+        <source>Schicht(en) <x id="START_TAG_NG_TEMPLATE" ctype="x-ng_template" equiv-text="&lt;ng-template #tooltip2&gt;"/> Hinweis zu den Schichten: <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> - 1. Schicht: 2400 - 3600 Minuten pro Woche mit 50% Überstunden d.h. 480 - 720 Minuten<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> - 2. Schicht: ab 3601 - 6000 Minuten pro Woche mit 50% Überstunden d.h. 960 - 1200 Minuten pro Tag <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> - 3. Schicht: ab 6001 - 7200 Minuten pro Woche ohne 50% Überstunden d.h. max. 1440 Minuten pro Tag <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> -&gt; ingesamt gilt zu beachten, dass pro Tag maximal 240 Minuten Überstunden in Schicht 1 und 2 gefahren werden können. In Schicht 3 sind Überstunden nicht möglich. <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/><x id="CLOSE_TAG_NG_TEMPLATE" ctype="x-ng_template" equiv-text="&lt;/ng-template&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/summary/summary.component.html</context>
+          <context context-type="linenumber">221,228</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="SUMMARY_TABLE_HELP_UEBERMINUTEN" datatype="html">
+        <source>Überminuten pro Tag</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/summary/summary.component.html</context>
+          <context context-type="linenumber">232</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="SUMMARY_BUTTON_XML" datatype="html">
+        <source>XML Export</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/summary/summary.component.html</context>
+          <context context-type="linenumber">251</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="UPLOAD_TITLE" datatype="html">
+        <source> Import </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/upload/upload.component.html</context>
+          <context context-type="linenumber">4,5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="UPLOAD_DESCRIPTION" datatype="html">
+        <source> Hier können Sie auswählen mit welcher Periode Sie planen möchten oder ob Sie eine neue anlegen möchten. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/upload/upload.component.html</context>
+          <context context-type="linenumber">7,9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="UPLOAD_TITLE_LAST_PERIODS" datatype="html">
+        <source>Vergangene Perioden</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/upload/upload.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="UPLOAD_OPEN_PERIOD" datatype="html">
+        <source><x id="START_TABLE_BODY" ctype="x-tbody" equiv-text="&lt;tbody&gt;"/><x id="START_TABLE_ROW" ctype="x-tr" equiv-text="&lt;tr *ngFor=&quot;let period of periods&quot;&gt;"/><x id="START_TABLE_CELL" ctype="x-td" equiv-text="&lt;td&gt;"/><x id="START_TAG_BUTTON" ctype="x-button" equiv-text="&lt;button tuiButton type=&quot;button&quot; size=&quot;l&quot; (click)=&quot;selectPeriod(period)&quot;&gt;"/> Periode <x id="INTERPOLATION" equiv-text="{{ period.name }"/> öffnen <x id="CLOSE_TAG_BUTTON" ctype="x-button" equiv-text="&lt;/button&gt;"/><x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i class=&quot;fas fa-trash&quot; i18n=&quot;@@DELETE_ICON&quot; style=&quot;padding: 20px; &quot; (click)=&quot;deletePeriod(period.name!)&quot;&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/><x id="CLOSE_TABLE_CELL" ctype="x-td" equiv-text="&lt;/td&gt;"/><x id="CLOSE_TABLE_ROW" ctype="x-tr" equiv-text="&lt;/tr&gt;"/><x id="CLOSE_TABLE_BODY" ctype="x-tbody" equiv-text="&lt;/tbody&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/upload/upload.component.html</context>
+          <context context-type="linenumber">16,25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="UPLOAD_TITLE_NEW_PERIOD" datatype="html">
+        <source>Neue Periode anlegen</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/upload/upload.component.html</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="PERIOD_PLANING" datatype="html">
+        <source>Planung für Periode</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/upload/upload.component.html</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="UPLOAD_BUTTON_CREATE_PERIOD" datatype="html">
+        <source> Periode anlegen </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/upload/upload.component.html</context>
+          <context context-type="linenumber">49,50</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="WORKINGTIME_TITLE" datatype="html">
+        <source> Kapazitätsplanung </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/workingtime/workingtime.component.html</context>
+          <context context-type="linenumber">4,5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="WORKINGTIME_DESCRIPTION" datatype="html">
+        <source> Die Kapazitätsplanung bietet eine Übersicht über die geplanten Schichten, Überstunden und Rüstzeiten pro Arbeitsplatz.<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> Bitte entnehmen Sie weitere Details zu den angezeigten Werten aus den Hinweisschildern.<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> Trage Sie hier die gewünschten Rüstzeit pro Arbeitsplatz ein, die angezeigten Werte sind Empfehlungen. <x id="START_TAG_NG_TEMPLATE" ctype="x-ng_template" equiv-text="&lt;ng-template #tooltip&gt;"/> Für die Kapazitätsplanung je Arbeitsplatz werden die folgenden Bestandteile berücksichtigt:<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> 1. Kapazitätsbedarf für geplante Fertigungsaufträge (Auftragsmenge * Bearbeitungszeit)<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> 2. Rüstzeit für geplante Fertigungsaufträge (fixe Rüstzeit je Fertigungsschritt)<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> 3. Rückstand aus vorherigen Perioden (Aufträge in Bearbeitung + Aufträge in der Warteschlange)<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> 4. Rüstzeit für Rückstand aus vorherigen Perioden (Rüstzeit der wartenden Aufträge)<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/><x id="CLOSE_TAG_NG_TEMPLATE" ctype="x-ng_template" equiv-text="&lt;/ng-template&gt;"/><x id="START_TAG_TUI_TOOLTIP" ctype="x-tui_tooltip" equiv-text="&lt;tui-tooltip [content]=&quot;tooltip&quot; direction=&quot;left&quot;&gt;"/><x id="CLOSE_TAG_TUI_TOOLTIP" ctype="x-tui_tooltip" equiv-text="&lt;/tui-tooltip&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/workingtime/workingtime.component.html</context>
+          <context context-type="linenumber">7,18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="WORKINGTIME_TABLE1" datatype="html">
+        <source> Arbeitsplatz </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/workingtime/workingtime.component.html</context>
+          <context context-type="linenumber">26,27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="WORKINGTIME_TABLE2" datatype="html">
+        <source>Schicht(en) <x id="START_TAG_NG_TEMPLATE" ctype="x-ng_template" equiv-text="&lt;ng-template #tooltip2&gt;"/> Hinweis zu den Schichten: <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> - 1. Schicht: 2400 - 3600 Minuten pro Woche mit 50% Überstunden d.h. 480 - 720 Minuten<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> - 2. Schicht: ab 3601 - 6000 Minuten pro Woche mit 50% Überstunden d.h. 960 - 1200 Minuten pro Tag <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> - 3. Schicht: ab 6001 - 7200 Minuten pro Woche ohne 50% Überstunden d.h. max. 1440 Minuten pro Tag <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> -&gt; ingesamt gilt zu beachten, dass pro Tag maximal 240 Minuten Überstunden in Schicht 1 und 2 gefahren werden können. In Schicht 3 sind Überstunden nicht möglich. <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/><x id="CLOSE_TAG_NG_TEMPLATE" ctype="x-ng_template" equiv-text="&lt;/ng-template&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/workingtime/workingtime.component.html</context>
+          <context context-type="linenumber">29,36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="WORKINGTIME_TABLE3" datatype="html">
+        <source> Überminuten pro Tag </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/workingtime/workingtime.component.html</context>
+          <context context-type="linenumber">40,41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="WORKINGTIME_TABLE4" datatype="html">
+        <source> Geplante Rüstzeit </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/workingtime/workingtime.component.html</context>
+          <context context-type="linenumber">43,44</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="WORKINGTIME_TABLE_INPUT_ARBEITSPLATZ" datatype="html">
+        <source>Arbeitsplatz</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/workingtime/workingtime.component.html</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="WORKINGTIME_ARBEITSPLATZ" datatype="html">
+        <source> Gesamtkapazität Arbeitsplatz <x id="INTERPOLATION" equiv-text="{{a._station}"/>: <x id="INTERPOLATION_1" equiv-text="{{a._processingtime + a._setuptime}"/> min<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> Neue Fertigungsaufträge </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/workingtime/workingtime.component.html</context>
+          <context context-type="linenumber">53,55</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="WORKINGTIME_INFO_HEADING" datatype="html">
+        <source><x id="START_TABLE_ROW" ctype="x-tr" equiv-text="&lt;tr&gt;"/><x id="START_TABLE_HEADER_CELL" ctype="x-th" equiv-text="&lt;th style=&quot;text-align: left;&quot;&gt;"/>Item<x id="CLOSE_TABLE_HEADER_CELL" ctype="x-th" equiv-text="&lt;/th&gt;"/><x id="START_TABLE_HEADER_CELL" ctype="x-th" equiv-text="&lt;th style=&quot;text-align: left;&quot;&gt;"/>Auftrags-<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/>menge<x id="CLOSE_TABLE_HEADER_CELL" ctype="x-th" equiv-text="&lt;/th&gt;"/><x id="START_TABLE_HEADER_CELL" ctype="x-th" equiv-text="&lt;th style=&quot;text-align: left;&quot;&gt;"/>Bearbeitungs-<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/>zeit<x id="CLOSE_TABLE_HEADER_CELL" ctype="x-th" equiv-text="&lt;/th&gt;"/><x id="CLOSE_TABLE_ROW" ctype="x-tr" equiv-text="&lt;/tr&gt;"/><x id="START_TABLE_ROW_1" equiv-text="&lt;tr *ngFor=&quot;let b of tempWorkingtimeDetails[a._station]._newOrders&quot;&gt;"/><x id="START_TABLE_CELL" ctype="x-td" equiv-text="&lt;td&gt;"/> <x id="INTERPOLATION" equiv-text="{{b._item}}"/> <x id="CLOSE_TABLE_CELL" ctype="x-td" equiv-text="&lt;/td&gt;"/><x id="START_TABLE_CELL" ctype="x-td" equiv-text="&lt;td&gt;"/> <x id="INTERPOLATION_1" equiv-text="{{b._quantity}}"/> Stück<x id="CLOSE_TABLE_CELL" ctype="x-td" equiv-text="&lt;/td&gt;"/><x id="START_TABLE_CELL" ctype="x-td" equiv-text="&lt;td&gt;"/> <x id="INTERPOLATION_2" equiv-text="{{b._processingtime}}"/> min <x id="CLOSE_TABLE_CELL" ctype="x-td" equiv-text="&lt;/td&gt;"/><x id="CLOSE_TABLE_ROW" ctype="x-tr" equiv-text="&lt;/tr&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/workingtime/workingtime.component.html</context>
+          <context context-type="linenumber">57,66</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="WORKINGTIME_INFO" datatype="html">
+        <source> Rüstzeit für neue Aufträge: <x id="INTERPOLATION" equiv-text="{{tempWorkingtimeDetails[a._station]._setuptimeNew}"/> min<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> Warteschlange: <x id="INTERPOLATION_1" equiv-text="{{tempWorkingtimeDetails[a._station]._waitinglist}"/> min<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> In Bearbeitung: <x id="INTERPOLATION_2" equiv-text="{{tempWorkingtimeDetails[a._station]._ordersInWork}"/> min<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> Rüstzeit für Rückstand: <x id="INTERPOLATION_3" equiv-text="{{tempWorkingtimeDetails[a._station]._setuptimeOld}"/> min<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/workingtime/workingtime.component.html</context>
+          <context context-type="linenumber">68,72</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ERROR_MAX_KAPA" datatype="html">
+        <source>Kapazitätsgrenze erreicht, bitte verringern Sie die geplante Produktionsmenge</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/workingtime/workingtime.component.ts</context>
+          <context context-type="linenumber">266</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ERROR_BUILDING_NOT_NEGATIVE" datatype="html">
+        <source>Die Rüstzeit darf nicht negativ sein!</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/workingtime/workingtime.component.ts</context>
+          <context context-type="linenumber">283</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ERROR_BUILDING_NOT_HIGHER_KAPA" datatype="html">
+        <source>Die eingetragene Rüstzeit darf nicht über der Kapazitätsgrenze liegen!</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/workingtime/workingtime.component.ts</context>
+          <context context-type="linenumber">294</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ERROR_CHECK_BUILDING_TIME" datatype="html">
+        <source>Vorsicht! Es wurde weniger als die Hälfte der empfohlenen Rüstzeit eingetragen!</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/steps/workingtime/workingtime.component.ts</context>
+          <context context-type="linenumber">299</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="UPLOAD_XML" datatype="html">
+        <source>XML-Datei hochladen</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/ui-components/ui-file-upload/ui-file-upload.component.html</context>
+          <context context-type="linenumber">5,6</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

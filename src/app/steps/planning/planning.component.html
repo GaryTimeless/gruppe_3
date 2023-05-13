@@ -1,0 +1,72 @@
+
+ <div class="tui-row tui-row_adaptive">
+    <div class="tui-col_md-12">
+        <h2 i18n="@@Disposition_TITLE">
+    Disposition Eigenfertigung
+</h2>
+<p i18n="@@Description_Disposition_1" *ngIf="activeItemIndex ===0">
+    Legen Sie hier den geplanten Lagerbestand der Eigenfertigungs-Produkte P1 fest.
+    <ng-template #tooltip>
+        Bei der Disposition werden anhand der angegebenen Bestandteile die Produktionsaufträge, der Eigenfertigungs-Produkte, für die kommende Periode bestimmt.
+        <br> <br>   
+        Dispostion 1 beinhaltet die Planung für das Kinder Fahrrad. <br> <br>
+        Dispostion 2 beinhaltet die Planung für das Damen Fahrrad. <br> <br>
+        Dispostion 3 beinhaltet die Planung für das Herren Fahrrad. <br> <br>
+        
+        *Hierbei wird berücksichtigt, dass die Teile E26, E16 und E17 bei allen drei Fahrradarten benötigt werden. <br>
+      </ng-template>
+      <tui-tooltip [content]="tooltip" direction="left"></tui-tooltip>
+</p>
+
+<p i18n="@@Description_Disposition_2" *ngIf="activeItemIndex ===1">
+    Legen Sie hier den geplanten Lagerbestand der Eigenfertigungs-Produkte P2 fest.
+    <ng-template #tooltip>
+        Bei der Disposition werden anhand der angegebenen Bestandteile die Produktionsaufträge, der Eigenfertigungs-Produkte, für die kommende Periode bestimmt.
+        <br> <br>   
+        Dispostion 1 beinhaltet die Planung für das Kinder Fahrrad. <br> <br>
+        Dispostion 2 beinhaltet die Planung für das Damen Fahrrad. <br> <br>
+        Dispostion 3 beinhaltet die Planung für das Herren Fahrrad. <br> <br>
+        
+        *Hierbei wird berücksichtigt, dass die Teile E26, E16 und E17 bei allen drei Fahrradarten benötigt werden. <br>
+      </ng-template>
+      <tui-tooltip [content]="tooltip" direction="left"></tui-tooltip>
+</p>
+<p i18n="@@Description_Disposition_3" *ngIf="activeItemIndex ===2">
+    Legen Sie hier den geplanten Lagerbestand der Eigenfertigungs-Produkte P3 fest.
+    <ng-template #tooltip>
+        Bei der Disposition werden anhand der angegebenen Bestandteile die Produktionsaufträge, der Eigenfertigungs-Produkte, für die kommende Periode bestimmt.
+        <br> <br>   
+        Dispostion 1 beinhaltet die Planung für das Kinder Fahrrad. <br> <br>
+        Dispostion 2 beinhaltet die Planung für das Damen Fahrrad. <br> <br>
+        Dispostion 3 beinhaltet die Planung für das Herren Fahrrad. <br> <br>
+        
+        *Hierbei wird berücksichtigt, dass die Teile E26, E16 und E17 bei allen drei Fahrradarten benötigt werden. <br>
+      </ng-template>
+      <tui-tooltip [content]="tooltip" direction="left"></tui-tooltip>
+</p>
+</div>
+ <div>
+
+<tui-tabs [(activeItemIndex)]="activeItemIndex">
+    <button  tuiTab>
+        <tui-svg src="tuiIconCheckList" class="tui-space_right-2"></tui-svg>
+       <span i18n="@@Planning_Button_Disposition1">Disposition 1</span>
+    </button>
+    <button  tuiTab [disabled]="highestIndex<1">
+        <tui-svg src="tuiIconCheckList" class="tui-space_right-2"></tui-svg>
+        <span i18n="@@Planning_Button_Disposition2">Disposition 2</span>
+    </button>
+    <button   tuiTab [disabled]="highestIndex<2">
+        <tui-svg src="tuiIconCheckList" class="tui-space_right-2"></tui-svg>
+        <span i18n="@@Planning_Button_Disposition3">Disposition 3</span>
+    </button>
+</tui-tabs>
+        <app-disposition1 *ngIf="activeItemIndex ===0" [activeItem]="activeItemIndex" (activeItemChange)="changeIndex($event)">
+        </app-disposition1>
+        <app-disposition2 *ngIf="activeItemIndex ===1" [activeItem]="activeItemIndex" (activeItemChange)="changeIndex($event)">
+        </app-disposition2>
+        <app-disposition3 *ngIf="activeItemIndex ===2" [activeItem]="activeItemIndex" (activeItemChange)="changeIndex($event)">
+        </app-disposition3>
+ </div>
+        
+</div>

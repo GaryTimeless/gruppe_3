@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "plannery-erp": {
+      "hosting": {
+        "plannery-erp": [
+          "plannery-erp"
+        ]
+      }
+    }
+  }
+}

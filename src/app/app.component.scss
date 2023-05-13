@@ -1,0 +1,36 @@
+.btn {
+    background-color: rgb(66, 76, 85, 0.56);
+      border: none; /* Remove borders */
+      color: white; /* White text */
+      padding: 12px 16px; /* Some padding */
+      font-size: 16px; /* Set a font size */
+      cursor: pointer; /* Mouse pointer on hover */
+      margin-right: 8px;
+    //   position: absolute;
+    //   top: 135px;
+    //   right: 31%;
+      border-radius: 10px;
+    }
+  
+    .btn_eng {
+      background-color: rgb(66, 76, 85, 0.56);
+      border: none; /* Remove borders */
+      color: white; /* White text */
+      padding: 12px 16px; /* Some padding */
+      font-size: 16px; /* Set a font size */
+      cursor: pointer; /* Mouse pointer on hover */
+    //   position: absolute;
+    //   top: 135px;
+    //   right: 27%;
+      border-radius: 10px;
+    }
+
+    .blocksatz {
+        text-align: justify;
+    }
+
+    .buttonContainer{
+        position: absolute;
+        right: 20vw;
+        top: 135px;
+    }

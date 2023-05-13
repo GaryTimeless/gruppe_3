@@ -1,0 +1,34 @@
+<!-- <tui-theme-night></tui-theme-night>
+<tui-root tuiMode="onDark"> -->
+<tui-root>
+  <div style="width: 100%; text-align: center; margin-bottom: 2.25rem">
+    <img src="assets/logo/logo.svg" width="200px" />
+    <p style="margin: 0;" *ngIf="dataService.currentPeriod" i18n="@@STEPS_CURRENT_PERIOD">
+      Aktuelle Periode: {{ dataService.currentPeriod.name }}
+    </p>
+    <hr
+      style="
+        width: 900px;
+        left: 50%;
+        position: absolute;
+        transform: translateX(-50%);
+        height: 5px;
+        background: var(--tui-primary);
+        margin: 1rem 0;
+      "
+    />
+    <div class="buttonContainer">
+    <button routerLink="/" class="btn">
+      <i class="fas fa-home"></i>
+    </button>
+  
+    <button class="btn_eng" *ngIf="siteLocale !== 'en'" (click)="switchLang('en')">
+      <i class="flag-icon flag-icon-gb"></i>
+    </button>
+    <button class="btn_eng" *ngIf="siteLocale === 'en'" (click)="switchLang('de')">
+      <i class="flag-icon flag-icon-de"></i>
+    </button>
+    </div>
+  </div>
+  <router-outlet></router-outlet>
+</tui-root>

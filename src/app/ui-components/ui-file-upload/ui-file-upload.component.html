@@ -1,0 +1,13 @@
+<ng-container *ngIf="rejected$ | async as rejected">
+  <ng-container *ngIf="loading$ | async as loading">
+    <tui-input-file
+      class="container"
+      link="XML-Datei hochladen"
+      i18n-link="@@UPLOAD_XML"
+      accept="text/xml"
+      [formControl]="control"
+      [loadingFiles]="loading"
+      [rejectedFiles]="rejected"
+    ></tui-input-file>
+  </ng-container>
+</ng-container>

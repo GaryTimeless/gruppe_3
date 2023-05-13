@@ -1,0 +1,253 @@
+<div class="tui-row tui-row_adaptive">
+    <div class="tui-col_md-12">
+        <h2 i18n="@@SUMMARY_TITLE"> 
+            Zusammenfassung
+        </h2>
+        <p i18n="@@SUMMARY_DESCRIPTION">
+            Prüfen Sie hier bitte Ihre gesamten Eingaben bevor Sie die XML-Datei generieren und exportieren. Falls etwas
+            nicht korrekt ist
+            oder Sie etwas ändern möchten, gehen Sie bitte zu dem entsprechenden Reiter zurück.
+        </p>
+    </div>
+</div>
+
+<!-- <button (click)="loadFakeData()">Fake Daten laden</button> -->
+
+<body *ngIf="dataService.currentPeriod">
+    <!-- <div>
+        <h1 style="font-size:30px;" i18n="@@SUMMARY_HEADING">Allgemein</h1> -->
+    <!-- <button
+        tuiButton
+        type="button"
+        class="tui-space_right-3"
+        (click)="back()"
+        outline
+      >
+        Zurück
+       </button> <br> -->
+    <!-- <table class="tui-table">
+            <tbody>
+                <tr class="tui-table__tr">
+                    <th width=50% class="tui-table__th" i18n="@@SUMMARY_TABLE">Komponente</th>
+                    <th class="tui-table__th" i18n="@@SUMMARY_TABLE">Daten</th>
+                </tr>
+            </tbody>
+
+            <tr class="tui-table__tr">
+                <td class="tui-table__td" i18n="@@SUMMARY_TABLE">Typ</td>
+                <td class="tui-table__td">{{dataService.currentPeriod.input.qualitycontrol?._type}}</td>
+            </tr>
+            <tr class="tui-table__tr">
+                <td class="tui-table__td" i18n="@@SUMMARY_TABLE">geringe Menge</td>
+                <td class="tui-table__td">{{dataService.currentPeriod.input.qualitycontrol?._losequantity}}</td>
+            </tr>
+            <tr class="tui-table__tr">
+                <td class="tui-table__td" i18n="@@SUMMARY_TABLE">Verzögerung</td>
+                <td class="tui-table__td">{{dataService.currentPeriod.input.qualitycontrol?._delay}}</td>
+            </tr>
+        </table> <br> -->
+    <!-- </div> -->
+
+    <div>
+        <h2 i18n="@@SUMMARY_HEADING_PROGNOSEN">Prognosen</h2>
+        <table class="tui-table">
+            <tbody>
+                <tr class="tui-table__tr">
+                    <th width=50% class="tui-table__th" i18n="@@FAHRRAD">Fahrrad</th>
+                    <th class="tui-table__th" i18n="@@MENGE">Menge</th>
+                </tr>
+            </tbody>
+
+            <tr class="tui-table__tr" *ngFor="let element of dataService.currentPeriod.input.sellwish?.item">
+                <td class="tui-table__td">P{{element._article}}</td>
+                <td class="tui-table__td">
+                    {{element._quantity}}
+                </td>
+            </tr>
+        </table> <br>
+    </div>
+
+    <div>
+        <h2 i18n="@@DIREKTVERKAEUFE">Direktverkäufe</h2>
+        <table class="tui-table">
+            <tbody>
+                <tr class="tui-table__tr">
+                    <th class="tui-table__th" i18n="@@FAHRRAD">Fahrrad</th>
+                    <th class="tui-table__th" i18n="@@MENGE">Menge</th>
+                    <th class="tui-table__th" i18n="@@PREIS_PRO_STUECK">Preis pro Stück</th>
+                    <th class="tui-table__th" i18n="@@KONVENTIONALSTRAFE">Konventionalstrafe pro Stück</th>
+                </tr>
+            </tbody>
+
+            <tr class="tui-table__tr" *ngFor="let element of dataService.currentPeriod.input.selldirect?.item">
+                <td width=25% class="tui-table__td">P{{element._article}}</td>
+                <td width=25% class="tui-table__td">
+                    {{element._quantity}}
+                </td>
+                <td width=25% class="tui-table__td">
+                    {{element._price}}
+                </td>
+                <td width=25% class="tui-table__td">
+                    {{element._penalty}}
+                </td>
+            </tr>
+        </table> <br>
+    </div>
+
+    <div>
+        <h2 i18n="@@SUMMARY_HEADING_BESTELLISTE">Bestellliste</h2>
+
+        <div class="tui-container tui-container_adaptive">
+            <div class="tui-row tui-row_adaptive">
+                <div class="tui-col_xs-12 tui-col_md-6 tui-col_lg-6">
+                    <table class="tui-table">
+                        <tbody>
+                            <tr class="tui-table__tr">
+                                <th class="tui-table__th" i18n="@@ARTIKEL">Artikel</th>
+                                <th class="tui-table__th" i18n="@@MENGE">Menge</th>
+                                <th class="tui-table__th" i18n="@@ART">Art
+                                    <ng-template #tooltip> 
+                                        Hinweis zu der Art: <br>
+                                        Art 5 = Normalbestellungen <br> Art 4 = Eilbestellungen
+                                    </ng-template>
+                                    <tui-tooltip [content]="tooltip" direction="left"></tui-tooltip>
+                                </th>
+                            </tr>
+                        </tbody>
+
+                        <ng-container
+                            *ngFor="let element of dataService.currentPeriod.input.orderlist?.order; let index = index">
+                            <tr class="tui-table__tr"
+                                *ngIf="index<(dataService.currentPeriod.input.orderlist!.order!.length/2)">
+                                <td class="tui-table__td"> {{element._article}} </td>
+                                <td class="tui-table__td"> {{element._quantity}} </td>
+                                <td class="tui-table__td"> {{element._modus}}
+                                </td>
+                            </tr>
+                        </ng-container>
+                    </table>
+                </div>
+                <div class="tui-col_xs-12 tui-col_md-6 tui-col_lg-6">
+
+                    <table class="tui-table">
+                        <tbody>
+                            <tr class="tui-table__tr" i18n="@@SUMMRARY_TABLE_HELP">
+                                <th class="tui-table__th">Artikel</th>
+                                <th class="tui-table__th">Menge</th>
+                                <th class="tui-table__th">Art
+                                    <ng-template #tooltip >
+                                        Hinweis zu der Art:<br>
+                                        Art 5 = Normalbestellungen <br>
+                                        Art 4 = Eilbestellungen
+                                    </ng-template>
+                                    <tui-tooltip [content]="tooltip" direction="left"></tui-tooltip>
+                                </th>
+                            </tr>
+                        </tbody>
+
+                        <ng-container
+                            *ngFor="let element of dataService.currentPeriod.input.orderlist?.order; let index = index">
+                            <tr class="tui-table__tr"
+                                *ngIf="index>=(dataService.currentPeriod.input.orderlist!.order!.length/2)">
+                                <td class="tui-table__td"> {{element._article}} </td>
+                                <td class="tui-table__td"> {{element._quantity}} </td>
+                                <td class="tui-table__td"> {{element._modus}}
+                                </td>
+                            </tr>
+                        </ng-container>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div> <br>
+
+    <div>
+        <h2 i18n="@@SUMMARY_HEADING_PRODUKTIONSLISTE">Produktionsliste</h2>
+        <div class="tui-container tui-container_adaptive">
+            <div class="tui-row tui-row_adaptive">
+                <div class="tui-col_xs-12 tui-col_md-6 tui-col_lg-6">
+                    <table class="tui-table">
+                        <tbody>
+                            <tr class="tui-table__tr">
+                                <th class="tui-table__th" i18n="@@ARTIKEL">Artikel</th>
+                                <th class="tui-table__th" i18n="@@MENGE">Menge</th>
+                            </tr>
+                        </tbody>
+
+                        <ng-container
+                            *ngFor="let element of dataService.currentPeriod.input.productionlist?.production; let index = index">
+                            <tr class="tui-table__tr"
+                                *ngIf="index<(dataService.currentPeriod.input.productionlist!.production!.length/2)">
+                                <td class="tui-table__td"> {{element._article}} </td>
+                                <td class="tui-table__td">
+                                    {{element._quantity}}
+                                </td>
+                            </tr>
+                        </ng-container>
+                    </table>
+                </div>
+
+                <div class="tui-col_xs-12 tui-col_md-6 tui-col_lg-6">
+                    <table class="tui-table">
+                        <tbody>
+                            <tr class="tui-table__tr">
+                                <th class="tui-table__th" i18n="@@ARTIKEL">Artikel</th>
+                                <th class="tui-table__th" i18n="@@MENGE">Menge</th>
+                            </tr>
+                        </tbody>
+                        <ng-container
+                            *ngFor="let element of dataService.currentPeriod.input.productionlist?.production; let index = index">
+                            <tr class="tui-table__tr"
+                                *ngIf="index>=(dataService.currentPeriod.input.productionlist!.production!.length/2)">
+                                <td class="tui-table__td"> {{element._article}} </td>
+                                <td class="tui-table__td">
+                                    {{element._quantity}}
+                                </td>
+                            </tr>
+                        </ng-container>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div> <br>
+
+    <div>
+        <h2 i18n="@@SUMMARY_HEADING_KAPAZITAETSPLANUNG">Kapazitätsplanung</h2>
+        <table class="tui-table">
+            <tbody>
+                <tr class="tui-table__tr">
+                    <th class="tui-table__th" i18n="@@SUMMARY_TABLE_HELP_ARBEITSPLATZ">Arbeitsplatz</th>
+                    <th class="tui-table__th" >
+                        <span i18n="@@SUMMARY_TABLE_HELP_SCHICHTEN">Schicht(en)
+                        <ng-template #tooltip2>
+                            Hinweis zu den Schichten: <br>
+            - 1. Schicht: 2400 - 3600 Minuten pro Woche mit 50% Überstunden d.h. 480 - 720 Minuten<br>
+            - 2. Schicht: ab 3601 - 6000 Minuten pro Woche mit 50% Überstunden d.h. 960 - 1200 Minuten pro Tag <br>
+            - 3. Schicht: ab 6001 - 7200 Minuten pro Woche ohne 50% Überstunden d.h. max. 1440 Minuten pro Tag <br>
+            -> ingesamt gilt zu beachten, dass pro Tag maximal 240 Minuten Überstunden in Schicht 1 und 2 gefahren werden können. In Schicht 3 sind Überstunden nicht möglich. <br>
+                        </ng-template>
+                    </span>
+                        <tui-tooltip [content]="tooltip2" direction="left"></tui-tooltip>
+                    </th>
+                    <th class="tui-table__th" i18n="@@SUMMARY_TABLE_HELP_UEBERMINUTEN">Überminuten pro Tag</th>
+                </tr>
+            </tbody>
+
+            <tr class="tui-table__tr"
+                *ngFor="let element of dataService.currentPeriod.input.workingtimelist?.workingtime">
+                <td class="tui-table__td">{{element._station}}</td>
+                <td class="tui-table__td">
+                    {{element._shift}}
+                </td>
+                <td class="tui-table__td">
+                    {{element._overtime}}
+                </td>
+            </tr>
+        </table> <br>
+    </div>
+
+    <div class="tui-space_top-3" style="text-align:center ; width:100%">
+        <button tuiButton type="button" (click)="back()" outline i18n="@@BACK">Zurück</button>
+        <button (click)="export()" class="button_further" tuiButton type="button" i18n="@@SUMMARY_BUTTON_XML">XML Export</button>
+    </div> <br>
+</body>

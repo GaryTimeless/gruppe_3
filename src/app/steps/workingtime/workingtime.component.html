@@ -1,0 +1,108 @@
+<div class="tui-row tui-row_adaptive">
+  <div class="tui-col_md-12">
+    <h2 i18n="@@WORKINGTIME_TITLE">
+      Kapazitätsplanung
+  </h2>
+    <p i18n="@@WORKINGTIME_DESCRIPTION"> 
+      Die Kapazitätsplanung bietet eine Übersicht über die geplanten Schichten, Überstunden und Rüstzeiten pro Arbeitsplatz.<br>
+      Bitte entnehmen Sie weitere Details zu den angezeigten Werten aus den Hinweisschildern.<br>
+      Trage Sie hier die gewünschten Rüstzeit pro Arbeitsplatz ein, die
+      angezeigten Werte sind Empfehlungen.
+      <ng-template #tooltip>
+        Für die Kapazitätsplanung je Arbeitsplatz werden die folgenden Bestandteile berücksichtigt:<br>
+        1. Kapazitätsbedarf für geplante Fertigungsaufträge (Auftragsmenge * Bearbeitungszeit)<br>
+        2. Rüstzeit für geplante Fertigungsaufträge (fixe Rüstzeit je Fertigungsschritt)<br>
+        3. Rückstand aus vorherigen Perioden (Aufträge in Bearbeitung + Aufträge in der Warteschlange)<br>
+        4. Rüstzeit für Rückstand aus vorherigen Perioden (Rüstzeit der wartenden Aufträge)<br>
+      </ng-template>
+      <tui-tooltip [content]="tooltip" direction="left"></tui-tooltip>
+    </p>
+  </div>
+
+  <table class="tui-table">
+    <tbody>
+      <tr class="tui-table__tr">
+        <th width="15%" class="tui-table__th" i18n="@@WORKINGTIME_TABLE1">
+          Arbeitsplatz
+        </th>
+        <th width="25%" class="tui-table__th">
+        <span  i18n="@@WORKINGTIME_TABLE2">Schicht(en)
+          <ng-template #tooltip2>
+            Hinweis zu den Schichten: <br>
+            - 1. Schicht: 2400 - 3600 Minuten pro Woche mit 50% Überstunden d.h. 480 - 720 Minuten<br>
+            - 2. Schicht: ab 3601 - 6000 Minuten pro Woche mit 50% Überstunden d.h. 960 - 1200 Minuten pro Tag <br>
+            - 3. Schicht: ab 6001 - 7200 Minuten pro Woche ohne 50% Überstunden d.h. max. 1440 Minuten pro Tag <br>
+            -> ingesamt gilt zu beachten, dass pro Tag maximal 240 Minuten Überstunden in Schicht 1 und 2 gefahren werden können. In Schicht 3 sind Überstunden nicht möglich. <br>
+          </ng-template></span>
+        <tui-tooltip [content]="tooltip2" direction="left"></tui-tooltip>
+        </th>
+        <th width="25%" class="tui-table__th" i18n="@@WORKINGTIME_TABLE3">
+          Überminuten pro Tag
+        </th>
+        <th width="25%" class="tui-table__th" i18n="@@WORKINGTIME_TABLE4">
+          Geplante Rüstzeit
+        </th>
+      </tr>
+    </tbody>
+
+    <tr class="tui-table__tr" *ngFor="let a of tempInput">
+      <td class="tui-table__td">
+        <span i18n="@@WORKINGTIME_TABLE_INPUT_ARBEITSPLATZ">Arbeitsplatz</span> 
+        {{a._station}}
+        <ng-template #tooltip> 
+          <p i18n="@@WORKINGTIME_ARBEITSPLATZ">
+          Gesamtkapazität Arbeitsplatz {{a._station}}: {{a._processingtime + a._setuptime}} min<br>
+          Neue Fertigungsaufträge </p>
+          <table width="100%" i18n="@@WORKINGTIME_INFO_HEADING">
+            <tr>
+              <th style="text-align: left;">Item</th>
+              <th style="text-align: left;">Auftrags-<br>menge</th>
+              <th style="text-align: left;">Bearbeitungs-<br>zeit</th>
+            </tr>
+          <tr *ngFor="let b of tempWorkingtimeDetails[a._station]._newOrders">
+            <td> {{b._item}} </td>
+            <td> {{b._quantity}} Stück</td>
+            <td> {{b._processingtime}} min </td>
+          </tr>
+          </table>
+          <p i18n="@@WORKINGTIME_INFO">
+          Rüstzeit für neue Aufträge: {{tempWorkingtimeDetails[a._station]._setuptimeNew}} min<br>
+          Warteschlange: {{tempWorkingtimeDetails[a._station]._waitinglist}} min<br>
+          In Bearbeitung: {{tempWorkingtimeDetails[a._station]._ordersInWork}} min<br>
+          Rüstzeit für Rückstand: {{tempWorkingtimeDetails[a._station]._setuptimeOld}} min<br>
+          </p>
+        </ng-template>
+        <tui-tooltip [content]="tooltip" direction="left"></tui-tooltip>
+      </td>
+      <td class="tui-table__td">
+        <span></span> {{a._shift}}
+        <span style="color: red;" *ngIf="errors[a._station+'.overtime']">{{errors[a._station+'.overtime']}}</span>
+      </td>
+      <td class="tui-table__td">
+        <span></span> {{a._overtime}}
+      </td>
+      <td class="tui-table__td">
+        <tui-input-number [(ngModel)]="a._setuptime" (ngModelChange)="updateSetuptime(a._station, $event)"  [tuiTextfieldLabelOutside]="true"  tuiTextfieldSize="s">
+        </tui-input-number>
+        <span style="color: red;" *ngIf="errors[a._station+'.setuptime']">{{errors[a._station+'.setuptime']}}</span>
+      </td>
+    </tr>
+  </table>
+
+  <div class="tui-space_top-3" style="text-align:center ; width:100%">
+    <button
+      tuiButton
+      type="button"
+      (click)="back()"
+      outline
+      i18n="@@BACK"
+    >Zurück</button>
+    <button
+      tuiButton
+      type="button"
+      class="button_further"
+      (click)="next()"
+      i18n="@@FORWARD"
+    >Weiter</button>
+  </div>
+</div><br>

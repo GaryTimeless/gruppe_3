@@ -1,0 +1,54 @@
+<div class="tui-container tui-container_adaptive tui-container_example">
+  <div class="tui-row tui-row_adaptive">
+    <div class="tui-col_md-12">
+      <p style="font-size:30px; color:red" i18n="@@HOME">
+        Herzlich Willkommen bei plannery erp!
+      </p>
+      <p class="blocksatz" style="font-size:18px" i18n="@@HOME_BEGIN">
+        Klicken Sie auf den Button "Los gehts!" um plannery erp zu verwenden  und die Produktionsplanung für die nächste Periode zu starten. <br>
+        Im nächsten Schritt werden Sie aufgefordet entweder eine vorhandene Periode auszuwählen oder eine XML-Datei hochzuladen, um eine neue Periode anzulegen und zuplanen.
+        Anschließenden werden Sie Schritt für Schritt durch die Planung über verschiedene Komponeten geleitet. <br> 
+         Am Seitenende der jeweiligen Komponente befindet sich ein "Zurück" und ein
+        "Weiter"- Button, mit denen Sie durch die Seiten navigieren können. <br>
+        Mit dem Home Button oben rechts werden Sie zurück zu dieser Seite geleitet und durch das Klicken auf das Flagge-Icon können sie zwischen der deutschen und englischen Sprache wechseln.
+      </p>
+      <ul class="tui-list tui-list_large">
+        <p style="font-size:18px" i18n="@@HOME_HELP_ERINNERUNG">Zur Erinnerung:</p>
+        <li>
+            <div class="tui-list__item" i18n="HOME_HELP_P1">P1 = Kinderfahrrad</div>
+            <div class="tui-list__item" i18n="HOME_HELP_P2">P2 = Damenfahrrad</div>
+            <div class="tui-list__item" i18n="HOME_HELP_P3">P3 = Herrenfahrad</div>
+        </li>
+      </ul> <br> <br>
+      <!-- <p>
+        Input (Daten die wir am Anfang eingegeben haben) -> müssen wir
+        generieren
+      </p>
+      <p>
+        Result (Ergebnisse der Vorperiode) -> bekommen wir von seinem Programm
+      </p> -->
+    </div>
+   
+    <!-- <div class="tui-col_md-5">
+      <button
+        tuiButton
+        type="button"
+        class="tui-space_right-3 tui-space_bottom-3"
+        (click)="parseInputToXML()"
+      >
+        ParseJsonToXML
+      </button>
+    </div> -->
+
+    <div class="tui-col_md-5">
+      <button
+        tuiButton
+        type="button"
+        class="tui-space_right-3 tui-space_bottom-3"
+        routerLink="/steps/upload"
+        i18n="@@HOME_BUTTON"
+      >Los gehts!</button>
+    </div>
+  </div>
+</div>
+

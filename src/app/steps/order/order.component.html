@@ -1,0 +1,200 @@
+<div class="tui-row tui-row_adaptive">
+  <div class="tui-col_md-12">
+      <h2 i18n="@@ORDER_TITLE">Bestellverwaltung</h2>
+        <p i18n="@@ORDER_DESCRIPTION">
+    Tragen Sie hier die gewünschten Normal- und Eilbestellungen ein. <br />
+    Wo eine Bestellung nötig ist, ist bereits eine Bestellvorschlag basierend
+    auf der optimalen Bestellmenge eingetragen. <br />
+    Bei einer orange markierten Artikel-ID ist es möglich, dass die Bestellung zu
+    spät ankommt und der Produktionsbedarf nicht gedeckt werden kann. Bitte prüfen Sie diese Artikel und wenden Sie sich ggf. an den Marktplatz.
+    <br>
+    <b style="color: #8bcf7d">|</b> Der <span style="color: #8bcf7d">grüne</span> Strich zeigt den tatsächlichen Ankunfszeitpunkt einer Normalbestellung. <br>
+    <b style="color: #B399D4">|</b> Der <span style="color: #B399D4">violette</span> Strich zeigt den tatsächlichen Ankunftszeitpunkt einer Eilbestellung.
+    <br>
+    
+  </p>
+  <br />
+  <div i18n="@@Lagerkostensatz">
+    Mit erhöhtem Lagerkostensatz rechnen:
+    <tui-toggle
+      [(ngModel)]="lagerkostensatzToggle"
+      (ngModelChange)="lagerkostensatzToggleChange($event)"
+    >
+    </tui-toggle>
+    <ng-template #tooltip>
+      Default: Ein Lagerkostensatz von 30 % wird zur Berechnung der optimalen
+      Bestellmenge verwendet. <br />
+      Wenn der Lagerwert 250.000 übersteigt, sollte die optimale Bestellmenge
+      mit erhöhtem Lagerkostensatz von 130 % berechnet und der Regler aktiviert
+      werden.
+    </ng-template>
+    <tui-tooltip [content]="tooltip" direction="left"></tui-tooltip>
+  <br />
+</div>
+</div>
+</div>
+
+<body>
+<table class="tui-table">
+  <tbody>
+    <tr class="tui-table__tr">
+      <th class="tui-table__th" i18n="@@ORDER_TABLE1">Artikel ID</th>
+      <th class="tui-table__th" i18n="@@LIEFERKOSTEN">Stück-<br />preis</th>
+      <th class="tui-table__th" i18n="@@ORDER_TABLE3">Liefer-<br />kosten</th>
+      <th class="tui-table__th" i18n="@@ORDER_TABLE5">Diskont<br />menge</th>
+      <th class="tui-table__th" i18n="@@ORDER_TABLE6">Bestellmenge<br />Normal</th>
+      <th class="tui-table__th" i18n="@@ORDER_TABLE7">Bestellmenge<br />Eil</th>
+      <th class="tui-table__th" i18n="@@ORDER_TABLE8">
+        Prognose <br />
+        Periode {{ getPeriodPlus(1) }}
+      </th>
+      <th class="tui-table__th" i18n="@@ORDER_TABLE9">
+        Prognose <br />
+        Periode {{ getPeriodPlus(2) }}
+      </th>
+      <th class="tui-table__th" i18n="@@ORDER_TABLE10">
+        Prognose <br />
+        Periode {{ getPeriodPlus(3) }}
+      </th>
+      <th class="tui-table__th" i18n="@@ORDER_TABLE11">
+        Prognose <br />
+        Periode {{ getPeriodPlus(4) }}
+      </th>
+    </tr>
+    <ng-container *ngFor="let order of bestellung | keyvalue">
+      <tr>
+        <th colspan="7"></th>
+        <th colspan="4" style="position: relative">
+          <div
+            style="
+              position: absolute;
+              top: 0px;
+              height: 50px;
+              border-left: 4px solid #8bcf7d;
+            "
+            [style.left]="
+              (order.value._lieferzeit - 0.8 +
+                order.value._lieferzeitabweichung / 2) /
+                0.04 +
+              '%'
+            "
+          ></div>
+          <div
+            style="
+              position: absolute;
+              top: 0px;
+              height: 50px;
+              border-left: 4px solid #B399D4;
+            "
+            [style.left]="(order.value._lieferzeit / 2 -0.8) / 0.04 + '%'"
+          ></div>
+        </th>
+      </tr>
+      <tr class="tui-table__tr">
+        <th class="tui-table__th">
+          <tui-tag
+            class="tag"
+            [class.support-orange]="order.value._bestellungZuSpaet == 1"
+            status="custom"
+            [hoverable]="true"
+            [value]="'K' + order.key"
+          ></tui-tag> <span i18n="@@ORDER_HELP">
+              <ng-template #tooltip>
+                Lagerbestand: {{ order.value._lagerbestand }} <br>
+                Lieferzeit: {{order.value._lieferzeit}}<br>
+                Ausstehende Bestellungen:<br>
+                <ng-container *ngFor="let ausstehendeBestellung of order.value._ausstehendeBestellungen">
+                  <span *ngIf="ausstehendeBestellung._mode == 5">- Artikel {{ausstehendeBestellung._article}}: Menge {{ausstehendeBestellung._amount}}, Ankunft in {{(ausstehendeBestellung._orderperiod + order.value._lieferzeit+0.2) | number}}</span><br/>
+                   <span *ngIf="ausstehendeBestellung._mode == 4">- Artikel {{ausstehendeBestellung._article}}: Menge {{ausstehendeBestellung._amount}}, Ankunft in {{(ausstehendeBestellung._orderperiod + (order.value._lieferzeit /2) + 0.2) | number}}</span>
+                </ng-container> 
+    </ng-template></span>
+    <tui-tooltip [content]="tooltip" direction="left"></tui-tooltip>
+        </th>
+        <th class="tui-table__th">{{ order.value._startpreis }}</th>
+        <th class="tui-table__th">{{ order.value._lieferkosten }}</th>
+        <th class="tui-table__th">{{ order.value._diskontmenge }}</th>
+        <th class="tui-table__th">
+          <tui-input-number
+            [(ngModel)]="order.value._bestellmengeNormal"
+            [class.support-yellow]="order.value._bestellmengeNormal > 0"
+            (ngModelChange)="bestellmengeNormalChange(order.key, $event)"
+            i18n="@@ORDER_TABLE_INPUT1"
+            tuiTextfieldSize="s"
+                                    [tuiTextfieldLabelOutside]="true"  
+          >
+          </tui-input-number>
+          <span style="color: red" *ngIf="errors[order.key + '.normal']">{{
+            errors[order.key + ".normal"]
+          }}</span>
+        </th>
+        <th class="tui-table__th">
+          <tui-input-number
+            [(ngModel)]="order.value._bestellmengeEil"
+            [class.support-yellow]="order.value._bestellmengeEil > 0"
+            (ngModelChange)="bestellmengeEilChange(order.key, $event)"
+            i18n="@@ORDER_TABLE_INPUT2"
+            tuiTextfieldSize="s"
+                                    [tuiTextfieldLabelOutside]="true"  
+          >
+          </tui-input-number>
+          <span style="color: red" *ngIf="errors[order.key + '.eil']">{{
+            errors[order.key + ".eil"]
+          }}</span>
+        </th>
+        <th class="tui-table__th">
+          <tui-tag
+            class="tag"
+            [class.support-red]="order.value._prog1 < 0"
+            status="custom"
+            [hoverable]="true"
+            [value]="order.value._prog1 + ''"
+          ></tui-tag>
+        </th>
+        <th class="tui-table__th" style="border-left: 0.5px solid lightgrey">
+          <tui-tag
+            class="tag"
+            [class.support-red]="order.value._prog2 < 0"
+            status="custom"
+            [hoverable]="true"
+            [value]="order.value._prog2 + ''"
+          ></tui-tag>
+        </th>
+        <th class="tui-table__th" style="border-left: 0.5px solid lightgrey">
+          <tui-tag
+            class="tag"
+            [class.support-red]="order.value._prog3 < 0"
+            status="custom"
+            [hoverable]="true"
+            [value]="order.value._prog3 + ''"
+          ></tui-tag>
+        </th>
+        <th class="tui-table__th" style="border-left: 0.5px solid lightgrey">
+          <tui-tag
+            class="tag"
+            [class.support-red]="order.value._prog4 < 0"
+            status="custom"
+            [hoverable]="true"
+            [value]="order.value._prog4 + ''"
+          ></tui-tag>
+        </th>
+      </tr>
+    </ng-container>
+  </tbody>
+</table>
+<div class="tui-space_top-3" style="text-align: center; width: 100%">
+  <button tuiButton type="button" (click)="back()" outline i18n="@@BACK">
+    Zurück
+  </button>
+  <button
+    tuiButton
+    type="button"
+    class="button_further"
+    [disabled]="(errors | keyvalue).length > 0"
+    (click)="next()"
+    i18n="@@FORWARD"
+  >
+    Weiter
+  </button>
+</div>
+<br />
+</body>

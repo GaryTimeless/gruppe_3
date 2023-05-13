@@ -1,0 +1,11 @@
+<div class="tui-container tui-container_adaptive tui-container_example">
+  <router-outlet></router-outlet>
+</div>
+
+<tui-stepper orientation="vertical"  [activeItemIndex]="activeItemIndex">
+<!-- <tui-stepper [orientation]="isMobile?'horizontal':'vertical'" [class.mobile]="isMobile" [activeItemIndex]="activeItemIndex"> -->
+  <button [routerLink]="step.route" *ngFor="let step of steps; let index = index" tuiStep [disabled]="index > activeItemIndex">
+    {{ step.label }}
+  </button>
+</tui-stepper>
+

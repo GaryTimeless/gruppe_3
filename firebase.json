@@ -1,0 +1,35 @@
+{
+  "hosting": [
+    {
+      "target": "plannery-erp",
+      "public": "dist/plannery-erp",
+      "ignore": [
+        "**/.*"
+      ],
+      "headers": [
+        {
+          "source": "*.[0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f].+(css|js)",
+          "headers": [
+            {
+              "key": "Cache-Control",
+              "value": "public,max-age=31536000,immutable"
+            }
+          ]
+        }
+      ],
+      "i18n": {
+        "root": "/"
+      },
+      "rewrites": [
+        {
+          "source": "/de/**",
+          "destination": "/de/index.html"
+        },
+        {
+          "source": "/en/**",
+          "destination": "/en/index.html"
+        }
+      ]
+    }
+  ]
+}

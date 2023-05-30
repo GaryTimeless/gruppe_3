@@ -83,5 +83,6 @@ const routes: Routes = [
     TuiTagModule,
     TuiToggleModule,
   ],
+  exports:[StepsComponent]
 })
 export class StepsModule {}

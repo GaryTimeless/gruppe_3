@@ -18,6 +18,8 @@ import { AngularFireAuthModule } from '@angular/fire/compat/auth';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { environment } from '../environments/environment';
 import { HttpClientModule } from '@angular/common/http';
+import { StepsModule } from './steps/steps.module';
+
 
 
 @NgModule({
@@ -36,7 +38,8 @@ import { HttpClientModule } from '@angular/common/http';
     TuiThemeNightModule,
     TuiModeModule,
     TuiTooltipModule, 
-    TuiHintModule
+    TuiHintModule,
+    StepsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

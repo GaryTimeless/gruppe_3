@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { DataService } from './data.service';
+import { StepsModule } from './steps/steps.module';
 
 @Component({
   selector: 'app-root',

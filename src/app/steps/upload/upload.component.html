@@ -17,7 +17,7 @@
             <tr *ngFor="let period of periods">
               <td>
                 <button tuiButton type="button" size="l" (click)="selectPeriod(period)">
-                  Periode {{ period.name }} öffnen
+                  Periode {{ period.name }} betrachten
                 </button>
                 <i class="fas fa-trash" i18n="@@DELETE_ICON" style="padding: 20px; " (click)="deletePeriod(period.name!)"></i>
               </td>
@@ -46,7 +46,7 @@
           (click)="createPeriod()"
           i18n="@@UPLOAD_BUTTON_CREATE_PERIOD"
         >
-          Periode anlegen
+          Neue Periode starten
         </button>
       </div>
     </tui-island>

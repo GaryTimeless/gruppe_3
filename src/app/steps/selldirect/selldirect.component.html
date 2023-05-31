@@ -5,9 +5,8 @@
         Direktverkäufe
       </h2>
       <p i18n="@@SELLDIRECT_DESCRIPTION">
-        Tragen Sie hier die gewünschten Direktverkäufe ein. 
-        Geben Sie dafür die Menge und den Preis sowie die Konventionalstrafe
-         für das jeweilige Fahrrad an. 
+      Zusätzlich zum vorangegangenen Vertriebswunsch, können sie hier den Verkauf von Endprodukten ab Lager veranlassen.
+      Geben Sie dafür die Menge, den Preis sowie die Konventionalstrafe für das jeweilige Fahrrad ein. 
       </p>
     </div>
 
@@ -16,8 +15,8 @@
         <tr class="tui-table__tr">
             <th width= 10% class="tui-table__th" i18n="@@SELLDIRECT_TABLE1">Fahrrad</th>
             <th class="tui-table__th" i18n="@@SELLDIRECT_TABLE2">Menge </th>
-            <th class="tui-table__th" i18n="@@SELLDIRECT_TABLE3">Preis pro Stück </th>
-            <th class="tui-table__th" i18n="@@SELLDIRECT_TABLE4">Konventionalstrafe pro Stück</th>
+            <th class="tui-table__th" i18n="@@SELLDIRECT_TABLE3">Preis pro Stück in EUR </th>
+            <th class="tui-table__th" i18n="@@SELLDIRECT_TABLE4">Konventionalstrafe pro Stück in EUR</th>
         </tr>
     </tbody>
  
@@ -25,7 +24,7 @@
     <td class="tui-table__td">P1</td>
     <td class="tui-table__td" > 
         <tui-input-number [(ngModel)]="p1._quantity"  ngDefaultControl i18n="@@SELLDIRECT_TABLE_INPUT">
-          Wert eingeben
+          Menge eingeben
         </tui-input-number>
     </td>
     <td class="tui-table__td" > 
@@ -43,7 +42,7 @@
     <td class="tui-table__td">P2</td>
     <td class="tui-table__td" > 
         <tui-input-number [(ngModel)]="p2._quantity" ngDefaultControl i18n="@@SELLDIRECT_TABLE_INPUT">
-          Wert eingeben
+          Menge eingeben
         </tui-input-number>
     </td>
     <td class="tui-table__td" > 
@@ -61,7 +60,7 @@
     <td class="tui-table__td">P3</td>
     <td class="tui-table__td" > 
         <tui-input-number [(ngModel)]="p3._quantity" ngDefaultControl i18n="@@SELLDIRECT_TABLE_INPUT">
-          Wert eingeben
+          Menge eingeben
         </tui-input-number>
     </td>
     <td class="tui-table__td" > 

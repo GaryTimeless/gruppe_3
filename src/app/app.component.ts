@@ -9,7 +9,7 @@ import { StepsModule } from './steps/steps.module';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'plannery-erp';
+  title = 'AGLMR';
   siteLocale
 
   constructor(private route: ActivatedRoute, public dataService:DataService, private router:Router) {

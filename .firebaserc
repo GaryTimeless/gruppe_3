@@ -1,9 +1,9 @@
 {
   "targets": {
-    "plannery-erp": {
+    "AGLMR": {
       "hosting": {
-        "plannery-erp": [
-          "plannery-erp"
+        "AGLMR": [
+          "AGLMR"
         ]
       }
     }

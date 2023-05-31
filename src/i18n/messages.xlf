@@ -17,14 +17,14 @@
         </context-group>
       </trans-unit>
       <trans-unit id="HOME" datatype="html">
-        <source> Herzlich Willkommen bei plannery erp! </source>
+        <source> Herzlich Willkommen bei AGLMR! </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
           <context context-type="linenumber">5,6</context>
         </context-group>
       </trans-unit>
       <trans-unit id="HOME_BEGIN" datatype="html">
-        <source> Klicken Sie auf den Button &quot;Los gehts!&quot; um plannery erp zu verwenden und die Produktionsplanung für die nächste Periode zu starten. <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> Im nächsten Schritt werden Sie aufgefordet entweder eine vorhandene Periode auszuwählen oder eine XML-Datei hochzuladen, um eine neue Periode anzulegen und zuplanen. Anschließenden werden Sie Schritt für Schritt durch die Planung über verschiedene Komponeten geleitet. <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> Am Seitenende der jeweiligen Komponente befindet sich ein &quot;Zurück&quot; und ein &quot;Weiter&quot;- Button, mit denen Sie durch die Seiten navigieren können. <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> Mit dem Home Button oben rechts werden Sie zurück zu dieser Seite geleitet und durch das Klicken auf das Flagge-Icon können sie zwischen der deutschen und englischen Sprache wechseln. </source>
+        <source> Klicken Sie auf den Button &quot;Los gehts!&quot; um AGLMR zu verwenden und die Produktionsplanung für die nächste Periode zu starten. <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> Im nächsten Schritt werden Sie aufgefordet entweder eine vorhandene Periode auszuwählen oder eine XML-Datei hochzuladen, um eine neue Periode anzulegen und zuplanen. Anschließenden werden Sie Schritt für Schritt durch die Planung über verschiedene Komponeten geleitet. <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> Am Seitenende der jeweiligen Komponente befindet sich ein &quot;Zurück&quot; und ein &quot;Weiter&quot;- Button, mit denen Sie durch die Seiten navigieren können. <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> Mit dem Home Button oben rechts werden Sie zurück zu dieser Seite geleitet und durch das Klicken auf das Flagge-Icon können sie zwischen der deutschen und englischen Sprache wechseln. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
           <context context-type="linenumber">8,14</context>

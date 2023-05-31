@@ -6,7 +6,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "plannery-erp": {
+    "AGLMR": {
       "i18n": {
         "sourceLocale": "de",
         "locales": {
@@ -30,7 +30,7 @@
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "i18nMissingTranslation": "warning",
-            "outputPath": "dist/plannery-erp",
+            "outputPath": "dist/AGLMR",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -93,14 +93,14 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "plannery-erp:build:production"
+              "browserTarget": "AGLMR:build:production"
             },
             "development": {
-              "browserTarget": "plannery-erp:build:development",
+              "browserTarget": "AGLMR:build:development",
               "ssl": true
             },
             "en": {
-              "browserTarget": "plannery-erp:build:en",
+              "browserTarget": "AGLMR:build:en",
               "ssl": true
             }
           },
@@ -109,7 +109,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "plannery-erp:build"
+            "browserTarget": "AGLMR:build"
           }
         },
         "test": {
@@ -137,5 +137,5 @@
       }
     }
   },
-  "defaultProject": "plannery-erp"
+  "defaultProject": "AGLMR"
 }

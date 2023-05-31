@@ -1,8 +1,8 @@
 {
   "hosting": [
     {
-      "target": "plannery-erp",
-      "public": "dist/plannery-erp",
+      "target": "AGLMR",
+      "public": "dist/AGLMR",
       "ignore": [
         "**/.*"
       ],

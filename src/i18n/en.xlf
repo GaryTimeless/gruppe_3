@@ -19,7 +19,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="HOME" datatype="html">
-        <source> Herzlich Willkommen bei plannery erp! </source>
+        <source> Herzlich Willkommen bei AGLMR! </source>
         <target> Welcome to planery erp!</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
@@ -27,9 +27,9 @@
         </context-group>
       </trans-unit>
       <trans-unit id="HOME_BEGIN" datatype="html">
-        <source> Klicken Sie auf den Button &quot;Los gehts!&quot; um plannery erp zu verwenden und die Produktionsplanung für die nächste Periode zu starten. <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/>
+        <source> Klicken Sie auf den Button &quot;Los gehts!&quot; um AGLMR zu verwenden und die Produktionsplanung für die nächste Periode zu starten. <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/>
            Im nächsten Schritt werden Sie aufgefordet entweder eine vorhandene Periode auszuwählen oder eine XML-Datei hochzuladen, um eine neue Periode anzulegen und zuplanen. Anschließenden werden Sie Schritt für Schritt durch die Planung über verschiedene Komponeten geleitet. <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> Am Seitenende der jeweiligen Komponente befindet sich ein &quot;Zurück&quot; und ein &quot;Weiter&quot;- Button, mit denen Sie durch die Seiten navigieren können. <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> Mit dem Home Button oben rechts werden Sie zurück zu dieser Seite geleitet und durch das Klicken auf das Flagge-Icon können sie zwischen der deutschen und englischen Sprache wechseln. </source>
-        <target>Press the button &quot; Let´s go! &quot; to use plannery erp and start the production planning for the next period.<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> In the next step you will be asked to either select an existing period or upload an XML file to create and schedule a new period. Subsequently, you will be guided step by step through the planning via various components. <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> At the bottom of the page of each component is a &quot;Back&quot; and a &quot;Next&quot;- button, with which you can navigate through the pages. <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> The Home button in the upper right corner will take you back to this page and by clicking on the flag icon you can switch between the German and English language.</target>
+        <target>Press the button &quot; Let´s go! &quot; to use pAGLMR and start the production planning for the next period.<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> In the next step you will be asked to either select an existing period or upload an XML file to create and schedule a new period. Subsequently, you will be guided step by step through the planning via various components. <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> At the bottom of the page of each component is a &quot;Back&quot; and a &quot;Next&quot;- button, with which you can navigate through the pages. <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> The Home button in the upper right corner will take you back to this page and by clicking on the flag icon you can switch between the German and English language.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
           <context context-type="linenumber">8,14</context>

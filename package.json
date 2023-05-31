@@ -1,12 +1,12 @@
 {
-  "name": "plannery-erp",
+  "name": "AGLMR",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
     "serve": "ng serve",
     "serve-tim": "npx @angular/cli@12.2.13 serve",
     "serve-en": "ng serve --port 4201 --configuration=en",
-    "build": "ng build --configuration production && cp src/indexRedirect.html dist/plannery-erp/index.html",
+    "build": "ng build --configuration production && cp src/indexRedirect.html dist/AGLMR/index.html",
     "deploy": "npm run build && firebase deploy --only hosting",
     "watch": "ng build --watch --configuration development",
     "watch-prod": "ng build --watch --configuration production",

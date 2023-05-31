@@ -39,7 +39,7 @@ export class UiFileUploadComponent {
     return this.requests$.pipe(
       map((file) => (file instanceof File ? [file] : [])),
       startWith([])
-    );
+    );     
   }
 
   @tuiPure

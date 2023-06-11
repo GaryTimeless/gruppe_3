@@ -86,11 +86,6 @@ export class DataService {
       case 'sellwish':
       // @ts-ignore
       case 'selldirect':
-        // period.planningo = {
-        //   disposition1: {},
-        //   disposition2: {},
-        //   disposition3: {},
-        // };
         period.productionorders = {
           disposition1: [],
           disposition2: [],

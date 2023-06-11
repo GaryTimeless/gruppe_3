@@ -19,7 +19,11 @@ export class SellwishComponent implements OnInit {
     private router: Router,
     @Inject(TuiNotificationsService)
     private readonly notificationsService: TuiNotificationsService
-  ) {}
+  ) {
+    console.log("___________")
+    console.log(this.waitinglist)
+
+  }
   errors: any = {};
 
   ordersinwork: any = {};
@@ -27,12 +31,16 @@ export class SellwishComponent implements OnInit {
   localInitNumber: number = 0;
 
   ngOnInit(): void {
+    console.log("___________")
+    console.log(this.waitinglist)
     if (!this.dataService.currentPeriod) {
       this.router.navigate(['/steps/upload']);
     }
-
+    // alles was jetzt kommt, führt dazu herauszufinden, ob für die produkte p1,p2,p3
+    // aufträge oder existieren, um einen korrekten Lagerbestand zu berechnen. 
+    // ordersinwork und waitinglistelements bedienen sich der selben realität
+    // nur geht es um eine andere Perspektive.
     this.dataService.currentPeriodObservable.subscribe((period: Planning) => {
-      console.log(period);
       if (period) {
         const tempMap: { [key: string]: WaitingListElement } = {};
         period?.result?.waitinglistworkstations?.workplace?.forEach(
@@ -59,6 +67,7 @@ export class SellwishComponent implements OnInit {
             }
           }
         );
+
         Object.values(tempMap).forEach((element) => {
           if (!this.waitinglist[element._item]) {
             this.waitinglist[element._item] = 0;
@@ -101,15 +110,10 @@ export class SellwishComponent implements OnInit {
             switch (period) {
               case 'period0':
                 if (
-                  !(this.dataService.currentPeriod!.productionPlanning as any)[
-                    product
-                  ][period].production
+                  !(this.dataService.currentPeriod!.productionPlanning as any)[product][period].production
                 ) {
-                  (this.dataService.currentPeriod!.productionPlanning as any)[
-                    product
-                  ][period].production = (
-                    this.dataService.currentPeriod?.result?.forecast as any
-                  )[product];
+                  (this.dataService.currentPeriod!.productionPlanning as any)[product][period].production = (
+                    this.dataService.currentPeriod?.result?.forecast as any)[product];
                 }
                 break;
               default:
@@ -158,14 +162,31 @@ export class SellwishComponent implements OnInit {
           // )[product]) {
           switch (period) {
             case 'period0':
+              //bsp: productNumber = 1; x._id =1 -> const warehouse.article[id=1] = 0
+              //<warehousestock>
+              //<article id="1" amount="0" startamount="100" pct="0,00" price="174,95" stockvalue="0,00"/>
+              //<article id="2" amount="0" startamount="100" pct="0,00" price="178,94" stockvalue="0,00"/>
               const warehousestock =
                 this.dataService.currentPeriod.result!.warehousestock.article.find(
                   (x) => x._id == productNumber
                 )!._amount;
+                //  selldirect.component.ts 
+                //this.dataService.currentPeriod.input.selldirect = {item :[this.p1, this.p2, this.p3]}
+               /*
+               export class SelldirectComponent implements OnInit {
+              p1:Item = {_article:1, _penalty: 0, _price: 0,_quantity:0}
+              p2:Item = {_article:2, _penalty: 0, _price: 0,_quantity:0}
+              p3:Item = {_article:3, _penalty: 0, _price: 0,_quantity:0}
+              
+              selldirect.intem.article[1].quantity = 0
+               */
               const selldirect =
                 this.dataService.currentPeriod.input.selldirect?.item.find(
                   (x) => x._article == productNumber
                 )!._quantity;
+
+                // this.waitinglist ={1:3{...},2:4{...}}
+                // this.waitinglist[1], wenn es das nicht gibt, dann -> 0
               const waitinglist =
                 this.waitinglist[Number.parseInt(product.substring(2, 3))] ?? 0;
               const ordersinwork =
@@ -174,15 +195,11 @@ export class SellwishComponent implements OnInit {
               (this.dataService.currentPeriod!.productionPlanning as any)[
                 product
               ].period0.plannedStock =
-                warehousestock +
-                waitinglist +
-                ordersinwork +
-                ((this.dataService.currentPeriod!.productionPlanning as any)[
-                  product
-                ].period0.production ?? 0) -
-                ((this.dataService.currentPeriod.result?.forecast as any)[
-                  product
-                ] ?? 0) -
+                warehousestock +  //result
+                waitinglist +     //result
+                ordersinwork +    //result
+                ((this.dataService.currentPeriod!.productionPlanning as any)[product].period0.production ?? 0) -
+                ((this.dataService.currentPeriod.result?.forecast as any)[product] ?? 0) -
                 (selldirect ?? 0);
               break;
             case 'period1':
@@ -198,33 +215,26 @@ export class SellwishComponent implements OnInit {
   }
 
   calcFuturePeriod(product: string, periodNumber: number) {
-    // console.log(
-    //   product,
-    //   periodNumber,
-    //   periodNumber - 1,
-    //   (this.dataService.currentPeriod!.productionPlanning as any)[product][
-    //     'period' + (periodNumber - 1)
-    //   ].plannedStock ?? 0,
-    //   (this.dataService.currentPeriod!.productionPlanning as any)[product][
-    //     'period' + periodNumber
-    //   ].production ?? 0,
-    //   (this.dataService.currentPeriod?.sellwish as any)[
-    //     'period' + periodNumber
-    //   ][product] ?? 0
-    // );
-
     (this.dataService.currentPeriod!.productionPlanning as any)[product][
       'period' + periodNumber
     ].plannedStock =
+      // was ist der vorperiode geplant im Lager zu belassen
       ((this.dataService.currentPeriod!.productionPlanning as any)[product][
         'period' + (periodNumber - 1)
       ].plannedStock ?? 0) +
+      //was ist in der Produktionsplanung ? (aus Eingabe)
       ((this.dataService.currentPeriod!.productionPlanning as any)[product][
         'period' + periodNumber
       ].production ?? 0) -
+      // Zahl aus Prognose im Part "Vertriebswunsch"
       ((this.dataService.currentPeriod?.sellwish as any)[
         'period' + periodNumber
       ][product] ?? 0);
+
+      // Produktionsplanung Aktuelle Periode [bsp 7] (grünes Kästchen) aktueller Bestand
+      //+ eingegebene gewünschte Produktionsplanung [bsp 8] (orientiert an den Vertriebswunsch)
+      // - dem aus der Prognose eingetragenen Vertriebswunsch
+      // = neuer Lagerbestand (grünes Kästchen Periode 8)
   }
 
   hasError(product: string, period: string) {

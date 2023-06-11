@@ -40,7 +40,8 @@ export class UploadComponent implements OnInit {
         .addPeriod(this.parsed._period + 1, this.parsed)
         .then((res) => {
           this.loading = false;
-
+          console.log("CURRENT PERIOD")
+          console.log(this.dataService.currentPeriod)
           this.router.navigate(['/steps/selldirect']);
         });
     }

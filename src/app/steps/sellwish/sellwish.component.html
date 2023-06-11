@@ -5,8 +5,8 @@
       Prognosen und Produktionsplanung
     </h2>
     <p i18n="@@SELLWISH_DESCRIPTION">
-      Tragen Sie hier die Vertriebswunsch-Prognosen für die aktuelle und die
-      kommenden Perioden ein sowie Ihren Produktionsplan.
+      Vertriebswunsch-Prognosen für die aktuelle und die
+      kommenden Perioden ein sowie Ihren Produktionsplan, sollen hier eingetragen werden.
     </p>
   
   <h2 i18n="@@SELLWISH_TITLE_VERTRIEBSWUNSCH">
@@ -204,7 +204,7 @@
             <tui-tag
             class="tag"
             [class.support-red]="(period.value.plannedStock || 0) < 0"
-            [class.support-green]="(period.value.plannedStock || 0) >= 0"
+            [class.support-blue]="(period.value.plannedStock || 0) >= 0"
             status="custom"
             [value]="period.value.plannedStock + ''"
             ></tui-tag>

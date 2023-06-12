@@ -1,0 +1,349 @@
+{
+    "input": {
+        "qualitycontrol": {
+            "_type": "no",
+            "_losequantity": 0,
+            "_delay": 0
+        },
+        "sellwish": {
+            "item": [
+                {
+                    "_article": 1,
+                    "_quantity": 150
+                },
+                {
+                    "_article": 2,
+                    "_quantity": 150
+                },
+                {
+                    "_article": 3,
+                    "_quantity": 150
+                }
+            ]
+        },
+        "selldirect": {
+            "item": [
+                {
+                    "_article": 1,
+                    "_quantity": 0,
+                    "_price": 0,
+                    "_penalty": 0
+                },
+                {
+                    "_article": 2,
+                    "_quantity": 0,
+                    "_price": 0,
+                    "_penalty": 0
+                },
+                {
+                    "_article": 3,
+                    "_quantity": 0,
+                    "_price": 0,
+                    "_penalty": 0
+                }
+            ]
+        },
+        "orderlist": {
+            "order": [
+                {
+                    "_article": 21,
+                    "_quantity": 300,
+                    "_modus": 5
+                },
+                {
+                    "_article": 22,
+                    "_quantity": 100,
+                    "_modus": 5
+                },
+                {
+                    "_article": 25,
+                    "_quantity": 1560,
+                    "_modus": 5
+                },
+                {
+                    "_article": 27,
+                    "_quantity": 1800,
+                    "_modus": 5
+                },
+                {
+                    "_article": 28,
+                    "_quantity": 3000,
+                    "_modus": 5
+                },
+                {
+                    "_article": 36,
+                    "_quantity": 400,
+                    "_modus": 5
+                },
+                {
+                    "_article": 37,
+                    "_quantity": 400,
+                    "_modus": 5
+                },
+                {
+                    "_article": 40,
+                    "_quantity": 400,
+                    "_modus": 5
+                },
+                {
+                    "_article": 41,
+                    "_quantity": 400,
+                    "_modus": 5
+                },
+                {
+                    "_article": 42,
+                    "_quantity": 800,
+                    "_modus": 5
+                },
+                {
+                    "_article": 44,
+                    "_quantity": 1200,
+                    "_modus": 5
+                },
+                {
+                    "_article": 45,
+                    "_quantity": 400,
+                    "_modus": 5
+                },
+                {
+                    "_article": 46,
+                    "_quantity": 400,
+                    "_modus": 5
+                },
+                {
+                    "_article": 47,
+                    "_quantity": 400,
+                    "_modus": 5
+                },
+                {
+                    "_article": 48,
+                    "_quantity": 800,
+                    "_modus": 5
+                },
+                {
+                    "_article": 52,
+                    "_quantity": 600,
+                    "_modus": 5
+                },
+                {
+                    "_article": 53,
+                    "_quantity": 22000,
+                    "_modus": 5
+                },
+                {
+                    "_article": 32,
+                    "_quantity": 2700,
+                    "_modus": 4
+                },
+                {
+                    "_article": 38,
+                    "_quantity": 1000,
+                    "_modus": 4
+                },
+                {
+                    "_article": 39,
+                    "_quantity": 1800,
+                    "_modus": 4
+                }
+            ]
+        },
+        "productionlist": {
+            "production": [
+                {
+                    "_article": 26,
+                    "_quantity": 300
+                },
+                {
+                    "_article": 51,
+                    "_quantity": 100
+                },
+                {
+                    "_article": 16,
+                    "_quantity": 300
+                },
+                {
+                    "_article": 17,
+                    "_quantity": 300
+                },
+                {
+                    "_article": 50,
+                    "_quantity": 100
+                },
+                {
+                    "_article": 4,
+                    "_quantity": 100
+                },
+                {
+                    "_article": 10,
+                    "_quantity": 100
+                },
+                {
+                    "_article": 49,
+                    "_quantity": 100
+                },
+                {
+                    "_article": 7,
+                    "_quantity": 100
+                },
+                {
+                    "_article": 13,
+                    "_quantity": 100
+                },
+                {
+                    "_article": 18,
+                    "_quantity": 100
+                },
+                {
+                    "_article": 56,
+                    "_quantity": 100
+                },
+                {
+                    "_article": 55,
+                    "_quantity": 100
+                },
+                {
+                    "_article": 5,
+                    "_quantity": 100
+                },
+                {
+                    "_article": 11,
+                    "_quantity": 100
+                },
+                {
+                    "_article": 54,
+                    "_quantity": 100
+                },
+                {
+                    "_article": 8,
+                    "_quantity": 100
+                },
+                {
+                    "_article": 14,
+                    "_quantity": 100
+                },
+                {
+                    "_article": 19,
+                    "_quantity": 100
+                },
+                {
+                    "_article": 31,
+                    "_quantity": 100
+                },
+                {
+                    "_article": 30,
+                    "_quantity": 100
+                },
+                {
+                    "_article": 6,
+                    "_quantity": 100
+                },
+                {
+                    "_article": 12,
+                    "_quantity": 100
+                },
+                {
+                    "_article": 29,
+                    "_quantity": 100
+                },
+                {
+                    "_article": 9,
+                    "_quantity": 100
+                },
+                {
+                    "_article": 15,
+                    "_quantity": 100
+                },
+                {
+                    "_article": 20,
+                    "_quantity": 100
+                },
+                {
+                    "_article": 1,
+                    "_quantity": 100
+                },
+                {
+                    "_article": 2,
+                    "_quantity": 100
+                },
+                {
+                    "_article": 3,
+                    "_quantity": 100
+                }
+            ]
+        },
+        "workingtimelist": {
+            "workingtime": [
+                {
+                    "_station": 1,
+                    "_shift": 1,
+                    "_overtime": 0
+                },
+                {
+                    "_station": 2,
+                    "_shift": 1,
+                    "_overtime": 0
+                },
+                {
+                    "_station": 3,
+                    "_shift": 1,
+                    "_overtime": 0
+                },
+                {
+                    "_station": 4,
+                    "_shift": 1,
+                    "_overtime": 0
+                },
+                {
+                    "_station": 6,
+                    "_shift": 1,
+                    "_overtime": 0
+                },
+                {
+                    "_station": 7,
+                    "_shift": 1,
+                    "_overtime": 28
+                },
+                {
+                    "_station": 8,
+                    "_shift": 1,
+                    "_overtime": 0
+                },
+                {
+                    "_station": 9,
+                    "_shift": 1,
+                    "_overtime": 56
+                },
+                {
+                    "_station": 10,
+                    "_shift": 1,
+                    "_overtime": 48
+                },
+                {
+                    "_station": 11,
+                    "_shift": 1,
+                    "_overtime": 0
+                },
+                {
+                    "_station": 12,
+                    "_shift": 1,
+                    "_overtime": 0
+                },
+                {
+                    "_station": 13,
+                    "_shift": 1,
+                    "_overtime": 0
+                },
+                {
+                    "_station": 14,
+                    "_shift": 1,
+                    "_overtime": 0
+                },
+                {
+                    "_station": 15,
+                    "_shift": 1,
+                    "_overtime": 0
+                }
+            ]
+        }
+    }
+}

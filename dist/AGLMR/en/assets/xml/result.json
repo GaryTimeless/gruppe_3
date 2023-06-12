@@ -1,0 +1,3578 @@
+{
+    "results": {
+        "_game": 328,
+        "_group": 6,
+        "_period": 1,
+        "forecast": {
+            "_p1": 150,
+            "_p2": 100,
+            "_p3": 100
+        },
+        "warehousestock": {
+            "article": [
+                {
+                    "_id": 1,
+                    "_amount": 50,
+                    "_startamount": 100,
+                    "_pct": "50,00",
+                    "_price": "156,30",
+                    "_stockvalue": "7815,05"
+                },
+                {
+                    "_id": 2,
+                    "_amount": 50,
+                    "_startamount": 100,
+                    "_pct": "50,00",
+                    "_price": "163,51",
+                    "_stockvalue": "8175,40"
+                },
+                {
+                    "_id": 3,
+                    "_amount": 50,
+                    "_startamount": 100,
+                    "_pct": "50,00",
+                    "_price": "165,56",
+                    "_stockvalue": "8278,20"
+                },
+                {
+                    "_id": 4,
+                    "_amount": 100,
+                    "_startamount": 100,
+                    "_pct": "100,00",
+                    "_price": "40,95",
+                    "_stockvalue": "4094,86"
+                },
+                {
+                    "_id": 5,
+                    "_amount": 100,
+                    "_startamount": 100,
+                    "_pct": "100,00",
+                    "_price": "41,02",
+                    "_stockvalue": "4102,15"
+                },
+                {
+                    "_id": 6,
+                    "_amount": 100,
+                    "_startamount": 100,
+                    "_pct": "100,00",
+                    "_price": "41,31",
+                    "_stockvalue": "4131,20"
+                },
+                {
+                    "_id": 7,
+                    "_amount": 100,
+                    "_startamount": 100,
+                    "_pct": "100,00",
+                    "_price": "36,22",
+                    "_stockvalue": "3621,60"
+                },
+                {
+                    "_id": 8,
+                    "_amount": 100,
+                    "_startamount": 100,
+                    "_pct": "100,00",
+                    "_price": "36,37",
+                    "_stockvalue": "3636,60"
+                },
+                {
+                    "_id": 9,
+                    "_amount": 100,
+                    "_startamount": 100,
+                    "_pct": "100,00",
+                    "_price": "36,20",
+                    "_stockvalue": "3620,40"
+                },
+                {
+                    "_id": 10,
+                    "_amount": 100,
+                    "_startamount": 100,
+                    "_pct": "100,00",
+                    "_price": "12,85",
+                    "_stockvalue": "1285,00"
+                },
+                {
+                    "_id": 11,
+                    "_amount": 100,
+                    "_startamount": 100,
+                    "_pct": "100,00",
+                    "_price": "14,03",
+                    "_stockvalue": "1402,75"
+                },
+                {
+                    "_id": 12,
+                    "_amount": 90,
+                    "_startamount": 100,
+                    "_pct": "90,00",
+                    "_price": "14,06",
+                    "_stockvalue": "1265,40"
+                },
+                {
+                    "_id": 13,
+                    "_amount": 100,
+                    "_startamount": 100,
+                    "_pct": "100,00",
+                    "_price": "13,23",
+                    "_stockvalue": "1322,80"
+                },
+                {
+                    "_id": 14,
+                    "_amount": 100,
+                    "_startamount": 100,
+                    "_pct": "100,00",
+                    "_price": "13,91",
+                    "_stockvalue": "1391,50"
+                },
+                {
+                    "_id": 15,
+                    "_amount": 0,
+                    "_startamount": 100,
+                    "_pct": "0,00",
+                    "_price": "14,65",
+                    "_stockvalue": "0,00"
+                },
+                {
+                    "_id": 16,
+                    "_amount": 300,
+                    "_startamount": 300,
+                    "_pct": "100,00",
+                    "_price": "7,04",
+                    "_stockvalue": "2110,93"
+                },
+                {
+                    "_id": 17,
+                    "_amount": 300,
+                    "_startamount": 300,
+                    "_pct": "100,00",
+                    "_price": "7,18",
+                    "_stockvalue": "2154,09"
+                },
+                {
+                    "_id": 18,
+                    "_amount": 100,
+                    "_startamount": 100,
+                    "_pct": "100,00",
+                    "_price": "13,75",
+                    "_stockvalue": "1375,00"
+                },
+                {
+                    "_id": 19,
+                    "_amount": 100,
+                    "_startamount": 100,
+                    "_pct": "100,00",
+                    "_price": "15,05",
+                    "_stockvalue": "1505,00"
+                },
+                {
+                    "_id": 20,
+                    "_amount": 0,
+                    "_startamount": 100,
+                    "_pct": "0,00",
+                    "_price": "15,55",
+                    "_stockvalue": "0,00"
+                },
+                {
+                    "_id": 21,
+                    "_amount": 200,
+                    "_startamount": 300,
+                    "_pct": "66,67",
+                    "_price": "5,00",
+                    "_stockvalue": "1000,00"
+                },
+                {
+                    "_id": 22,
+                    "_amount": 200,
+                    "_startamount": 300,
+                    "_pct": "66,67",
+                    "_price": "6,50",
+                    "_stockvalue": "1300,00"
+                },
+                {
+                    "_id": 23,
+                    "_amount": 200,
+                    "_startamount": 300,
+                    "_pct": "66,67",
+                    "_price": "6,50",
+                    "_stockvalue": "1300,00"
+                },
+                {
+                    "_id": 24,
+                    "_amount": 4000,
+                    "_startamount": 6100,
+                    "_pct": "65,57",
+                    "_price": "0,06",
+                    "_stockvalue": "240,00"
+                },
+                {
+                    "_id": 25,
+                    "_amount": 3960,
+                    "_startamount": 3600,
+                    "_pct": "110,00",
+                    "_price": "0,07",
+                    "_stockvalue": "287,60"
+                },
+                {
+                    "_id": 26,
+                    "_amount": 300,
+                    "_startamount": 300,
+                    "_pct": "100,00",
+                    "_price": "10,57",
+                    "_stockvalue": "3171,66"
+                },
+                {
+                    "_id": 27,
+                    "_amount": 3000,
+                    "_startamount": 1800,
+                    "_pct": "166,67",
+                    "_price": "0,12",
+                    "_stockvalue": "357,00"
+                },
+                {
+                    "_id": 28,
+                    "_amount": 3000,
+                    "_startamount": 4500,
+                    "_pct": "66,67",
+                    "_price": "1,20",
+                    "_stockvalue": "3600,00"
+                },
+                {
+                    "_id": 29,
+                    "_amount": 100,
+                    "_startamount": 100,
+                    "_pct": "100,00",
+                    "_price": "69,33",
+                    "_stockvalue": "6932,56"
+                },
+                {
+                    "_id": 30,
+                    "_amount": 100,
+                    "_startamount": 100,
+                    "_pct": "100,00",
+                    "_price": "127,61",
+                    "_stockvalue": "12761,50"
+                },
+                {
+                    "_id": 31,
+                    "_amount": 100,
+                    "_startamount": 100,
+                    "_pct": "100,00",
+                    "_price": "144,79",
+                    "_stockvalue": "14478,60"
+                },
+                {
+                    "_id": 32,
+                    "_amount": 2000,
+                    "_startamount": 2700,
+                    "_pct": "74,07",
+                    "_price": "0,75",
+                    "_stockvalue": "1500,00"
+                },
+                {
+                    "_id": 33,
+                    "_amount": 700,
+                    "_startamount": 900,
+                    "_pct": "77,78",
+                    "_price": "22,00",
+                    "_stockvalue": "15400,00"
+                },
+                {
+                    "_id": 34,
+                    "_amount": 14800,
+                    "_startamount": 22000,
+                    "_pct": "67,27",
+                    "_price": "0,10",
+                    "_stockvalue": "1480,00"
+                },
+                {
+                    "_id": 35,
+                    "_amount": 2400,
+                    "_startamount": 3600,
+                    "_pct": "66,67",
+                    "_price": "1,00",
+                    "_stockvalue": "2400,00"
+                },
+                {
+                    "_id": 36,
+                    "_amount": 600,
+                    "_startamount": 900,
+                    "_pct": "66,67",
+                    "_price": "8,00",
+                    "_stockvalue": "4800,00"
+                },
+                {
+                    "_id": 37,
+                    "_amount": 600,
+                    "_startamount": 900,
+                    "_pct": "66,67",
+                    "_price": "1,50",
+                    "_stockvalue": "900,00"
+                },
+                {
+                    "_id": 38,
+                    "_amount": 1000,
+                    "_startamount": 300,
+                    "_pct": "333,33",
+                    "_price": "1,85",
+                    "_stockvalue": "1850,00"
+                },
+                {
+                    "_id": 39,
+                    "_amount": 2100,
+                    "_startamount": 900,
+                    "_pct": "233,33",
+                    "_price": "1,73",
+                    "_stockvalue": "3630,00"
+                },
+                {
+                    "_id": 40,
+                    "_amount": 600,
+                    "_startamount": 900,
+                    "_pct": "66,67",
+                    "_price": "2,50",
+                    "_stockvalue": "1500,00"
+                },
+                {
+                    "_id": 41,
+                    "_amount": 600,
+                    "_startamount": 900,
+                    "_pct": "66,67",
+                    "_price": "0,06",
+                    "_stockvalue": "36,00"
+                },
+                {
+                    "_id": 42,
+                    "_amount": 1200,
+                    "_startamount": 1800,
+                    "_pct": "66,67",
+                    "_price": "0,10",
+                    "_stockvalue": "120,00"
+                },
+                {
+                    "_id": 43,
+                    "_amount": 1600,
+                    "_startamount": 1900,
+                    "_pct": "84,21",
+                    "_price": "5,00",
+                    "_stockvalue": "8000,00"
+                },
+                {
+                    "_id": 44,
+                    "_amount": 1800,
+                    "_startamount": 2700,
+                    "_pct": "66,67",
+                    "_price": "0,50",
+                    "_stockvalue": "900,00"
+                },
+                {
+                    "_id": 45,
+                    "_amount": 600,
+                    "_startamount": 900,
+                    "_pct": "66,67",
+                    "_price": "0,06",
+                    "_stockvalue": "36,00"
+                },
+                {
+                    "_id": 46,
+                    "_amount": 600,
+                    "_startamount": 900,
+                    "_pct": "66,67",
+                    "_price": "0,10",
+                    "_stockvalue": "60,00"
+                },
+                {
+                    "_id": 47,
+                    "_amount": 600,
+                    "_startamount": 900,
+                    "_pct": "66,67",
+                    "_price": "3,50",
+                    "_stockvalue": "2100,00"
+                },
+                {
+                    "_id": 48,
+                    "_amount": 1200,
+                    "_startamount": 1800,
+                    "_pct": "66,67",
+                    "_price": "1,50",
+                    "_stockvalue": "1800,00"
+                },
+                {
+                    "_id": 49,
+                    "_amount": 100,
+                    "_startamount": 100,
+                    "_pct": "100,00",
+                    "_price": "64,83",
+                    "_stockvalue": "6482,78"
+                },
+                {
+                    "_id": 50,
+                    "_amount": 100,
+                    "_startamount": 100,
+                    "_pct": "100,00",
+                    "_price": "120,82",
+                    "_stockvalue": "12082,20"
+                },
+                {
+                    "_id": 51,
+                    "_amount": 100,
+                    "_startamount": 100,
+                    "_pct": "100,00",
+                    "_price": "137,65",
+                    "_stockvalue": "13764,50"
+                },
+                {
+                    "_id": 52,
+                    "_amount": 400,
+                    "_startamount": 600,
+                    "_pct": "66,67",
+                    "_price": "22,00",
+                    "_stockvalue": "8800,00"
+                },
+                {
+                    "_id": 53,
+                    "_amount": 14800,
+                    "_startamount": 22000,
+                    "_pct": "67,27",
+                    "_price": "0,10",
+                    "_stockvalue": "1480,00"
+                },
+                {
+                    "_id": 54,
+                    "_amount": 100,
+                    "_startamount": 100,
+                    "_pct": "100,00",
+                    "_price": "68,13",
+                    "_stockvalue": "6812,54"
+                },
+                {
+                    "_id": 55,
+                    "_amount": 100,
+                    "_startamount": 100,
+                    "_pct": "100,00",
+                    "_price": "125,67",
+                    "_stockvalue": "12567,20"
+                },
+                {
+                    "_id": 56,
+                    "_amount": 100,
+                    "_startamount": 100,
+                    "_pct": "100,00",
+                    "_price": "142,84",
+                    "_stockvalue": "14283,50"
+                },
+                {
+                    "_id": 57,
+                    "_amount": 400,
+                    "_startamount": 600,
+                    "_pct": "66,67",
+                    "_price": "22,00",
+                    "_stockvalue": "8800,00"
+                },
+                {
+                    "_id": 58,
+                    "_amount": 14800,
+                    "_startamount": 22000,
+                    "_pct": "67,27",
+                    "_price": "0,10",
+                    "_stockvalue": "1480,00"
+                },
+                {
+                    "_id": 59,
+                    "_amount": 1260,
+                    "_startamount": 1800,
+                    "_pct": "70,00",
+                    "_price": "0,15",
+                    "_stockvalue": "189,00"
+                }
+            ],
+            "totalstockvalue": "239970,56"
+        },
+        "inwardstockmovement": {
+            "order": [
+                {
+                    "_orderperiod": 1,
+                    "_id": 20,
+                    "_mode": 4,
+                    "_article": 39,
+                    "_amount": 1800,
+                    "_time": 5760,
+                    "_materialcosts": "2430,00",
+                    "_ordercosts": "750,00",
+                    "_entirecosts": "3180,00",
+                    "_piececosts": "1,77"
+                },
+                {
+                    "_orderperiod": 1,
+                    "_id": 3,
+                    "_mode": 5,
+                    "_article": 25,
+                    "_amount": 1560,
+                    "_time": 7200,
+                    "_materialcosts": "93,60",
+                    "_ordercosts": "50,00",
+                    "_entirecosts": "143,60",
+                    "_piececosts": "0,09"
+                },
+                {
+                    "_orderperiod": 1,
+                    "_id": 4,
+                    "_mode": 5,
+                    "_article": 27,
+                    "_amount": 1800,
+                    "_time": 7200,
+                    "_materialcosts": "162,00",
+                    "_ordercosts": "75,00",
+                    "_entirecosts": "237,00",
+                    "_piececosts": "0,13"
+                },
+                {
+                    "_orderperiod": 1,
+                    "_id": 19,
+                    "_mode": 4,
+                    "_article": 38,
+                    "_amount": 1000,
+                    "_time": 7200,
+                    "_materialcosts": "1350,00",
+                    "_ordercosts": "500,00",
+                    "_entirecosts": "1850,00",
+                    "_piececosts": "1,85"
+                }
+            ]
+        },
+        "futureinwardstockmovement": {
+            "order": [
+                {
+                    "_orderperiod": 1,
+                    "_id": 9,
+                    "_mode": 5,
+                    "_article": 41,
+                    "_amount": 400
+                },
+                {
+                    "_orderperiod": 1,
+                    "_id": 11,
+                    "_mode": 5,
+                    "_article": 44,
+                    "_amount": 1200
+                },
+                {
+                    "_orderperiod": 1,
+                    "_id": 13,
+                    "_mode": 5,
+                    "_article": 46,
+                    "_amount": 400
+                },
+                {
+                    "_orderperiod": 1,
+                    "_id": 14,
+                    "_mode": 5,
+                    "_article": 47,
+                    "_amount": 400
+                },
+                {
+                    "_orderperiod": 1,
+                    "_id": 18,
+                    "_mode": 4,
+                    "_article": 32,
+                    "_amount": 2700
+                },
+                {
+                    "_orderperiod": 1,
+                    "_id": 6,
+                    "_mode": 5,
+                    "_article": 36,
+                    "_amount": 400
+                },
+                {
+                    "_orderperiod": 1,
+                    "_id": 15,
+                    "_mode": 5,
+                    "_article": 48,
+                    "_amount": 800
+                },
+                {
+                    "_orderperiod": 1,
+                    "_id": 7,
+                    "_mode": 5,
+                    "_article": 37,
+                    "_amount": 400
+                },
+                {
+                    "_orderperiod": 1,
+                    "_id": 17,
+                    "_mode": 5,
+                    "_article": 53,
+                    "_amount": 22000
+                },
+                {
+                    "_orderperiod": 1,
+                    "_id": 8,
+                    "_mode": 5,
+                    "_article": 40,
+                    "_amount": 400
+                },
+                {
+                    "_orderperiod": 1,
+                    "_id": 10,
+                    "_mode": 5,
+                    "_article": 42,
+                    "_amount": 800
+                },
+                {
+                    "_orderperiod": 1,
+                    "_id": 2,
+                    "_mode": 5,
+                    "_article": 22,
+                    "_amount": 100
+                },
+                {
+                    "_orderperiod": 1,
+                    "_id": 5,
+                    "_mode": 5,
+                    "_article": 28,
+                    "_amount": 3000
+                },
+                {
+                    "_orderperiod": 1,
+                    "_id": 12,
+                    "_mode": 5,
+                    "_article": 45,
+                    "_amount": 400
+                },
+                {
+                    "_orderperiod": 1,
+                    "_id": 16,
+                    "_mode": 5,
+                    "_article": 52,
+                    "_amount": 600
+                },
+                {
+                    "_orderperiod": 1,
+                    "_id": 1,
+                    "_mode": 5,
+                    "_article": 21,
+                    "_amount": 300
+                }
+            ]
+        },
+        "idletimecosts": {
+            "workplace": [
+                {
+                    "_id": 1,
+                    "_setupevents": 3,
+                    "_idletime": 540,
+                    "_wageidletimecosts": "243,00",
+                    "_wagecosts": "837,00",
+                    "_machineidletimecosts": "5,40"
+                },
+                {
+                    "_id": 2,
+                    "_setupevents": 3,
+                    "_idletime": 820,
+                    "_wageidletimecosts": "369,00",
+                    "_wagecosts": "711,00",
+                    "_machineidletimecosts": "8,20"
+                },
+                {
+                    "_id": 3,
+                    "_setupevents": 3,
+                    "_idletime": 640,
+                    "_wageidletimecosts": "288,00",
+                    "_wagecosts": "792,00",
+                    "_machineidletimecosts": "6,40"
+                },
+                {
+                    "_id": 4,
+                    "_setupevents": 3,
+                    "_idletime": 320,
+                    "_wageidletimecosts": "144,00",
+                    "_wagecosts": "936,00",
+                    "_machineidletimecosts": "3,20"
+                },
+                {
+                    "_id": 6,
+                    "_setupevents": 4,
+                    "_idletime": 840,
+                    "_wageidletimecosts": "378,00",
+                    "_wagecosts": "702,00",
+                    "_machineidletimecosts": "84,00"
+                },
+                {
+                    "_id": 7,
+                    "_setupevents": 10,
+                    "_idletime": 0,
+                    "_wageidletimecosts": "0,00",
+                    "_wagecosts": "1210,50",
+                    "_machineidletimecosts": "0,00"
+                },
+                {
+                    "_id": 8,
+                    "_setupevents": 10,
+                    "_idletime": 390,
+                    "_wageidletimecosts": "175,50",
+                    "_wagecosts": "904,50",
+                    "_machineidletimecosts": "39,00"
+                },
+                {
+                    "_id": 9,
+                    "_setupevents": 7,
+                    "_idletime": 670,
+                    "_wageidletimecosts": "326,70",
+                    "_wagecosts": "1005,30",
+                    "_machineidletimecosts": "167,50"
+                },
+                {
+                    "_id": 10,
+                    "_setupevents": 6,
+                    "_idletime": 120,
+                    "_wageidletimecosts": "75,60",
+                    "_wagecosts": "1220,40",
+                    "_machineidletimecosts": "12,00"
+                },
+                {
+                    "_id": 11,
+                    "_setupevents": 6,
+                    "_idletime": 500,
+                    "_wageidletimecosts": "225,00",
+                    "_wagecosts": "855,00",
+                    "_machineidletimecosts": "50,00"
+                },
+                {
+                    "_id": 12,
+                    "_setupevents": 6,
+                    "_idletime": 600,
+                    "_wageidletimecosts": "270,00",
+                    "_wagecosts": "810,00",
+                    "_machineidletimecosts": "60,00"
+                },
+                {
+                    "_id": 13,
+                    "_setupevents": 6,
+                    "_idletime": 1200,
+                    "_wageidletimecosts": "540,00",
+                    "_wagecosts": "540,00",
+                    "_machineidletimecosts": "180,00"
+                },
+                {
+                    "_id": 14,
+                    "_setupevents": 1,
+                    "_idletime": 1500,
+                    "_wageidletimecosts": "675,00",
+                    "_wagecosts": "405,00",
+                    "_machineidletimecosts": "15,00"
+                },
+                {
+                    "_id": 15,
+                    "_setupevents": 3,
+                    "_idletime": 555,
+                    "_wageidletimecosts": "249,75",
+                    "_wagecosts": "830,25",
+                    "_machineidletimecosts": "5,55"
+                }
+            ],
+            "sum": {
+                "_setupevents": 71,
+                "_idletime": 8695,
+                "_wageidletimecosts": "3959,55",
+                "_wagecosts": "11758,95",
+                "_machineidletimecosts": "636,25"
+            }
+        },
+        "waitinglistworkstations": {
+            "workplace": [
+                {
+                    "_id": 1,
+                    "_timeneed": 0
+                },
+                {
+                    "_id": 2,
+                    "_timeneed": 0
+                },
+                {
+                    "_id": 3,
+                    "_timeneed": 0
+                },
+                {
+                    "_id": 4,
+                    "_timeneed": 0
+                },
+                {
+                    "_id": 6,
+                    "_timeneed": 0
+                },
+                {
+                    "_id": 7,
+                    "_timeneed": 40,
+                    "waitinglist": {
+                        "_period": 1,
+                        "_order": 27,
+                        "_firstbatch": 9,
+                        "_lastbatch": 10,
+                        "_item": 20,
+                        "_amount": 20,
+                        "_timeneed": 40
+                    }
+                },
+                {
+                    "_id": 8,
+                    "_timeneed": 60,
+                    "waitinglist": {
+                        "_period": 1,
+                        "_order": 27,
+                        "_firstbatch": 9,
+                        "_lastbatch": 10,
+                        "_item": 20,
+                        "_amount": 20,
+                        "_timeneed": 60
+                    }
+                },
+                {
+                    "_id": 9,
+                    "_timeneed": 360,
+                    "waitinglist": [
+                        {
+                            "_period": 1,
+                            "_order": 27,
+                            "_firstbatch": 9,
+                            "_lastbatch": 10,
+                            "_item": 20,
+                            "_amount": 20,
+                            "_timeneed": 40
+                        },
+                        {
+                            "_period": 1,
+                            "_order": 26,
+                            "_firstbatch": 1,
+                            "_lastbatch": 10,
+                            "_item": 15,
+                            "_amount": 100,
+                            "_timeneed": 200
+                        },
+                        {
+                            "_period": 1,
+                            "_order": 27,
+                            "_firstbatch": 1,
+                            "_lastbatch": 6,
+                            "_item": 20,
+                            "_amount": 60,
+                            "_timeneed": 120
+                        }
+                    ]
+                },
+                {
+                    "_id": 10,
+                    "_timeneed": 0
+                },
+                {
+                    "_id": 11,
+                    "_timeneed": 0
+                },
+                {
+                    "_id": 12,
+                    "_timeneed": 0
+                },
+                {
+                    "_id": 13,
+                    "_timeneed": 0
+                },
+                {
+                    "_id": 14,
+                    "_timeneed": 0
+                },
+                {
+                    "_id": 15,
+                    "_timeneed": 0
+                }
+            ]
+        },
+        "waitingliststock": "",
+        "ordersinwork": {
+            "workplace": [
+                {
+                    "_id": 7,
+                    "_period": 1,
+                    "_order": 27,
+                    "_batch": 7,
+                    "_item": 20,
+                    "_amount": 10,
+                    "_timeneed": 10
+                },
+                {
+                    "_id": 8,
+                    "_period": 1,
+                    "_order": 27,
+                    "_batch": 8,
+                    "_item": 20,
+                    "_amount": 10,
+                    "_timeneed": 30
+                },
+                {
+                    "_id": 9,
+                    "_period": 1,
+                    "_order": 23,
+                    "_batch": 10,
+                    "_item": 12,
+                    "_amount": 10,
+                    "_timeneed": 28
+                }
+            ]
+        },
+        "completedorders": {
+            "order": [
+                {
+                    "_period": 1,
+                    "_id": 1,
+                    "_item": 26,
+                    "_quantity": 300,
+                    "_cost": "3192,60",
+                    "_averageunitcosts": "10,64",
+                    "batch": [
+                        {
+                            "_id": 1,
+                            "_amount": 10,
+                            "_cycletime": 120,
+                            "_cost": "135,00"
+                        },
+                        {
+                            "_id": 2,
+                            "_amount": 10,
+                            "_cycletime": 100,
+                            "_cost": "105,00"
+                        },
+                        {
+                            "_id": 3,
+                            "_amount": 10,
+                            "_cycletime": 110,
+                            "_cost": "105,00"
+                        },
+                        {
+                            "_id": 4,
+                            "_amount": 10,
+                            "_cycletime": 120,
+                            "_cost": "105,00"
+                        },
+                        {
+                            "_id": 5,
+                            "_amount": 10,
+                            "_cycletime": 130,
+                            "_cost": "105,00"
+                        },
+                        {
+                            "_id": 6,
+                            "_amount": 10,
+                            "_cycletime": 140,
+                            "_cost": "105,00"
+                        },
+                        {
+                            "_id": 7,
+                            "_amount": 10,
+                            "_cycletime": 150,
+                            "_cost": "105,00"
+                        },
+                        {
+                            "_id": 8,
+                            "_amount": 10,
+                            "_cycletime": 160,
+                            "_cost": "105,00"
+                        },
+                        {
+                            "_id": 9,
+                            "_amount": 10,
+                            "_cycletime": 170,
+                            "_cost": "105,00"
+                        },
+                        {
+                            "_id": 10,
+                            "_amount": 10,
+                            "_cycletime": 180,
+                            "_cost": "105,00"
+                        },
+                        {
+                            "_id": 11,
+                            "_amount": 10,
+                            "_cycletime": 190,
+                            "_cost": "105,00"
+                        },
+                        {
+                            "_id": 12,
+                            "_amount": 10,
+                            "_cycletime": 200,
+                            "_cost": "105,00"
+                        },
+                        {
+                            "_id": 13,
+                            "_amount": 10,
+                            "_cycletime": 210,
+                            "_cost": "105,00"
+                        },
+                        {
+                            "_id": 14,
+                            "_amount": 10,
+                            "_cycletime": 1180,
+                            "_cost": "105,00"
+                        },
+                        {
+                            "_id": 15,
+                            "_amount": 10,
+                            "_cycletime": 1190,
+                            "_cost": "105,00"
+                        },
+                        {
+                            "_id": 16,
+                            "_amount": 10,
+                            "_cycletime": 1200,
+                            "_cost": "105,00"
+                        },
+                        {
+                            "_id": 17,
+                            "_amount": 10,
+                            "_cycletime": 1210,
+                            "_cost": "105,00"
+                        },
+                        {
+                            "_id": 18,
+                            "_amount": 10,
+                            "_cycletime": 1220,
+                            "_cost": "105,00"
+                        },
+                        {
+                            "_id": 19,
+                            "_amount": 10,
+                            "_cycletime": 1230,
+                            "_cost": "105,00"
+                        },
+                        {
+                            "_id": 20,
+                            "_amount": 10,
+                            "_cycletime": 1240,
+                            "_cost": "105,00"
+                        },
+                        {
+                            "_id": 21,
+                            "_amount": 10,
+                            "_cycletime": 1250,
+                            "_cost": "105,00"
+                        },
+                        {
+                            "_id": 22,
+                            "_amount": 10,
+                            "_cycletime": 1260,
+                            "_cost": "105,00"
+                        },
+                        {
+                            "_id": 23,
+                            "_amount": 10,
+                            "_cycletime": 1270,
+                            "_cost": "109,50"
+                        },
+                        {
+                            "_id": 24,
+                            "_amount": 10,
+                            "_cycletime": 1280,
+                            "_cost": "113,10"
+                        },
+                        {
+                            "_id": 25,
+                            "_amount": 10,
+                            "_cycletime": 358,
+                            "_cost": "105,00"
+                        },
+                        {
+                            "_id": 26,
+                            "_amount": 10,
+                            "_cycletime": 368,
+                            "_cost": "105,00"
+                        },
+                        {
+                            "_id": 27,
+                            "_amount": 10,
+                            "_cycletime": 378,
+                            "_cost": "105,00"
+                        },
+                        {
+                            "_id": 28,
+                            "_amount": 10,
+                            "_cycletime": 388,
+                            "_cost": "105,00"
+                        },
+                        {
+                            "_id": 29,
+                            "_amount": 10,
+                            "_cycletime": 398,
+                            "_cost": "105,00"
+                        },
+                        {
+                            "_id": 30,
+                            "_amount": 10,
+                            "_cycletime": 1368,
+                            "_cost": "105,00"
+                        }
+                    ]
+                },
+                {
+                    "_period": 1,
+                    "_id": 2,
+                    "_item": 51,
+                    "_quantity": 100,
+                    "_cost": "13776,63",
+                    "_averageunitcosts": "137,77",
+                    "batch": [
+                        {
+                            "_id": 1,
+                            "_amount": 10,
+                            "_cycletime": 70,
+                            "_cost": "1384,70"
+                        },
+                        {
+                            "_id": 2,
+                            "_amount": 10,
+                            "_cycletime": 50,
+                            "_cost": "1375,32"
+                        },
+                        {
+                            "_id": 3,
+                            "_amount": 10,
+                            "_cycletime": 50,
+                            "_cost": "1376,97"
+                        },
+                        {
+                            "_id": 4,
+                            "_amount": 10,
+                            "_cycletime": 50,
+                            "_cost": "1376,76"
+                        },
+                        {
+                            "_id": 5,
+                            "_amount": 10,
+                            "_cycletime": 50,
+                            "_cost": "1376,98"
+                        },
+                        {
+                            "_id": 6,
+                            "_amount": 10,
+                            "_cycletime": 50,
+                            "_cost": "1377,11"
+                        },
+                        {
+                            "_id": 7,
+                            "_amount": 10,
+                            "_cycletime": 50,
+                            "_cost": "1377,18"
+                        },
+                        {
+                            "_id": 8,
+                            "_amount": 10,
+                            "_cycletime": 50,
+                            "_cost": "1377,21"
+                        },
+                        {
+                            "_id": 9,
+                            "_amount": 10,
+                            "_cycletime": 50,
+                            "_cost": "1377,22"
+                        },
+                        {
+                            "_id": 10,
+                            "_amount": 10,
+                            "_cycletime": 1010,
+                            "_cost": "1377,18"
+                        }
+                    ]
+                },
+                {
+                    "_period": 1,
+                    "_id": 3,
+                    "_item": 16,
+                    "_quantity": 300,
+                    "_cost": "2117,25",
+                    "_averageunitcosts": "7,06",
+                    "batch": [
+                        {
+                            "_id": 1,
+                            "_amount": 10,
+                            "_cycletime": 65,
+                            "_cost": "81,45"
+                        },
+                        {
+                            "_id": 2,
+                            "_amount": 10,
+                            "_cycletime": 60,
+                            "_cost": "70,20"
+                        },
+                        {
+                            "_id": 3,
+                            "_amount": 10,
+                            "_cycletime": 70,
+                            "_cost": "70,20"
+                        },
+                        {
+                            "_id": 4,
+                            "_amount": 10,
+                            "_cycletime": 80,
+                            "_cost": "70,20"
+                        },
+                        {
+                            "_id": 5,
+                            "_amount": 10,
+                            "_cycletime": 90,
+                            "_cost": "70,20"
+                        },
+                        {
+                            "_id": 6,
+                            "_amount": 10,
+                            "_cycletime": 100,
+                            "_cost": "70,20"
+                        },
+                        {
+                            "_id": 7,
+                            "_amount": 10,
+                            "_cycletime": 110,
+                            "_cost": "70,20"
+                        },
+                        {
+                            "_id": 8,
+                            "_amount": 10,
+                            "_cycletime": 120,
+                            "_cost": "70,20"
+                        },
+                        {
+                            "_id": 9,
+                            "_amount": 10,
+                            "_cycletime": 130,
+                            "_cost": "70,20"
+                        },
+                        {
+                            "_id": 10,
+                            "_amount": 10,
+                            "_cycletime": 140,
+                            "_cost": "70,20"
+                        },
+                        {
+                            "_id": 11,
+                            "_amount": 10,
+                            "_cycletime": 150,
+                            "_cost": "70,20"
+                        },
+                        {
+                            "_id": 12,
+                            "_amount": 10,
+                            "_cycletime": 160,
+                            "_cost": "70,20"
+                        },
+                        {
+                            "_id": 13,
+                            "_amount": 10,
+                            "_cycletime": 170,
+                            "_cost": "70,20"
+                        },
+                        {
+                            "_id": 14,
+                            "_amount": 10,
+                            "_cycletime": 180,
+                            "_cost": "70,20"
+                        },
+                        {
+                            "_id": 15,
+                            "_amount": 10,
+                            "_cycletime": 1150,
+                            "_cost": "70,20"
+                        },
+                        {
+                            "_id": 16,
+                            "_amount": 10,
+                            "_cycletime": 1160,
+                            "_cost": "70,20"
+                        },
+                        {
+                            "_id": 17,
+                            "_amount": 10,
+                            "_cycletime": 1170,
+                            "_cost": "70,20"
+                        },
+                        {
+                            "_id": 18,
+                            "_amount": 10,
+                            "_cycletime": 1180,
+                            "_cost": "70,20"
+                        },
+                        {
+                            "_id": 19,
+                            "_amount": 10,
+                            "_cycletime": 1190,
+                            "_cost": "70,20"
+                        },
+                        {
+                            "_id": 20,
+                            "_amount": 10,
+                            "_cycletime": 1200,
+                            "_cost": "70,20"
+                        },
+                        {
+                            "_id": 21,
+                            "_amount": 10,
+                            "_cycletime": 1210,
+                            "_cost": "70,20"
+                        },
+                        {
+                            "_id": 22,
+                            "_amount": 10,
+                            "_cycletime": 1220,
+                            "_cost": "70,20"
+                        },
+                        {
+                            "_id": 23,
+                            "_amount": 10,
+                            "_cycletime": 1230,
+                            "_cost": "70,20"
+                        },
+                        {
+                            "_id": 24,
+                            "_amount": 10,
+                            "_cycletime": 1240,
+                            "_cost": "70,20"
+                        },
+                        {
+                            "_id": 25,
+                            "_amount": 10,
+                            "_cycletime": 290,
+                            "_cost": "70,20"
+                        },
+                        {
+                            "_id": 26,
+                            "_amount": 10,
+                            "_cycletime": 300,
+                            "_cost": "70,20"
+                        },
+                        {
+                            "_id": 27,
+                            "_amount": 10,
+                            "_cycletime": 310,
+                            "_cost": "70,20"
+                        },
+                        {
+                            "_id": 28,
+                            "_amount": 10,
+                            "_cycletime": 320,
+                            "_cost": "70,20"
+                        },
+                        {
+                            "_id": 29,
+                            "_amount": 10,
+                            "_cycletime": 330,
+                            "_cost": "70,20"
+                        },
+                        {
+                            "_id": 30,
+                            "_amount": 10,
+                            "_cycletime": 340,
+                            "_cost": "70,20"
+                        }
+                    ]
+                },
+                {
+                    "_period": 1,
+                    "_id": 4,
+                    "_item": 17,
+                    "_quantity": 300,
+                    "_cost": "2163,00",
+                    "_averageunitcosts": "7,21",
+                    "batch": [
+                        {
+                            "_id": 1,
+                            "_amount": 10,
+                            "_cycletime": 45,
+                            "_cost": "79,10"
+                        },
+                        {
+                            "_id": 2,
+                            "_amount": 10,
+                            "_cycletime": 30,
+                            "_cost": "71,60"
+                        },
+                        {
+                            "_id": 3,
+                            "_amount": 10,
+                            "_cycletime": 45,
+                            "_cost": "79,10"
+                        },
+                        {
+                            "_id": 4,
+                            "_amount": 10,
+                            "_cycletime": 30,
+                            "_cost": "71,60"
+                        },
+                        {
+                            "_id": 5,
+                            "_amount": 10,
+                            "_cycletime": 30,
+                            "_cost": "71,60"
+                        },
+                        {
+                            "_id": 6,
+                            "_amount": 10,
+                            "_cycletime": 30,
+                            "_cost": "71,60"
+                        },
+                        {
+                            "_id": 7,
+                            "_amount": 10,
+                            "_cycletime": 30,
+                            "_cost": "71,60"
+                        },
+                        {
+                            "_id": 8,
+                            "_amount": 10,
+                            "_cycletime": 30,
+                            "_cost": "71,60"
+                        },
+                        {
+                            "_id": 9,
+                            "_amount": 10,
+                            "_cycletime": 30,
+                            "_cost": "71,60"
+                        },
+                        {
+                            "_id": 10,
+                            "_amount": 10,
+                            "_cycletime": 30,
+                            "_cost": "71,60"
+                        },
+                        {
+                            "_id": 11,
+                            "_amount": 10,
+                            "_cycletime": 30,
+                            "_cost": "71,60"
+                        },
+                        {
+                            "_id": 12,
+                            "_amount": 10,
+                            "_cycletime": 30,
+                            "_cost": "71,60"
+                        },
+                        {
+                            "_id": 13,
+                            "_amount": 10,
+                            "_cycletime": 30,
+                            "_cost": "71,60"
+                        },
+                        {
+                            "_id": 14,
+                            "_amount": 10,
+                            "_cycletime": 30,
+                            "_cost": "71,60"
+                        },
+                        {
+                            "_id": 15,
+                            "_amount": 10,
+                            "_cycletime": 30,
+                            "_cost": "71,60"
+                        },
+                        {
+                            "_id": 16,
+                            "_amount": 10,
+                            "_cycletime": 30,
+                            "_cost": "71,60"
+                        },
+                        {
+                            "_id": 17,
+                            "_amount": 10,
+                            "_cycletime": 990,
+                            "_cost": "71,60"
+                        },
+                        {
+                            "_id": 18,
+                            "_amount": 10,
+                            "_cycletime": 30,
+                            "_cost": "71,60"
+                        },
+                        {
+                            "_id": 19,
+                            "_amount": 10,
+                            "_cycletime": 30,
+                            "_cost": "71,60"
+                        },
+                        {
+                            "_id": 20,
+                            "_amount": 10,
+                            "_cycletime": 30,
+                            "_cost": "71,60"
+                        },
+                        {
+                            "_id": 21,
+                            "_amount": 10,
+                            "_cycletime": 30,
+                            "_cost": "71,60"
+                        },
+                        {
+                            "_id": 22,
+                            "_amount": 10,
+                            "_cycletime": 30,
+                            "_cost": "71,60"
+                        },
+                        {
+                            "_id": 23,
+                            "_amount": 10,
+                            "_cycletime": 30,
+                            "_cost": "71,60"
+                        },
+                        {
+                            "_id": 24,
+                            "_amount": 10,
+                            "_cycletime": 30,
+                            "_cost": "71,60"
+                        },
+                        {
+                            "_id": 25,
+                            "_amount": 10,
+                            "_cycletime": 30,
+                            "_cost": "71,60"
+                        },
+                        {
+                            "_id": 26,
+                            "_amount": 10,
+                            "_cycletime": 30,
+                            "_cost": "71,60"
+                        },
+                        {
+                            "_id": 27,
+                            "_amount": 10,
+                            "_cycletime": 30,
+                            "_cost": "71,60"
+                        },
+                        {
+                            "_id": 28,
+                            "_amount": 10,
+                            "_cycletime": 30,
+                            "_cost": "71,60"
+                        },
+                        {
+                            "_id": 29,
+                            "_amount": 10,
+                            "_cycletime": 30,
+                            "_cost": "71,60"
+                        },
+                        {
+                            "_id": 30,
+                            "_amount": 10,
+                            "_cycletime": 30,
+                            "_cost": "71,60"
+                        }
+                    ]
+                },
+                {
+                    "_period": 1,
+                    "_id": 5,
+                    "_item": 50,
+                    "_quantity": 100,
+                    "_cost": "12096,87",
+                    "_averageunitcosts": "120,97",
+                    "batch": [
+                        {
+                            "_id": 1,
+                            "_amount": 10,
+                            "_cycletime": 80,
+                            "_cost": "1221,30"
+                        },
+                        {
+                            "_id": 2,
+                            "_amount": 10,
+                            "_cycletime": 50,
+                            "_cost": "1206,30"
+                        },
+                        {
+                            "_id": 3,
+                            "_amount": 10,
+                            "_cycletime": 50,
+                            "_cost": "1209,91"
+                        },
+                        {
+                            "_id": 4,
+                            "_amount": 10,
+                            "_cycletime": 50,
+                            "_cost": "1209,29"
+                        },
+                        {
+                            "_id": 5,
+                            "_amount": 10,
+                            "_cycletime": 50,
+                            "_cost": "1208,98"
+                        },
+                        {
+                            "_id": 6,
+                            "_amount": 10,
+                            "_cycletime": 50,
+                            "_cost": "1208,70"
+                        },
+                        {
+                            "_id": 7,
+                            "_amount": 10,
+                            "_cycletime": 50,
+                            "_cost": "1208,45"
+                        },
+                        {
+                            "_id": 8,
+                            "_amount": 10,
+                            "_cycletime": 50,
+                            "_cost": "1208,11"
+                        },
+                        {
+                            "_id": 9,
+                            "_amount": 10,
+                            "_cycletime": 50,
+                            "_cost": "1208,00"
+                        },
+                        {
+                            "_id": 10,
+                            "_amount": 10,
+                            "_cycletime": 1010,
+                            "_cost": "1207,83"
+                        }
+                    ]
+                },
+                {
+                    "_period": 1,
+                    "_id": 6,
+                    "_item": 4,
+                    "_quantity": 100,
+                    "_cost": "4107,50",
+                    "_averageunitcosts": "41,08",
+                    "batch": [
+                        {
+                            "_id": 1,
+                            "_amount": 10,
+                            "_cycletime": 100,
+                            "_cost": "431,00"
+                        },
+                        {
+                            "_id": 2,
+                            "_amount": 10,
+                            "_cycletime": 70,
+                            "_cost": "408,50"
+                        },
+                        {
+                            "_id": 3,
+                            "_amount": 10,
+                            "_cycletime": 70,
+                            "_cost": "408,50"
+                        },
+                        {
+                            "_id": 4,
+                            "_amount": 10,
+                            "_cycletime": 70,
+                            "_cost": "408,50"
+                        },
+                        {
+                            "_id": 5,
+                            "_amount": 10,
+                            "_cycletime": 70,
+                            "_cost": "408,50"
+                        },
+                        {
+                            "_id": 6,
+                            "_amount": 10,
+                            "_cycletime": 70,
+                            "_cost": "408,50"
+                        },
+                        {
+                            "_id": 7,
+                            "_amount": 10,
+                            "_cycletime": 70,
+                            "_cost": "408,50"
+                        },
+                        {
+                            "_id": 8,
+                            "_amount": 10,
+                            "_cycletime": 70,
+                            "_cost": "408,50"
+                        },
+                        {
+                            "_id": 9,
+                            "_amount": 10,
+                            "_cycletime": 70,
+                            "_cost": "408,50"
+                        },
+                        {
+                            "_id": 10,
+                            "_amount": 10,
+                            "_cycletime": 70,
+                            "_cost": "408,50"
+                        }
+                    ]
+                },
+                {
+                    "_period": 1,
+                    "_id": 7,
+                    "_item": 10,
+                    "_quantity": 100,
+                    "_cost": "1285,00",
+                    "_averageunitcosts": "12,85",
+                    "batch": [
+                        {
+                            "_id": 1,
+                            "_amount": 10,
+                            "_cycletime": 1647,
+                            "_cost": "169,00"
+                        },
+                        {
+                            "_id": 2,
+                            "_amount": 10,
+                            "_cycletime": 1657,
+                            "_cost": "124,00"
+                        },
+                        {
+                            "_id": 3,
+                            "_amount": 10,
+                            "_cycletime": 1667,
+                            "_cost": "124,00"
+                        },
+                        {
+                            "_id": 4,
+                            "_amount": 10,
+                            "_cycletime": 1677,
+                            "_cost": "124,00"
+                        },
+                        {
+                            "_id": 5,
+                            "_amount": 10,
+                            "_cycletime": 1687,
+                            "_cost": "124,00"
+                        },
+                        {
+                            "_id": 6,
+                            "_amount": 10,
+                            "_cycletime": 1697,
+                            "_cost": "124,00"
+                        },
+                        {
+                            "_id": 7,
+                            "_amount": 10,
+                            "_cycletime": 1707,
+                            "_cost": "124,00"
+                        },
+                        {
+                            "_id": 8,
+                            "_amount": 10,
+                            "_cycletime": 1717,
+                            "_cost": "124,00"
+                        },
+                        {
+                            "_id": 9,
+                            "_amount": 10,
+                            "_cycletime": 1727,
+                            "_cost": "124,00"
+                        },
+                        {
+                            "_id": 10,
+                            "_amount": 10,
+                            "_cycletime": 1737,
+                            "_cost": "124,00"
+                        }
+                    ]
+                },
+                {
+                    "_period": 1,
+                    "_id": 8,
+                    "_item": 49,
+                    "_quantity": 100,
+                    "_cost": "6489,00",
+                    "_averageunitcosts": "64,89",
+                    "batch": [
+                        {
+                            "_id": 1,
+                            "_amount": 10,
+                            "_cycletime": 80,
+                            "_cost": "656,40"
+                        },
+                        {
+                            "_id": 2,
+                            "_amount": 10,
+                            "_cycletime": 60,
+                            "_cost": "646,40"
+                        },
+                        {
+                            "_id": 3,
+                            "_amount": 10,
+                            "_cycletime": 60,
+                            "_cost": "646,40"
+                        },
+                        {
+                            "_id": 4,
+                            "_amount": 10,
+                            "_cycletime": 60,
+                            "_cost": "646,40"
+                        },
+                        {
+                            "_id": 5,
+                            "_amount": 10,
+                            "_cycletime": 60,
+                            "_cost": "646,40"
+                        },
+                        {
+                            "_id": 6,
+                            "_amount": 10,
+                            "_cycletime": 60,
+                            "_cost": "646,40"
+                        },
+                        {
+                            "_id": 7,
+                            "_amount": 10,
+                            "_cycletime": 60,
+                            "_cost": "646,40"
+                        },
+                        {
+                            "_id": 8,
+                            "_amount": 10,
+                            "_cycletime": 1020,
+                            "_cost": "646,40"
+                        },
+                        {
+                            "_id": 9,
+                            "_amount": 10,
+                            "_cycletime": 60,
+                            "_cost": "646,40"
+                        },
+                        {
+                            "_id": 10,
+                            "_amount": 10,
+                            "_cycletime": 60,
+                            "_cost": "661,40"
+                        }
+                    ]
+                },
+                {
+                    "_period": 1,
+                    "_id": 9,
+                    "_item": 7,
+                    "_quantity": 100,
+                    "_cost": "3636,60",
+                    "_averageunitcosts": "36,37",
+                    "batch": [
+                        {
+                            "_id": 1,
+                            "_amount": 10,
+                            "_cycletime": 1070,
+                            "_cost": "388,50"
+                        },
+                        {
+                            "_id": 2,
+                            "_amount": 10,
+                            "_cycletime": 1040,
+                            "_cost": "376,50"
+                        },
+                        {
+                            "_id": 3,
+                            "_amount": 10,
+                            "_cycletime": 1030,
+                            "_cost": "362,10"
+                        },
+                        {
+                            "_id": 4,
+                            "_amount": 10,
+                            "_cycletime": 108,
+                            "_cost": "358,50"
+                        },
+                        {
+                            "_id": 5,
+                            "_amount": 10,
+                            "_cycletime": 98,
+                            "_cost": "358,50"
+                        },
+                        {
+                            "_id": 6,
+                            "_amount": 10,
+                            "_cycletime": 88,
+                            "_cost": "358,50"
+                        },
+                        {
+                            "_id": 7,
+                            "_amount": 10,
+                            "_cycletime": 78,
+                            "_cost": "358,50"
+                        },
+                        {
+                            "_id": 8,
+                            "_amount": 10,
+                            "_cycletime": 70,
+                            "_cost": "358,50"
+                        },
+                        {
+                            "_id": 9,
+                            "_amount": 10,
+                            "_cycletime": 70,
+                            "_cost": "358,50"
+                        },
+                        {
+                            "_id": 10,
+                            "_amount": 10,
+                            "_cycletime": 70,
+                            "_cost": "358,50"
+                        }
+                    ]
+                },
+                {
+                    "_period": 1,
+                    "_id": 10,
+                    "_item": 13,
+                    "_quantity": 100,
+                    "_cost": "1322,80",
+                    "_averageunitcosts": "13,23",
+                    "batch": [
+                        {
+                            "_id": 1,
+                            "_amount": 10,
+                            "_cycletime": 1762,
+                            "_cost": "187,90"
+                        },
+                        {
+                            "_id": 2,
+                            "_amount": 10,
+                            "_cycletime": 2676,
+                            "_cost": "130,30"
+                        },
+                        {
+                            "_id": 3,
+                            "_amount": 10,
+                            "_cycletime": 2686,
+                            "_cost": "124,00"
+                        },
+                        {
+                            "_id": 4,
+                            "_amount": 10,
+                            "_cycletime": 2696,
+                            "_cost": "124,00"
+                        },
+                        {
+                            "_id": 5,
+                            "_amount": 10,
+                            "_cycletime": 2706,
+                            "_cost": "124,00"
+                        },
+                        {
+                            "_id": 6,
+                            "_amount": 10,
+                            "_cycletime": 2716,
+                            "_cost": "124,90"
+                        },
+                        {
+                            "_id": 7,
+                            "_amount": 10,
+                            "_cycletime": 2726,
+                            "_cost": "133,00"
+                        },
+                        {
+                            "_id": 8,
+                            "_amount": 10,
+                            "_cycletime": 2736,
+                            "_cost": "126,70"
+                        },
+                        {
+                            "_id": 9,
+                            "_amount": 10,
+                            "_cycletime": 2746,
+                            "_cost": "124,00"
+                        },
+                        {
+                            "_id": 10,
+                            "_amount": 10,
+                            "_cycletime": 2756,
+                            "_cost": "124,00"
+                        }
+                    ]
+                },
+                {
+                    "_period": 1,
+                    "_id": 11,
+                    "_item": 18,
+                    "_quantity": 100,
+                    "_cost": "1375,00",
+                    "_averageunitcosts": "13,75",
+                    "batch": [
+                        {
+                            "_id": 1,
+                            "_amount": 10,
+                            "_cycletime": 1596,
+                            "_cost": "191,50"
+                        },
+                        {
+                            "_id": 2,
+                            "_amount": 10,
+                            "_cycletime": 1571,
+                            "_cost": "131,50"
+                        },
+                        {
+                            "_id": 3,
+                            "_amount": 10,
+                            "_cycletime": 1561,
+                            "_cost": "131,50"
+                        },
+                        {
+                            "_id": 4,
+                            "_amount": 10,
+                            "_cycletime": 1551,
+                            "_cost": "131,50"
+                        },
+                        {
+                            "_id": 5,
+                            "_amount": 10,
+                            "_cycletime": 1541,
+                            "_cost": "131,50"
+                        },
+                        {
+                            "_id": 6,
+                            "_amount": 10,
+                            "_cycletime": 1531,
+                            "_cost": "131,50"
+                        },
+                        {
+                            "_id": 7,
+                            "_amount": 10,
+                            "_cycletime": 1521,
+                            "_cost": "131,50"
+                        },
+                        {
+                            "_id": 8,
+                            "_amount": 10,
+                            "_cycletime": 1511,
+                            "_cost": "131,50"
+                        },
+                        {
+                            "_id": 9,
+                            "_amount": 10,
+                            "_cycletime": 1501,
+                            "_cost": "131,50"
+                        },
+                        {
+                            "_id": 10,
+                            "_amount": 10,
+                            "_cycletime": 1491,
+                            "_cost": "131,50"
+                        }
+                    ]
+                },
+                {
+                    "_period": 1,
+                    "_id": 12,
+                    "_item": 56,
+                    "_quantity": 100,
+                    "_cost": "14296,02",
+                    "_averageunitcosts": "142,96",
+                    "batch": [
+                        {
+                            "_id": 1,
+                            "_amount": 10,
+                            "_cycletime": 80,
+                            "_cost": "1437,18"
+                        },
+                        {
+                            "_id": 2,
+                            "_amount": 10,
+                            "_cycletime": 60,
+                            "_cost": "1427,16"
+                        },
+                        {
+                            "_id": 3,
+                            "_amount": 10,
+                            "_cycletime": 60,
+                            "_cost": "1428,82"
+                        },
+                        {
+                            "_id": 4,
+                            "_amount": 10,
+                            "_cycletime": 60,
+                            "_cost": "1428,47"
+                        },
+                        {
+                            "_id": 5,
+                            "_amount": 10,
+                            "_cycletime": 60,
+                            "_cost": "1428,46"
+                        },
+                        {
+                            "_id": 6,
+                            "_amount": 10,
+                            "_cycletime": 60,
+                            "_cost": "1428,42"
+                        },
+                        {
+                            "_id": 7,
+                            "_amount": 10,
+                            "_cycletime": 60,
+                            "_cost": "1428,39"
+                        },
+                        {
+                            "_id": 8,
+                            "_amount": 10,
+                            "_cycletime": 1020,
+                            "_cost": "1428,35"
+                        },
+                        {
+                            "_id": 9,
+                            "_amount": 10,
+                            "_cycletime": 60,
+                            "_cost": "1429,78"
+                        },
+                        {
+                            "_id": 10,
+                            "_amount": 10,
+                            "_cycletime": 60,
+                            "_cost": "1430,99"
+                        }
+                    ]
+                },
+                {
+                    "_period": 1,
+                    "_id": 13,
+                    "_item": 55,
+                    "_quantity": 100,
+                    "_cost": "12581,41",
+                    "_averageunitcosts": "125,81",
+                    "batch": [
+                        {
+                            "_id": 1,
+                            "_amount": 10,
+                            "_cycletime": 80,
+                            "_cost": "1268,30"
+                        },
+                        {
+                            "_id": 2,
+                            "_amount": 10,
+                            "_cycletime": 50,
+                            "_cost": "1253,30"
+                        },
+                        {
+                            "_id": 3,
+                            "_amount": 10,
+                            "_cycletime": 50,
+                            "_cost": "1253,30"
+                        },
+                        {
+                            "_id": 4,
+                            "_amount": 10,
+                            "_cycletime": 50,
+                            "_cost": "1254,55"
+                        },
+                        {
+                            "_id": 5,
+                            "_amount": 10,
+                            "_cycletime": 50,
+                            "_cost": "1254,39"
+                        },
+                        {
+                            "_id": 6,
+                            "_amount": 10,
+                            "_cycletime": 50,
+                            "_cost": "1254,39"
+                        },
+                        {
+                            "_id": 7,
+                            "_amount": 10,
+                            "_cycletime": 50,
+                            "_cost": "1254,24"
+                        },
+                        {
+                            "_id": 8,
+                            "_amount": 10,
+                            "_cycletime": 50,
+                            "_cost": "1262,23"
+                        },
+                        {
+                            "_id": 9,
+                            "_amount": 10,
+                            "_cycletime": 1010,
+                            "_cost": "1262,58"
+                        },
+                        {
+                            "_id": 10,
+                            "_amount": 10,
+                            "_cycletime": 50,
+                            "_cost": "1264,13"
+                        }
+                    ]
+                },
+                {
+                    "_period": 1,
+                    "_id": 14,
+                    "_item": 5,
+                    "_quantity": 100,
+                    "_cost": "4129,10",
+                    "_averageunitcosts": "41,29",
+                    "batch": [
+                        {
+                            "_id": 1,
+                            "_amount": 10,
+                            "_cycletime": 100,
+                            "_cost": "431,00"
+                        },
+                        {
+                            "_id": 2,
+                            "_amount": 10,
+                            "_cycletime": 70,
+                            "_cost": "408,50"
+                        },
+                        {
+                            "_id": 3,
+                            "_amount": 10,
+                            "_cycletime": 1030,
+                            "_cost": "408,50"
+                        },
+                        {
+                            "_id": 4,
+                            "_amount": 10,
+                            "_cycletime": 1020,
+                            "_cost": "413,90"
+                        },
+                        {
+                            "_id": 5,
+                            "_amount": 10,
+                            "_cycletime": 1010,
+                            "_cost": "424,70"
+                        },
+                        {
+                            "_id": 6,
+                            "_amount": 10,
+                            "_cycletime": 88,
+                            "_cost": "408,50"
+                        },
+                        {
+                            "_id": 7,
+                            "_amount": 10,
+                            "_cycletime": 78,
+                            "_cost": "408,50"
+                        },
+                        {
+                            "_id": 8,
+                            "_amount": 10,
+                            "_cycletime": 70,
+                            "_cost": "408,50"
+                        },
+                        {
+                            "_id": 9,
+                            "_amount": 10,
+                            "_cycletime": 70,
+                            "_cost": "408,50"
+                        },
+                        {
+                            "_id": 10,
+                            "_amount": 10,
+                            "_cycletime": 70,
+                            "_cost": "408,50"
+                        }
+                    ]
+                },
+                {
+                    "_period": 1,
+                    "_id": 15,
+                    "_item": 11,
+                    "_quantity": 100,
+                    "_cost": "1402,75",
+                    "_averageunitcosts": "14,03",
+                    "batch": [
+                        {
+                            "_id": 1,
+                            "_amount": 10,
+                            "_cycletime": 2996,
+                            "_cost": "192,70"
+                        },
+                        {
+                            "_id": 2,
+                            "_amount": 10,
+                            "_cycletime": 3910,
+                            "_cost": "151,75"
+                        },
+                        {
+                            "_id": 3,
+                            "_amount": 10,
+                            "_cycletime": 3920,
+                            "_cost": "131,50"
+                        },
+                        {
+                            "_id": 4,
+                            "_amount": 10,
+                            "_cycletime": 3930,
+                            "_cost": "131,50"
+                        },
+                        {
+                            "_id": 5,
+                            "_amount": 10,
+                            "_cycletime": 3940,
+                            "_cost": "131,50"
+                        },
+                        {
+                            "_id": 6,
+                            "_amount": 10,
+                            "_cycletime": 2990,
+                            "_cost": "131,50"
+                        },
+                        {
+                            "_id": 7,
+                            "_amount": 10,
+                            "_cycletime": 3000,
+                            "_cost": "131,50"
+                        },
+                        {
+                            "_id": 8,
+                            "_amount": 10,
+                            "_cycletime": 3010,
+                            "_cost": "131,50"
+                        },
+                        {
+                            "_id": 9,
+                            "_amount": 10,
+                            "_cycletime": 3020,
+                            "_cost": "131,50"
+                        },
+                        {
+                            "_id": 10,
+                            "_amount": 10,
+                            "_cycletime": 3030,
+                            "_cost": "137,80"
+                        }
+                    ]
+                },
+                {
+                    "_period": 1,
+                    "_id": 16,
+                    "_item": 54,
+                    "_quantity": 100,
+                    "_cost": "6819,00",
+                    "_averageunitcosts": "68,19",
+                    "batch": [
+                        {
+                            "_id": 1,
+                            "_amount": 10,
+                            "_cycletime": 80,
+                            "_cost": "690,90"
+                        },
+                        {
+                            "_id": 2,
+                            "_amount": 10,
+                            "_cycletime": 60,
+                            "_cost": "680,90"
+                        },
+                        {
+                            "_id": 3,
+                            "_amount": 10,
+                            "_cycletime": 60,
+                            "_cost": "680,90"
+                        },
+                        {
+                            "_id": 4,
+                            "_amount": 10,
+                            "_cycletime": 60,
+                            "_cost": "680,90"
+                        },
+                        {
+                            "_id": 5,
+                            "_amount": 10,
+                            "_cycletime": 60,
+                            "_cost": "680,90"
+                        },
+                        {
+                            "_id": 6,
+                            "_amount": 10,
+                            "_cycletime": 1020,
+                            "_cost": "680,90"
+                        },
+                        {
+                            "_id": 7,
+                            "_amount": 10,
+                            "_cycletime": 60,
+                            "_cost": "680,90"
+                        },
+                        {
+                            "_id": 8,
+                            "_amount": 10,
+                            "_cycletime": 60,
+                            "_cost": "680,90"
+                        },
+                        {
+                            "_id": 9,
+                            "_amount": 10,
+                            "_cycletime": 60,
+                            "_cost": "680,90"
+                        },
+                        {
+                            "_id": 10,
+                            "_amount": 10,
+                            "_cycletime": 60,
+                            "_cost": "680,90"
+                        }
+                    ]
+                },
+                {
+                    "_period": 1,
+                    "_id": 17,
+                    "_item": 8,
+                    "_quantity": 100,
+                    "_cost": "3636,60",
+                    "_averageunitcosts": "36,37",
+                    "batch": [
+                        {
+                            "_id": 1,
+                            "_amount": 10,
+                            "_cycletime": 110,
+                            "_cost": "388,50"
+                        },
+                        {
+                            "_id": 2,
+                            "_amount": 10,
+                            "_cycletime": 80,
+                            "_cost": "358,50"
+                        },
+                        {
+                            "_id": 3,
+                            "_amount": 10,
+                            "_cycletime": 70,
+                            "_cost": "358,50"
+                        },
+                        {
+                            "_id": 4,
+                            "_amount": 10,
+                            "_cycletime": 70,
+                            "_cost": "358,50"
+                        },
+                        {
+                            "_id": 5,
+                            "_amount": 10,
+                            "_cycletime": 70,
+                            "_cost": "358,50"
+                        },
+                        {
+                            "_id": 6,
+                            "_amount": 10,
+                            "_cycletime": 1030,
+                            "_cost": "358,50"
+                        },
+                        {
+                            "_id": 7,
+                            "_amount": 10,
+                            "_cycletime": 1020,
+                            "_cost": "369,30"
+                        },
+                        {
+                            "_id": 8,
+                            "_amount": 10,
+                            "_cycletime": 1010,
+                            "_cost": "369,30"
+                        },
+                        {
+                            "_id": 9,
+                            "_amount": 10,
+                            "_cycletime": 88,
+                            "_cost": "358,50"
+                        },
+                        {
+                            "_id": 10,
+                            "_amount": 10,
+                            "_cycletime": 78,
+                            "_cost": "358,50"
+                        }
+                    ]
+                },
+                {
+                    "_period": 1,
+                    "_id": 18,
+                    "_item": 14,
+                    "_quantity": 100,
+                    "_cost": "1391,50",
+                    "_averageunitcosts": "13,91",
+                    "batch": [
+                        {
+                            "_id": 1,
+                            "_amount": 10,
+                            "_cycletime": 3055,
+                            "_cost": "182,80"
+                        },
+                        {
+                            "_id": 2,
+                            "_amount": 10,
+                            "_cycletime": 3065,
+                            "_cost": "131,50"
+                        },
+                        {
+                            "_id": 3,
+                            "_amount": 10,
+                            "_cycletime": 3075,
+                            "_cost": "131,50"
+                        },
+                        {
+                            "_id": 4,
+                            "_amount": 10,
+                            "_cycletime": 3085,
+                            "_cost": "131,50"
+                        },
+                        {
+                            "_id": 5,
+                            "_amount": 10,
+                            "_cycletime": 3095,
+                            "_cost": "131,50"
+                        },
+                        {
+                            "_id": 6,
+                            "_amount": 10,
+                            "_cycletime": 3105,
+                            "_cost": "131,50"
+                        },
+                        {
+                            "_id": 7,
+                            "_amount": 10,
+                            "_cycletime": 3115,
+                            "_cost": "131,50"
+                        },
+                        {
+                            "_id": 8,
+                            "_amount": 10,
+                            "_cycletime": 3125,
+                            "_cost": "142,75"
+                        },
+                        {
+                            "_id": 9,
+                            "_amount": 10,
+                            "_cycletime": 3135,
+                            "_cost": "145,00"
+                        },
+                        {
+                            "_id": 10,
+                            "_amount": 10,
+                            "_cycletime": 4049,
+                            "_cost": "131,95"
+                        }
+                    ]
+                },
+                {
+                    "_period": 1,
+                    "_id": 19,
+                    "_item": 19,
+                    "_quantity": 100,
+                    "_cost": "1505,00",
+                    "_averageunitcosts": "15,05",
+                    "batch": [
+                        {
+                            "_id": 1,
+                            "_amount": 10,
+                            "_cycletime": 3939,
+                            "_cost": "213,50"
+                        },
+                        {
+                            "_id": 2,
+                            "_amount": 10,
+                            "_cycletime": 2954,
+                            "_cost": "143,50"
+                        },
+                        {
+                            "_id": 3,
+                            "_amount": 10,
+                            "_cycletime": 2944,
+                            "_cost": "143,50"
+                        },
+                        {
+                            "_id": 4,
+                            "_amount": 10,
+                            "_cycletime": 2934,
+                            "_cost": "143,50"
+                        },
+                        {
+                            "_id": 5,
+                            "_amount": 10,
+                            "_cycletime": 2924,
+                            "_cost": "143,50"
+                        },
+                        {
+                            "_id": 6,
+                            "_amount": 10,
+                            "_cycletime": 2914,
+                            "_cost": "143,50"
+                        },
+                        {
+                            "_id": 7,
+                            "_amount": 10,
+                            "_cycletime": 2904,
+                            "_cost": "143,50"
+                        },
+                        {
+                            "_id": 8,
+                            "_amount": 10,
+                            "_cycletime": 2894,
+                            "_cost": "143,50"
+                        },
+                        {
+                            "_id": 9,
+                            "_amount": 10,
+                            "_cycletime": 2884,
+                            "_cost": "143,50"
+                        },
+                        {
+                            "_id": 10,
+                            "_amount": 10,
+                            "_cycletime": 2874,
+                            "_cost": "143,50"
+                        }
+                    ]
+                },
+                {
+                    "_period": 1,
+                    "_id": 20,
+                    "_item": 31,
+                    "_quantity": 100,
+                    "_cost": "14510,46",
+                    "_averageunitcosts": "145,10",
+                    "batch": [
+                        {
+                            "_id": 1,
+                            "_amount": 10,
+                            "_cycletime": 80,
+                            "_cost": "1460,39"
+                        },
+                        {
+                            "_id": 2,
+                            "_amount": 10,
+                            "_cycletime": 60,
+                            "_cost": "1450,21"
+                        },
+                        {
+                            "_id": 3,
+                            "_amount": 10,
+                            "_cycletime": 60,
+                            "_cost": "1450,08"
+                        },
+                        {
+                            "_id": 4,
+                            "_amount": 10,
+                            "_cycletime": 60,
+                            "_cost": "1449,91"
+                        },
+                        {
+                            "_id": 5,
+                            "_amount": 10,
+                            "_cycletime": 1020,
+                            "_cost": "1449,95"
+                        },
+                        {
+                            "_id": 6,
+                            "_amount": 10,
+                            "_cycletime": 60,
+                            "_cost": "1449,98"
+                        },
+                        {
+                            "_id": 7,
+                            "_amount": 10,
+                            "_cycletime": 60,
+                            "_cost": "1450,00"
+                        },
+                        {
+                            "_id": 8,
+                            "_amount": 10,
+                            "_cycletime": 60,
+                            "_cost": "1450,00"
+                        },
+                        {
+                            "_id": 9,
+                            "_amount": 10,
+                            "_cycletime": 60,
+                            "_cost": "1449,98"
+                        },
+                        {
+                            "_id": 10,
+                            "_amount": 10,
+                            "_cycletime": 60,
+                            "_cost": "1449,96"
+                        }
+                    ]
+                },
+                {
+                    "_period": 1,
+                    "_id": 21,
+                    "_item": 30,
+                    "_quantity": 100,
+                    "_cost": "12769,45",
+                    "_averageunitcosts": "127,69",
+                    "batch": [
+                        {
+                            "_id": 1,
+                            "_amount": 10,
+                            "_cycletime": 70,
+                            "_cost": "1285,30"
+                        },
+                        {
+                            "_id": 2,
+                            "_amount": 10,
+                            "_cycletime": 50,
+                            "_cost": "1275,30"
+                        },
+                        {
+                            "_id": 3,
+                            "_amount": 10,
+                            "_cycletime": 50,
+                            "_cost": "1275,30"
+                        },
+                        {
+                            "_id": 4,
+                            "_amount": 10,
+                            "_cycletime": 50,
+                            "_cost": "1275,30"
+                        },
+                        {
+                            "_id": 5,
+                            "_amount": 10,
+                            "_cycletime": 50,
+                            "_cost": "1275,30"
+                        },
+                        {
+                            "_id": 6,
+                            "_amount": 10,
+                            "_cycletime": 50,
+                            "_cost": "1276,97"
+                        },
+                        {
+                            "_id": 7,
+                            "_amount": 10,
+                            "_cycletime": 50,
+                            "_cost": "1276,69"
+                        },
+                        {
+                            "_id": 8,
+                            "_amount": 10,
+                            "_cycletime": 1010,
+                            "_cost": "1276,69"
+                        },
+                        {
+                            "_id": 9,
+                            "_amount": 10,
+                            "_cycletime": 50,
+                            "_cost": "1276,41"
+                        },
+                        {
+                            "_id": 10,
+                            "_amount": 10,
+                            "_cycletime": 50,
+                            "_cost": "1276,19"
+                        }
+                    ]
+                },
+                {
+                    "_period": 1,
+                    "_id": 22,
+                    "_item": 6,
+                    "_quantity": 100,
+                    "_cost": "4131,20",
+                    "_averageunitcosts": "41,31",
+                    "batch": [
+                        {
+                            "_id": 1,
+                            "_amount": 10,
+                            "_cycletime": 110,
+                            "_cost": "438,50"
+                        },
+                        {
+                            "_id": 2,
+                            "_amount": 10,
+                            "_cycletime": 80,
+                            "_cost": "408,50"
+                        },
+                        {
+                            "_id": 3,
+                            "_amount": 10,
+                            "_cycletime": 70,
+                            "_cost": "408,50"
+                        },
+                        {
+                            "_id": 4,
+                            "_amount": 10,
+                            "_cycletime": 70,
+                            "_cost": "408,50"
+                        },
+                        {
+                            "_id": 5,
+                            "_amount": 10,
+                            "_cycletime": 70,
+                            "_cost": "408,50"
+                        },
+                        {
+                            "_id": 6,
+                            "_amount": 10,
+                            "_cycletime": 70,
+                            "_cost": "408,50"
+                        },
+                        {
+                            "_id": 7,
+                            "_amount": 10,
+                            "_cycletime": 70,
+                            "_cost": "408,50"
+                        },
+                        {
+                            "_id": 8,
+                            "_amount": 10,
+                            "_cycletime": 70,
+                            "_cost": "408,50"
+                        },
+                        {
+                            "_id": 9,
+                            "_amount": 10,
+                            "_cycletime": 1030,
+                            "_cost": "408,50"
+                        },
+                        {
+                            "_id": 10,
+                            "_amount": 10,
+                            "_cycletime": 1020,
+                            "_cost": "424,70"
+                        }
+                    ]
+                },
+                {
+                    "_period": 1,
+                    "_id": 23,
+                    "_item": 12,
+                    "_quantity": 90,
+                    "_cost": "1265,40",
+                    "_averageunitcosts": "14,06",
+                    "batch": [
+                        {
+                            "_id": 1,
+                            "_amount": 10,
+                            "_cycletime": 4294,
+                            "_cost": "176,50"
+                        },
+                        {
+                            "_id": 2,
+                            "_amount": 10,
+                            "_cycletime": 4304,
+                            "_cost": "134,20"
+                        },
+                        {
+                            "_id": 3,
+                            "_amount": 10,
+                            "_cycletime": 4314,
+                            "_cost": "140,50"
+                        },
+                        {
+                            "_id": 4,
+                            "_amount": 10,
+                            "_cycletime": 4324,
+                            "_cost": "132,40"
+                        },
+                        {
+                            "_id": 5,
+                            "_amount": 10,
+                            "_cycletime": 4334,
+                            "_cost": "131,50"
+                        },
+                        {
+                            "_id": 6,
+                            "_amount": 10,
+                            "_cycletime": 4344,
+                            "_cost": "131,50"
+                        },
+                        {
+                            "_id": 7,
+                            "_amount": 10,
+                            "_cycletime": 4354,
+                            "_cost": "131,50"
+                        },
+                        {
+                            "_id": 8,
+                            "_amount": 10,
+                            "_cycletime": 4364,
+                            "_cost": "142,30"
+                        },
+                        {
+                            "_id": 9,
+                            "_amount": 10,
+                            "_cycletime": 4374,
+                            "_cost": "145,00"
+                        }
+                    ]
+                },
+                {
+                    "_period": 1,
+                    "_id": 24,
+                    "_item": 29,
+                    "_quantity": 100,
+                    "_cost": "6939,00",
+                    "_averageunitcosts": "69,39",
+                    "batch": [
+                        {
+                            "_id": 1,
+                            "_amount": 10,
+                            "_cycletime": 80,
+                            "_cost": "702,90"
+                        },
+                        {
+                            "_id": 2,
+                            "_amount": 10,
+                            "_cycletime": 60,
+                            "_cost": "692,90"
+                        },
+                        {
+                            "_id": 3,
+                            "_amount": 10,
+                            "_cycletime": 60,
+                            "_cost": "692,90"
+                        },
+                        {
+                            "_id": 4,
+                            "_amount": 10,
+                            "_cycletime": 1020,
+                            "_cost": "692,90"
+                        },
+                        {
+                            "_id": 5,
+                            "_amount": 10,
+                            "_cycletime": 60,
+                            "_cost": "692,90"
+                        },
+                        {
+                            "_id": 6,
+                            "_amount": 10,
+                            "_cycletime": 60,
+                            "_cost": "692,90"
+                        },
+                        {
+                            "_id": 7,
+                            "_amount": 10,
+                            "_cycletime": 60,
+                            "_cost": "692,90"
+                        },
+                        {
+                            "_id": 8,
+                            "_amount": 10,
+                            "_cycletime": 60,
+                            "_cost": "692,90"
+                        },
+                        {
+                            "_id": 9,
+                            "_amount": 10,
+                            "_cycletime": 60,
+                            "_cost": "692,90"
+                        },
+                        {
+                            "_id": 10,
+                            "_amount": 10,
+                            "_cycletime": 60,
+                            "_cost": "692,90"
+                        }
+                    ]
+                },
+                {
+                    "_period": 1,
+                    "_id": 25,
+                    "_item": 9,
+                    "_quantity": 100,
+                    "_cost": "3620,40",
+                    "_averageunitcosts": "36,20",
+                    "batch": [
+                        {
+                            "_id": 1,
+                            "_amount": 10,
+                            "_cycletime": 1030,
+                            "_cost": "393,90"
+                        },
+                        {
+                            "_id": 2,
+                            "_amount": 10,
+                            "_cycletime": 88,
+                            "_cost": "358,50"
+                        },
+                        {
+                            "_id": 3,
+                            "_amount": 10,
+                            "_cycletime": 78,
+                            "_cost": "358,50"
+                        },
+                        {
+                            "_id": 4,
+                            "_amount": 10,
+                            "_cycletime": 70,
+                            "_cost": "358,50"
+                        },
+                        {
+                            "_id": 5,
+                            "_amount": 10,
+                            "_cycletime": 70,
+                            "_cost": "358,50"
+                        },
+                        {
+                            "_id": 6,
+                            "_amount": 10,
+                            "_cycletime": 70,
+                            "_cost": "358,50"
+                        },
+                        {
+                            "_id": 7,
+                            "_amount": 10,
+                            "_cycletime": 70,
+                            "_cost": "358,50"
+                        },
+                        {
+                            "_id": 8,
+                            "_amount": 10,
+                            "_cycletime": 70,
+                            "_cost": "358,50"
+                        },
+                        {
+                            "_id": 9,
+                            "_amount": 10,
+                            "_cycletime": 70,
+                            "_cost": "358,50"
+                        },
+                        {
+                            "_id": 10,
+                            "_amount": 10,
+                            "_cycletime": 70,
+                            "_cost": "358,50"
+                        }
+                    ]
+                },
+                {
+                    "_period": 1,
+                    "_id": 28,
+                    "_item": 1,
+                    "_quantity": 100,
+                    "_cost": "15646,83",
+                    "_averageunitcosts": "156,47",
+                    "batch": [
+                        {
+                            "_id": 1,
+                            "_amount": 10,
+                            "_cycletime": 90,
+                            "_cost": "1576,30"
+                        },
+                        {
+                            "_id": 2,
+                            "_amount": 10,
+                            "_cycletime": 60,
+                            "_cost": "1562,30"
+                        },
+                        {
+                            "_id": 3,
+                            "_amount": 10,
+                            "_cycletime": 60,
+                            "_cost": "1563,30"
+                        },
+                        {
+                            "_id": 4,
+                            "_amount": 10,
+                            "_cycletime": 60,
+                            "_cost": "1563,36"
+                        },
+                        {
+                            "_id": 5,
+                            "_amount": 10,
+                            "_cycletime": 60,
+                            "_cost": "1563,39"
+                        },
+                        {
+                            "_id": 6,
+                            "_amount": 10,
+                            "_cycletime": 60,
+                            "_cost": "1563,55"
+                        },
+                        {
+                            "_id": 7,
+                            "_amount": 10,
+                            "_cycletime": 60,
+                            "_cost": "1563,59"
+                        },
+                        {
+                            "_id": 8,
+                            "_amount": 10,
+                            "_cycletime": 1020,
+                            "_cost": "1563,64"
+                        },
+                        {
+                            "_id": 9,
+                            "_amount": 10,
+                            "_cycletime": 60,
+                            "_cost": "1563,68"
+                        },
+                        {
+                            "_id": 10,
+                            "_amount": 10,
+                            "_cycletime": 60,
+                            "_cost": "1563,72"
+                        }
+                    ]
+                },
+                {
+                    "_period": 1,
+                    "_id": 29,
+                    "_item": 2,
+                    "_quantity": 100,
+                    "_cost": "16362,55",
+                    "_averageunitcosts": "163,63",
+                    "batch": [
+                        {
+                            "_id": 1,
+                            "_amount": 10,
+                            "_cycletime": 90,
+                            "_cost": "1644,88"
+                        },
+                        {
+                            "_id": 2,
+                            "_amount": 10,
+                            "_cycletime": 70,
+                            "_cost": "1634,79"
+                        },
+                        {
+                            "_id": 3,
+                            "_amount": 10,
+                            "_cycletime": 70,
+                            "_cost": "1635,03"
+                        },
+                        {
+                            "_id": 4,
+                            "_amount": 10,
+                            "_cycletime": 70,
+                            "_cost": "1635,25"
+                        },
+                        {
+                            "_id": 5,
+                            "_amount": 10,
+                            "_cycletime": 1030,
+                            "_cost": "1635,26"
+                        },
+                        {
+                            "_id": 6,
+                            "_amount": 10,
+                            "_cycletime": 70,
+                            "_cost": "1635,25"
+                        },
+                        {
+                            "_id": 7,
+                            "_amount": 10,
+                            "_cycletime": 70,
+                            "_cost": "1635,29"
+                        },
+                        {
+                            "_id": 8,
+                            "_amount": 10,
+                            "_cycletime": 70,
+                            "_cost": "1635,44"
+                        },
+                        {
+                            "_id": 9,
+                            "_amount": 10,
+                            "_cycletime": 70,
+                            "_cost": "1635,68"
+                        },
+                        {
+                            "_id": 10,
+                            "_amount": 10,
+                            "_cycletime": 70,
+                            "_cost": "1635,68"
+                        }
+                    ]
+                },
+                {
+                    "_period": 1,
+                    "_id": 30,
+                    "_item": 3,
+                    "_quantity": 100,
+                    "_cost": "16562,07",
+                    "_averageunitcosts": "165,62",
+                    "batch": [
+                        {
+                            "_id": 1,
+                            "_amount": 10,
+                            "_cycletime": 1060,
+                            "_cost": "1668,68"
+                        },
+                        {
+                            "_id": 2,
+                            "_amount": 10,
+                            "_cycletime": 70,
+                            "_cost": "1653,95"
+                        },
+                        {
+                            "_id": 3,
+                            "_amount": 10,
+                            "_cycletime": 70,
+                            "_cost": "1654,21"
+                        },
+                        {
+                            "_id": 4,
+                            "_amount": 10,
+                            "_cycletime": 70,
+                            "_cost": "1654,65"
+                        },
+                        {
+                            "_id": 5,
+                            "_amount": 10,
+                            "_cycletime": 70,
+                            "_cost": "1654,84"
+                        },
+                        {
+                            "_id": 6,
+                            "_amount": 10,
+                            "_cycletime": 70,
+                            "_cost": "1655,02"
+                        },
+                        {
+                            "_id": 7,
+                            "_amount": 10,
+                            "_cycletime": 70,
+                            "_cost": "1655,18"
+                        },
+                        {
+                            "_id": 8,
+                            "_amount": 10,
+                            "_cycletime": 1030,
+                            "_cost": "1655,18"
+                        },
+                        {
+                            "_id": 9,
+                            "_amount": 10,
+                            "_cycletime": 70,
+                            "_cost": "1655,18"
+                        },
+                        {
+                            "_id": 10,
+                            "_amount": 10,
+                            "_cycletime": 70,
+                            "_cost": "1655,18"
+                        }
+                    ]
+                }
+            ]
+        },
+        "cycletimes": {
+            "_startedorders": 1,
+            "_waitingorders": 2,
+            "order": [
+                {
+                    "_id": 6,
+                    "_period": 1,
+                    "_starttime": "1-1-0-0",
+                    "_finishtime": "1-1-7-30",
+                    "_cycletimemin": 450,
+                    "_cycletimefactor": "1,00"
+                },
+                {
+                    "_id": 2,
+                    "_period": 1,
+                    "_starttime": "1-1-0-0",
+                    "_finishtime": "1-2-0-40",
+                    "_cycletimemin": 520,
+                    "_cycletimefactor": "2,85"
+                },
+                {
+                    "_id": 5,
+                    "_period": 1,
+                    "_starttime": "1-1-0-0",
+                    "_finishtime": "1-2-0-50",
+                    "_cycletimemin": 530,
+                    "_cycletimefactor": "2,81"
+                },
+                {
+                    "_id": 8,
+                    "_period": 1,
+                    "_starttime": "1-1-0-0",
+                    "_finishtime": "1-2-2-20",
+                    "_cycletimemin": 620,
+                    "_cycletimefactor": "2,55"
+                },
+                {
+                    "_id": 28,
+                    "_period": 1,
+                    "_starttime": "1-1-0-0",
+                    "_finishtime": "1-2-2-30",
+                    "_cycletimemin": 630,
+                    "_cycletimefactor": "2,52"
+                },
+                {
+                    "_id": 9,
+                    "_period": 1,
+                    "_starttime": "1-1-7-0",
+                    "_finishtime": "1-2-5-42",
+                    "_cycletimemin": 450,
+                    "_cycletimefactor": "3,03"
+                },
+                {
+                    "_id": 3,
+                    "_period": 1,
+                    "_starttime": "1-1-0-0",
+                    "_finishtime": "1-2-7-35",
+                    "_cycletimemin": 935,
+                    "_cycletimefactor": "2,03"
+                },
+                {
+                    "_id": 7,
+                    "_period": 1,
+                    "_starttime": "1-1-0-0",
+                    "_finishtime": "1-2-7-57",
+                    "_cycletimemin": 430,
+                    "_cycletimefactor": "4,46"
+                },
+                {
+                    "_id": 1,
+                    "_period": 1,
+                    "_starttime": "1-1-0-0",
+                    "_finishtime": "1-3-0-30",
+                    "_cycletimemin": 965,
+                    "_cycletimefactor": "3,02"
+                },
+                {
+                    "_id": 13,
+                    "_period": 1,
+                    "_starttime": "1-2-0-50",
+                    "_finishtime": "1-3-1-40",
+                    "_cycletimemin": 530,
+                    "_cycletimefactor": "2,81"
+                },
+                {
+                    "_id": 12,
+                    "_period": 1,
+                    "_starttime": "1-2-0-40",
+                    "_finishtime": "1-3-3-0",
+                    "_cycletimemin": 620,
+                    "_cycletimefactor": "2,55"
+                },
+                {
+                    "_id": 14,
+                    "_period": 1,
+                    "_starttime": "1-2-5-12",
+                    "_finishtime": "1-3-3-54",
+                    "_cycletimemin": 450,
+                    "_cycletimefactor": "3,03"
+                },
+                {
+                    "_id": 10,
+                    "_period": 1,
+                    "_starttime": "1-1-3-20",
+                    "_finishtime": "1-3-4-16",
+                    "_cycletimemin": 430,
+                    "_cycletimefactor": "6,83"
+                },
+                {
+                    "_id": 16,
+                    "_period": 1,
+                    "_starttime": "1-2-2-20",
+                    "_finishtime": "1-3-4-40",
+                    "_cycletimemin": 620,
+                    "_cycletimefactor": "2,55"
+                },
+                {
+                    "_id": 29,
+                    "_period": 1,
+                    "_starttime": "1-2-2-30",
+                    "_finishtime": "1-3-6-30",
+                    "_cycletimemin": 720,
+                    "_cycletimefactor": "2,33"
+                },
+                {
+                    "_id": 11,
+                    "_period": 1,
+                    "_starttime": "1-2-2-15",
+                    "_finishtime": "1-3-7-51",
+                    "_cycletimemin": 405,
+                    "_cycletimefactor": "4,39"
+                },
+                {
+                    "_id": 17,
+                    "_period": 1,
+                    "_starttime": "1-3-3-24",
+                    "_finishtime": "1-4-2-14",
+                    "_cycletimemin": 450,
+                    "_cycletimefactor": "3,04"
+                },
+                {
+                    "_id": 21,
+                    "_period": 1,
+                    "_starttime": "1-3-1-40",
+                    "_finishtime": "1-4-2-20",
+                    "_cycletimemin": 520,
+                    "_cycletimefactor": "2,85"
+                },
+                {
+                    "_id": 15,
+                    "_period": 1,
+                    "_starttime": "1-1-6-40",
+                    "_finishtime": "1-4-4-10",
+                    "_cycletimemin": 440,
+                    "_cycletimefactor": "9,48"
+                },
+                {
+                    "_id": 20,
+                    "_period": 1,
+                    "_starttime": "1-3-3-0",
+                    "_finishtime": "1-4-5-20",
+                    "_cycletimemin": 620,
+                    "_cycletimefactor": "2,55"
+                },
+                {
+                    "_id": 4,
+                    "_period": 1,
+                    "_starttime": "1-1-0-0",
+                    "_finishtime": "1-4-6-45",
+                    "_cycletimemin": 915,
+                    "_cycletimefactor": "5,16"
+                },
+                {
+                    "_id": 24,
+                    "_period": 1,
+                    "_starttime": "1-3-4-40",
+                    "_finishtime": "1-4-7-0",
+                    "_cycletimemin": 620,
+                    "_cycletimefactor": "2,55"
+                },
+                {
+                    "_id": 18,
+                    "_period": 1,
+                    "_starttime": "1-2-2-0",
+                    "_finishtime": "1-5-0-29",
+                    "_cycletimemin": 440,
+                    "_cycletimefactor": "9,61"
+                },
+                {
+                    "_id": 22,
+                    "_period": 1,
+                    "_starttime": "1-4-1-36",
+                    "_finishtime": "1-5-0-56",
+                    "_cycletimemin": 450,
+                    "_cycletimefactor": "3,11"
+                },
+                {
+                    "_id": 30,
+                    "_period": 1,
+                    "_starttime": "1-3-6-30",
+                    "_finishtime": "1-5-2-40",
+                    "_cycletimemin": 730,
+                    "_cycletimefactor": "3,63"
+                },
+                {
+                    "_id": 19,
+                    "_period": 1,
+                    "_starttime": "1-2-7-30",
+                    "_finishtime": "1-5-4-9",
+                    "_cycletimemin": 410,
+                    "_cycletimefactor": "10,05"
+                },
+                {
+                    "_id": 25,
+                    "_period": 1,
+                    "_starttime": "1-4-8-36",
+                    "_finishtime": "1-5-7-18",
+                    "_cycletimemin": 450,
+                    "_cycletimefactor": "3,03"
+                }
+            ]
+        },
+        "result": {
+            "general": {
+                "capacity": {
+                    "_current": 33600,
+                    "_average": "33600,00",
+                    "_all": 33600
+                },
+                "possiblecapacity": {
+                    "_current": 34260,
+                    "_average": "34260,00",
+                    "_all": 34260
+                },
+                "relpossiblenormalcapacity": {
+                    "_current": "101,96%",
+                    "_average": "101,96%",
+                    "_all": "-"
+                },
+                "productivetime": {
+                    "_current": 25575,
+                    "_average": "25575,00",
+                    "_all": 25575
+                },
+                "effiency": {
+                    "_current": "74,65%",
+                    "_average": "74,65%",
+                    "_all": "-"
+                },
+                "sellwish": {
+                    "_current": 450,
+                    "_average": "450,00",
+                    "_all": 450
+                },
+                "salesquantity": {
+                    "_current": 450,
+                    "_average": "450,00",
+                    "_all": 450
+                },
+                "deliveryreliability": {
+                    "_current": "100,00%",
+                    "_average": "100,00%",
+                    "_all": "-"
+                },
+                "idletime": {
+                    "_current": 8685,
+                    "_average": "8685,00",
+                    "_all": 8685
+                },
+                "idletimecosts": {
+                    "_current": "4595,80",
+                    "_average": "4595,80",
+                    "_all": "4595,80"
+                },
+                "storevalue": {
+                    "_current": "254659,00",
+                    "_average": "254659,00",
+                    "_all": "-"
+                },
+                "storagecosts": {
+                    "_current": "6555,91",
+                    "_average": "6555,91",
+                    "_all": "6555,91"
+                }
+            },
+            "defectivegoods": {
+                "quantity": {
+                    "_current": 0,
+                    "_average": "0,00",
+                    "_all": 0
+                },
+                "costs": {
+                    "_current": "0,00",
+                    "_average": "0,00",
+                    "_all": "0,00"
+                }
+            },
+            "normalsale": {
+                "salesprice": {
+                    "_current": "200,00",
+                    "_average": "200,00",
+                    "_all": "-"
+                },
+                "profit": {
+                    "_current": "6091,53",
+                    "_average": "6091,53",
+                    "_all": "6091,53"
+                },
+                "profitperunit": {
+                    "_current": "13,54",
+                    "_average": "13,54",
+                    "_all": "-"
+                }
+            },
+            "directsale": {
+                "profit": {
+                    "_current": "0,00",
+                    "_average": "0,00",
+                    "_all": "0,00"
+                },
+                "contractpenalty": {
+                    "_current": "0,00",
+                    "_average": "0,00",
+                    "_all": "0,00"
+                }
+            },
+            "marketplacesale": {
+                "profit": {
+                    "_current": "0,00",
+                    "_average": "0,00",
+                    "_all": "0,00"
+                }
+            },
+            "summary": {
+                "profit": {
+                    "_current": "6091,53",
+                    "_average": "6091,53",
+                    "_all": "6091,53"
+                }
+            }
+        }
+    }
+}

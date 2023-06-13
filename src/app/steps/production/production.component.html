@@ -12,7 +12,7 @@
     verschoben.<br />
     <i class="fas fa-angles-down"></i>: Der Auftrag wird an das Ende
     geschoben.<br />
-    <i class="fas fa-split"></i>: Der Auftrag wird gesplittet. <br />
+    <i class="fa-solid fa-arrows-split-up-and-left fa-flip-horizontal"></i>: Der Auftrag wird gesplittet. <br />
   </ng-template>
   <tui-tooltip [content]="tooltip" direction="left"></tui-tooltip>
 </p>
@@ -118,7 +118,7 @@
             class="fas fa-angles-down tui-space_left-3"
             (click)="moveDown(index, true)"
           ></i>
-          <i class="fas fa-split tui-space_left-3" (click)="split(index)"></i>
+          <i class="fa-solid fa-arrows-split-up-and-left fa-flip-horizontal tui-space_left-3" (click)="split(index)"></i>
           <i
             *ngIf="splittedMap[p._article]"
             class="fas fa-trash tui-space_left-3"
